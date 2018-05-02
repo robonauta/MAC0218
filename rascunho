@@ -1,0 +1,17 @@
+User
+nickname:string
+password:string
+name:string
+age:integer
+origin:string
+type:integer
+
+	0 - common user
+	1 - cientist
+
+Planets
+name: string
+
+
+Civilizations
+
