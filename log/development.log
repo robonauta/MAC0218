@@ -4048,3 +4048,923 @@ Processing by IndexController#index as HTML
 Completed 200 OK in 89ms (Views: 86.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:07 -0300
+Processing by IndexController#index as HTML
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:07 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (13.5ms)
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 149ms (Views: 145.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 162ms (Views: 158.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:14 -0300
+Processing by IndexController#index as HTML
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:14 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (12.6ms)
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 151ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 162ms (Views: 158.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:19 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:19 -0300
+Processing by IndexController#index as HTML
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (11.0ms)
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 139ms (Views: 119.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 193ms (Views: 189.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:35 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:35 -0300
+  Rendered index/index.html.haml within layouts/application (14.5ms)
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (16.6ms)
+Completed 200 OK in 182ms (Views: 178.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 174ms (Views: 170.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-05-05 00:36:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:45 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (17.3ms)
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:45 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 149ms (Views: 140.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:46 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 88ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:51 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 89ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:36:59 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 91ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:37:04 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 95ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:37:06 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 78ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:37:14 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 100ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:37:16 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 93ms (Views: 89.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:37:50 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 81ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:39:15 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 108ms (Views: 104.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:39:30 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 80ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:42:17 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (34.1ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_form_errors with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views"
+):
+    11:   .span6
+    12:     %h2.small_head New Task
+    13: 
+    14:     = render :partial => 'layouts/form_errors', :locals => {:object => @list}
+    15: 
+    16:     .form
+    17:       = form_for :list, :url => {:controller => 'lists', :action => 'create'} do |f|
+  
+app/views/index/new.html.haml:14:in `_app_views_index_new_html_haml__1502164729053690397_70309842266480'
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:42:39 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"lists"}):
+    13: 
+    14: 
+    15:     .form
+    16:       = form_for :list, :url => {:controller => 'lists', :action => 'create'} do |f|
+    17:         = label_tag :list_name, "Title", :class => 'header_label' 
+  
+app/views/index/new.html.haml:16:in `_app_views_index_new_html_haml__1502164729053690397_70309794906760'
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:42:50 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 102ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:43:22 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within a tag that already has content is illegal.):
+    58:             %a{href: "#"} Separated link
+    59:   / /.navbar-collapse
+    60: 
+    61:     %center
+    62:       %h1 New post
+    63:       %form
+    64:         = label :user, :email, "Email"
+  
+app/views/index/new.html.haml:61
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:43:40 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 100ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:43:47 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 84ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:44:25 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    54:   / /.navbar-collapse
+    55: 
+    56: %form
+    57:     = label :user, :email, "Email"
+    58:     = text_field :user, :email
+    59:     = label :user, :password
+    60:     = password_field :user, :password
+  
+app/views/index/new.html.haml:57
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:44:43 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 85ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:44:48 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (19.2ms)
+Completed 200 OK in 98ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:45:07 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 86ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2018-05-05 00:45:08 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for IndexController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index/index" for 127.0.0.1 at 2018-05-05 00:45:27 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for IndexController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:45:27 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 85ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/" for 127.0.0.1 at 2018-05-05 00:45:27 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (62.7ms)
+Completed 200 OK in 176ms (Views: 170.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/index/new" for 127.0.0.1 at 2018-05-05 00:45:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index/index/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index/" for 127.0.0.1 at 2018-05-05 00:45:35 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 94ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/" for 127.0.0.1 at 2018-05-05 00:45:37 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 158ms (Views: 154.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:45:38 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 123ms (Views: 119.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:45:40 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 96ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:45:46 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (18.9ms)
+Completed 200 OK in 92ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2018-05-05 00:45:47 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for IndexController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:45:49 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 104ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2018-05-05 00:46:50 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for IndexController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:46:56 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 84ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:47:00 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 102ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:47:02 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 88ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2018-05-05 00:47:03 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for IndexController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:47:06 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (15.9ms)
+Completed 200 OK in 97ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:47:58 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 103ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:48:01 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 90ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:48:02 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 120ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:48:05 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 95ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:48:07 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (20.7ms)
+Completed 200 OK in 97ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:48:08 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 101ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:48:10 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 100ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:48:11 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 110ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:48:49 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 80ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:49:47 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    53:             %a{href: "#"} Separated link
+    54:   / /.navbar-collapse
+    55: %center
+    56:     %form{:name => "email", :id => "email", :action => "/contact", :method => "post", :enctype => "text/plain"}
+    57:       %fieldset
+    58:         %ol
+    59:           %li
+  
+app/views/index/new.html.haml:56
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:50:16 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 111ms (Views: 107.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:50:36 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (16.9ms)
+Completed 200 OK in 94ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:50:42 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (20.8ms)
+Completed 200 OK in 102ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:51:00 -0300
+Processing by IndexController#index as HTML
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:51:00 -0300
+  Rendering index/index.html.haml within layouts/application
+Processing by IndexController#index as HTML
+  Rendered index/index.html.haml within layouts/application (13.1ms)
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (22.2ms)
+Completed 200 OK in 193ms (Views: 185.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 171ms (Views: 163.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:51:02 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 99ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:53:44 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 124ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:53:46 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 101ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:54:11 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:54:12 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 102ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:54:32 -0300
+Processing by IndexController#new as HTML
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:54:32 -0300
+  Rendering index/new.html.haml within layouts/application
+Processing by IndexController#index as HTML
+  Rendered index/new.html.haml within layouts/application (13.3ms)
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 158ms (Views: 154.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 157ms (Views: 154.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:54:40 -0300
+Processing by IndexController#new as HTML
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:54:40 -0300
+Processing by IndexController#index as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (5.7ms)
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 150ms (Views: 140.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 173ms (Views: 169.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:54:42 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 77ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:54:44 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 101ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:55:07 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:55:07 -0300
+Processing by IndexController#new as HTML
+Processing by IndexController#index as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (3.1ms)
+  Rendered index/index.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    1: %center
+    2:   %form{:name => "email", :id => "email", :action => "/contact", :method => "post", :enctype => "text/plain"}
+    3:     %fieldset
+    4:         %label{:for => "message[name]"} Name:
+    5:         %input{:type => "text", :name => "message[name]", :class => "text"}
+    6:       %li
+    7:         %label{:for => "message[mail]"} Mail:
+  
+app/views/index/new.html.haml:4
+Completed 200 OK in 235ms (Views: 229.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:55:13 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:55:13 -0300
+Processing by IndexController#new as HTML
+Processing by IndexController#index as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (6.4ms)
+  Rendered index/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 177ms (Views: 174.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 193ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:56:19 -0300
+Processing by IndexController#new as HTML
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:56:19 -0300
+Processing by IndexController#index as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (63.6ms)
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (47.9ms)
+Completed 200 OK in 337ms (Views: 309.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 376ms (Views: 360.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 00:56:43 -0300
+Processing by IndexController#index as HTML
+  Rendering index/index.html.haml within layouts/application
+  Rendered index/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 104ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index/new" for 127.0.0.1 at 2018-05-05 00:56:45 -0300
+Processing by IndexController#new as HTML
+  Rendering index/new.html.haml within layouts/application
+  Rendered index/new.html.haml within layouts/application (19.5ms)
+Completed 200 OK in 130ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
