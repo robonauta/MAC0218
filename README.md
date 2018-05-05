@@ -1,4 +1,4 @@
-# To-do
+# TODO
 
 - [ ] Formulário new precisa guardar um post na db
 - [ ] Fazer a página index mostrar os posts existentes

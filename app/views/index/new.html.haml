@@ -1,5 +1,5 @@
 .container.text-center
-  %form
+  = form_for :post, :url => {:controller => 'index', :action => 'create'} do |f|
     %h2 New post
     %br
     .row
@@ -7,8 +7,19 @@
       / col-md-3
       .col-md-6
         .form-group
+          %label{:for => "company"} Author
+          = f.text_field :author, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
           %label{:for => "first"} Post title
-          %input#first.form-control{:placeholder => "", :type => "text"}/
+          = f.text_field :title, class: 'form-control'
       / col-md-6
       .col-md-3
       / col-md-3
@@ -18,36 +29,8 @@
       .col-md-6
         .form-group
           %label{:for => "last"} Short description
-          %input#last.form-control{:placeholder => "", :type => "text"}/
+          = f.text_area :description, class: 'form-control'
       / col-md-6
       .col-md-3
       / col-md-3
-    .row
-      .col-md-3
-      / col-md-3
-      .col-md-6
-        .form-group
-          %label{:for => "company"} Company
-          %input#company.form-control{:placeholder => "", :type => "text"}/
-      / col-md-6
-      .col-md-3
-      / col-md-3
-    / row
-    -# CÓDIGO COMENTADO
-      %label{:for => "contact-preference"} When is the best time of day to reach you?
-      .radio
-        %label
-          %input#contact-preference{:checked => "checked", :name => "contact-preference", :type => "radio", :value => "am"}>/
-          Morning
-      .radio
-        %label
-          %input#contact-preference{:checked => "checked", :name => "contact-preference", :type => "radio", :value => "pm"}>/
-          Evening
-      %label{:for => "newsletter"} Would you like to recieve our email newsletter?
-      .checkbox
-        %label
-          %input#newsletter{:type => "checkbox", :value => "Sure!"}/
-          Sure!
     %button.btn.btn-primary{:type => "submit"} Submit
-
-
