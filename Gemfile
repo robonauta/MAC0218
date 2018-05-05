@@ -14,6 +14,8 @@ gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 gem 'puma', '~> 3.7'
 # Use HAML for templates
 gem 'haml-rails'
+# Refactor para renomear controllers
+gem 'rails_refactor'
 # Bootstrap
 gem 'bootstrap-sass'
 # jQuery
