@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+  %body
+    %center
+      %h1 Add post
+      %form
+        = label :user, :email, "Email"
+        = text_field :user, :email
+        = label :user, :password
+        = password_field :user, :password
+        %input{:type => "submit", :value => "Sign in"}
+
