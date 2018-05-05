@@ -1,0 +1,36 @@
+.container.text-center
+  = form_for :post, :url => {:controller => 'posts', :action => 'create'} do |f|
+    %h2 New post
+    %br
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "company"} Author
+          = f.text_field :author, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "first"} Post title
+          = f.text_field :title, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "last"} Short description
+          = f.text_area :description, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    %button.btn.btn-primary{:type => "submit"} Submit
