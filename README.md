@@ -7,11 +7,12 @@
 - [ ] Começar o login dos usuários mas sem pedir credenciais pra executar ações por enquanto
 
 ### UTILIDADES
-servidor:
-```rails server```
-reseta a db de acordo com o schema atual:
-```rake db:drop db:create db:migrate```
-converter códigos html em haml:
-```http://htmltohaml.com```
-ideias pra design:
-```https://codepen.io```
+servidor:\
+```rails server```\
+reseta a db de acordo com o schema atual:\
+```rake db:drop db:create db:migrate```\
+converter códigos html em haml:\
+```http://htmltohaml.com```\
+ideias pra design:\
+```https://codepen.io```\
+
