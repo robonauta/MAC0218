@@ -1,0 +1,27 @@
+.container.text-center
+  = form_for(:user, :url => {:controller => 'sessions', :action => 'create'}) do |f|
+    %h1 Login
+    %br
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "email"} Username or Email
+          = f.text_field :email, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "password"} Password
+          = f.password_field :password, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    %button.btn.btn-primary{:type => "submit"} Login

@@ -1,21 +1,3 @@
--#- @page_title = "UserAuth | Signup"
--#.container.text-center
--#  = form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f|
--#    %p.form-group
--#      Username: #{f.text_field :username}
--#    %p.form-group
--#      Email: #{f.text_field :email}
--#    %p.form-group
--#      Password: #{f.password_field :password}
--#    %p.form-group
--#      Password Confirmation: #{f.password_field :password_confirmation}
--#    = f.submit :Signup
--#  - if @user.errors.any?
--#    %ul.Signup_Errors
--#      - for message_error in @user.errors.full_messages
--#        %li
--#          * #{message_error}
-          
 .container.text-center
   = form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f|
     %h1 Sign Up
