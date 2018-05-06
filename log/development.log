@@ -12809,3 +12809,558 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 102ms (Views: 94.3ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/posts/5" for 127.0.0.1 at 2018-05-05 21:21:14 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 145ms (Views: 137.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2018-05-05 21:21:15 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  Rendering posts/edit.html.haml within layouts/application
+  Rendered posts/edit.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 110ms (Views: 101.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2018-05-05 21:21:21 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ucfikl0Pc1joPueQx/XOp8ijtBR/15Y7x9VvPVufQEwC7S3q0L+C8lx7qKsf6PjGEXub93m7+YICD8QKecB7XA==", "post"=>{"author"=>"Bruno", "title"=>"IA1", "description"=>"aloalow"}, "id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `posts` SET `description` = 'aloalow', `updated_at` = '2018-05-06 00:21:21' WHERE `posts`.`id` = 5[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2018-05-05 21:21:21 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 92ms (Views: 87.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 21:21:23 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 95ms (Views: 88.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 21:21:29 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 89ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-05-05 21:27:17 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UEwSRQ8GW9RaVtGvoorpvgnBYHEqGhK+F/Wowk7+hIR2jmjNTVwxG+QeUx6MSM9TS02nuCPsz39co0MmFzdB0g==", "post"=>{"author"=>"bb", "title"=>"bb", "description"=>"bbb"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`author`, `title`, `description`, `created_at`, `updated_at`) VALUES ('bb', 'bb', 'bbb', '2018-05-06 00:27:17', '2018-05-06 00:27:17')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/8" for 127.0.0.1 at 2018-05-05 21:27:17 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 8 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 109ms (Views: 102.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/8/edit" for 127.0.0.1 at 2018-05-05 21:27:19 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 8 LIMIT 1[0m
+  Rendering posts/edit.html.haml within layouts/application
+  Rendered posts/edit.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 94ms (Views: 85.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/posts/8" for 127.0.0.1 at 2018-05-05 21:27:20 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rnDNfc3DlWCE6z0atxLz3z/gBbnrHsMTmy80gqOM+O7SNU1+UxIrKjo2YuZy4vp2BvakDi3CpJIGIxUMQQzPAw==", "post"=>{"author"=>"bb", "title"=>"bb", "description"=>"bbb"}, "id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/8" for 127.0.0.1 at 2018-05-05 21:27:20 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 8 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 78ms (Views: 73.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/posts/8" for 127.0.0.1 at 2018-05-05 21:27:22 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sXAOphnUovXZRtTkCm0KRm+wOOc+cwmFQqOfU1GwLZ0sbeQ0dzDShCmRhPYHC16fqEeMHXQJgma4UAPobbU6bw==", "id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 8[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-05-05 21:27:22 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 93ms (Views: 87.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-05-05 22:05:23 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (22.1ms)
+Completed 200 OK in 170ms (Views: 159.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2018-05-05 22:05:28 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 137ms (Views: 127.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/6/edit" for 127.0.0.1 at 2018-05-05 22:05:32 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  Rendering posts/edit.html.haml within layouts/application
+  Rendered posts/edit.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 91ms (Views: 84.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 22:05:35 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 95ms (Views: 90.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:05:37 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 83ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:05:38 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 99ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:05:39 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 102ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:05:39 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 102ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 22:05:40 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 109ms (Views: 102.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:11:42 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 166ms (Views: 156.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:11:43 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 139ms (Views: 134.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 22:11:43 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 101ms (Views: 91.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:11:44 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 108ms (Views: 101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:11:46 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 95ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:11:47 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 111ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:11:48 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 110ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:11:49 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 111ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:11:50 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 100ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 22:11:52 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 109ms (Views: 101.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:11:53 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 94ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:11:53 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 105ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:11:54 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 136ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 22:11:54 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 109ms (Views: 104.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:11:56 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 103ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:13:01 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 120ms (Views: 111.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 22:13:01 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 100ms (Views: 93.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 22:13:02 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 97ms (Views: 94.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:13:04 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (14.2ms)
+Completed 200 OK in 151ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 22:13:05 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 102ms (Views: 93.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 22:13:07 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 103ms (Views: 96.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 22:13:08 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 97ms (Views: 89.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 23:40:14 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (47.9ms)
+Completed 200 OK in 295ms (Views: 257.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 23:41:54 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 148ms (Views: 138.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 23:41:55 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 100ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-05 23:41:56 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 88ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 23:41:58 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (16.6ms)
+Completed 200 OK in 141ms (Views: 128.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 23:42:00 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 105ms (Views: 97.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-05 23:42:03 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 124ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 23:42:09 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 105ms (Views: 97.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2018-05-05 23:42:10 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 108ms (Views: 99.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2018-05-05 23:42:11 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  Rendering posts/edit.html.haml within layouts/application
+  Rendered posts/edit.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 94ms (Views: 85.6ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2018-05-05 23:42:16 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ahFrRQM1iL2uD/GeF67L0Vpwn6K5606faEbwE0+rCskbwabhWxwrBIWPD4X8tMxCMwBraA0TCiiEy23vyCUzaw==", "post"=>{"author"=>"Bruno", "title"=>"IA1", "description"=>"aloalowfalae"}, "id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE `posts` SET `description` = 'aloalowfalae', `updated_at` = '2018-05-06 02:42:16' WHERE `posts`.`id` = 5[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 11ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2018-05-05 23:42:16 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 100ms (Views: 94.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 23:42:21 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 95ms (Views: 89.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2018-05-05 23:42:23 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 107ms (Views: 98.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/6/edit" for 127.0.0.1 at 2018-05-05 23:42:25 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  Rendering posts/edit.html.haml within layouts/application
+  Rendered posts/edit.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 104ms (Views: 97.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/posts/6" for 127.0.0.1 at 2018-05-05 23:42:29 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G74JUDh9iYrEOYmWRZLQHsuyldSwdcVGlxJOUX2AC2mzZSrFBjj19nDYSLx4dEiOrCuAPxwcPZnb7ZmfJG6pUw==", "post"=>{"author"=>"Pedro", "title"=>"IA22", "description"=>"pocpocpokpoc"}, "id"=>"6"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `posts` SET `title` = 'IA22', `description` = 'pocpocpokpoc', `updated_at` = '2018-05-06 02:42:29' WHERE `posts`.`id` = 6[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2018-05-05 23:42:29 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 102ms (Views: 95.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-05 23:42:30 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 97ms (Views: 89.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2018-05-05 23:42:35 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 93ms (Views: 84.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/posts/6" for 127.0.0.1 at 2018-05-05 23:42:39 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CcHeK1vHt10dQU+9LT1/59wnZ8K6SzhwMvTVTVknj5CYPdH3t0pfaus5hHLzEZ5PFvvPWldbzdS6tw6MLuw6ow==", "id"=>"6"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM `posts` WHERE `posts`.`id` = 6[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-05-05 23:42:39 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 101ms (Views: 94.8ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (14.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT GET_LOCK('4087196906081189040', 0)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to RemoveSeveralFromUsers (20180506042012)
+  [1m[35m (89.0ms)[0m  [1m[35mALTER TABLE `users` DROP `nickname`[0m
+  [1m[35m (50.5ms)[0m  [1m[35mALTER TABLE `users` DROP `password`[0m
+  [1m[35m (59.8ms)[0m  [1m[35mALTER TABLE `users` DROP `name`[0m
+  [1m[35m (71.8ms)[0m  [1m[35mALTER TABLE `users` DROP `age`[0m
+  [1m[35m (47.8ms)[0m  [1m[35mALTER TABLE `users` DROP `origin`[0m
+  [1m[35m (45.0ms)[0m  [1m[35mALTER TABLE `users` DROP `type`[0m
+  [1m[35m (44.7ms)[0m  [1m[35mALTER TABLE `users` DROP `specie`[0m
+  [1m[35m (48.5ms)[0m  [1m[35mALTER TABLE `users` DROP `habitat`[0m
+  [1m[35m (45.8ms)[0m  [1m[35mALTER TABLE `users` ADD `username` varchar(255)[0m
+  [1m[35m (48.1ms)[0m  [1m[35mALTER TABLE `users` ADD `email` varchar(255)[0m
+  [1m[35m (44.5ms)[0m  [1m[35mALTER TABLE `users` ADD `encrypted_password` varchar(255)[0m
+  [1m[35m (43.8ms)[0m  [1m[35mALTER TABLE `users` ADD `salt` varchar(255)[0m
+  [1m[35m (48.4ms)[0m  [1m[35mALTER TABLE `users` ADD `name` varchar(255)[0m
+  [1m[35m (49.4ms)[0m  [1m[35mALTER TABLE `users` ADD `organization` varchar(255)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180506042012')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('4087196906081189040')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
