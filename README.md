@@ -9,10 +9,10 @@
 ### UTILIDADES
 servidor:\
 ```rails server```\
-reseta a db de acordo com o schema atual:\
+reseta a db:\
 ```rake db:drop db:create db:migrate```\
 converter códigos html em haml:\
 ```http://htmltohaml.com```\
 ideias pra design:\
-```https://codepen.io```\
+```https://codepen.io```
 
