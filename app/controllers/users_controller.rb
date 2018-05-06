@@ -6,13 +6,11 @@ class UsersController < ApplicationController
 #    render plain: params[:user].inspect
     @user = User.new(user_params)
     if(@user.save)
-      flash[:notice] = "You signed up successfully"
-      flash[:color]= "valid"
+      session[:user_id] = @user.id
+      redirect_to '/'
     else
-      flash[:notice] = "Form is invalid"
-      flash[:color]= "invalid"
+      redirect_to '/signup'
     end
-    render "new"
   end
   
   private def user_params
