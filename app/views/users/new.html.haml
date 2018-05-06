@@ -1,18 +1,94 @@
-- @page_title = "UserAuth | Signup"
-.Sign_Form
-  %h1 Sign Up
+-#- @page_title = "UserAuth | Signup"
+-#.container.text-center
+-#  = form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f|
+-#    %p.form-group
+-#      Username: #{f.text_field :username}
+-#    %p.form-group
+-#      Email: #{f.text_field :email}
+-#    %p.form-group
+-#      Password: #{f.password_field :password}
+-#    %p.form-group
+-#      Password Confirmation: #{f.password_field :password_confirmation}
+-#    = f.submit :Signup
+-#  - if @user.errors.any?
+-#    %ul.Signup_Errors
+-#      - for message_error in @user.errors.full_messages
+-#        %li
+-#          * #{message_error}
+          
+.container.text-center
   = form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f|
-    %p
-      Username: #{f.text_field :username}
-    %p
-      Email: #{f.text_field :email}
-    %p
-      Password: #{f.password_field :password}
-    %p
-      Password Confirmation: #{f.password_field :password_confirmation}
-    = f.submit :Signup
-  - if @user.errors.any?
-    %ul.Signup_Errors
-      - for message_error in @user.errors.full_messages
-        %li
-          * #{message_error}
+    %h1 Sign Up
+    %br
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "username"} Username
+          = f.text_field :username, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "email"} Email
+          = f.text_field :email, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "password"} Password
+          = f.password_field :password, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "password_confirmation"} Password Confirmation
+          = f.password_field :password_confirmation, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "name"} Full Name
+          = f.text_field :name, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    .row
+      .col-md-3
+      / col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "organization"} Organization (Optional)
+          = f.text_field :organization, class: 'form-control'
+      / col-md-6
+      .col-md-3
+      / col-md-3
+    / row
+    %button.btn.btn-primary{:type => "submit"} Signup
+    - if @user.errors.any?
+      %ul.Signup_Errors
+        - for message_error in @user.errors.full_messages
+          %li
+            * #{message_error}
