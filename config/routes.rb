@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   root 'posts#index'
   # Regular routes:
   get 'about' => 'pages#about'
+  get 'login' => 'users#new'
   
   # Resources:
   resources :posts
+  resources :users
   
 end
