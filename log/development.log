@@ -16757,3 +16757,223 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 108ms (Views: 101.7ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/signup" for 127.0.0.1 at 2018-05-07 02:22:13 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (26.2ms)
+Completed 200 OK in 601ms (Views: 568.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-07 02:22:28 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IQR/A6H0UopI/kMGClL9AkBLElphGi0kKHZrNYdzukmQW1Ceaf3WjwHrv36666tDK3W6UBtMimCEcVwuow3uag==", "user"=>{"username"=>"eduardo", "email"=>"eduardo@eduardo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"lkajsh", "organization"=>"alksjh"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'eduardo' LIMIT 1[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'eduardo@eduardo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `encrypted_password`, `salt`, `name`, `organization`, `created_at`, `updated_at`) VALUES ('eduardo', 'eduardo@eduardo.com', '$2a$10$SwWwNX2rCsqq8MfmwbJ3ouD2ytDtt0yRMI2OzGUn28yzlt57YDavS', '$2a$10$SwWwNX2rCsqq8MfmwbJ3ou', 'lkajsh', 'alksjh', '2018-05-07 05:22:28', '2018-05-07 05:22:28')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 101ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 02:22:28 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 129ms (Views: 122.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 02:22:32 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 90ms (Views: 86.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:22:33 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 110ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:22:33 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 179ms (Views: 172.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 02:22:39 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jkgeRuIF520lLVHoFje7QjkZUaqVjVInTK9BE0+dW+8/FzHbKgxjaGw4rZCmju0DUif5oO/b9WPgqHYIa+MPzA==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x00007fa503f09da8>):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:25:45 -0300
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:25:45 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (17.5ms)
+  Rendered sessions/new.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 985ms (Views: 966.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 973ms (Views: 969.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 02:25:52 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"68/BU1Zq0l5NMjit8J5NvJHkkNqPfX84HzwwwsiFa4FakO7OnmNWWwQnxNVAJxv9+to40PUr2HyzOwfZ7Ps/og==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.3ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x00007fe69232a2a0>):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:26:08 -0300
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:26:08 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (15.3ms)
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 830ms (Views: 815.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 823ms (Views: 812.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 02:26:14 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y+JoHyZmcii+qL6yHSYrMtJRLDB2j04PLbOuW1t/tX7SvUeC7m/2Lfe9Qsqtn31zuW+EOgzZ6UuBtJlAfwHhXQ==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[35m (12.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m  [["email", "bruno@bruno.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 191ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 02:26:14 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 119ms (Views: 111.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:26:58 -0300
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:26:58 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (16.9ms)
+  Rendered sessions/new.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 917ms (Views: 913.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 933ms (Views: 915.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 02:27:04 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M84j+MdvGZtqqkGwroRxHAFEiPYB6lUmnoVdA0UYfH6CkQxlD2adniO/vcgePSddanog/Hu88mIygmoYYWYoXQ==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m  [["email", "bruno@bruno.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 140ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:27:04 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 97ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 02:27:09 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M0uVDiMLeO+2wrRJ5/N4IEGr9NkJkzByrrrs3b5GNaqCFLqT6wL86v/XSDFXSi5hKpVc03PFlzYCvdvGmjhhiQ==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m  [["email", "bruno@bruno.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 02:27:09 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 112ms (Views: 105.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 02:27:15 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 84ms (Views: 80.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:27:15 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 121ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 02:27:16 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (24.4ms)
+Completed 200 OK in 257ms (Views: 249.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 02:27:23 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uAMYF8tatsJurBqkJUOVLjPwK3+T5meI4DmkoWBzJTIJXDeKA1Myxye55tyV+sNvWM6DdemwwMxMPpO6RA1xEQ==", "user"=>{"email"=>"eduardo@eduardo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'eduardo@eduardo.com' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'eduardo@eduardo.com' LIMIT 1[0m  [["email", "eduardo@eduardo.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 86ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 02:27:23 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 102ms (Views: 98.2ms | ActiveRecord: 0.3ms)
+
+
