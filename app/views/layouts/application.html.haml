@@ -32,18 +32,24 @@
             %a{href: "/posts/new"} 
               %span.glyphicon.glyphicon-plus 
               New
-          %li.dropdown
-            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-              Account
-              %b.caret
-            %ul.dropdown-menu
-              %li
-                %a{href: "#"} Action
-              %li
-                %a{href: "#"} Another action
-              %li
-                %a{href: "#"} Something else here
-              %li
-                %a{href: "#"} Separated link
+          - if current_user
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+                Account
+                %b.caret
+              %ul.dropdown-menu
+                %li
+                  %a= current_user.username
+                %hr
+                %li
+                  %a{href: "#"} Settings
+                %li
+                  = link_to("Logout", logout_path, :method => :delete)
+          - else
+            %li
+              %a{href: "/login"} 
+                Sign In
+            
       / /.navbar-collapse
+      
     = yield

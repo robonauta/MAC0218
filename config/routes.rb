@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about'
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
+  delete '/logout' => 'sessions#destroy'
   
   # Resources:
   resources :posts

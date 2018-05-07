@@ -16977,3 +16977,1791 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 102ms (Views: 98.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-07 02:41:55 -0300
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (21.5ms)
+Completed 200 OK in 561ms (Views: 538.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:17:54 -0300
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (12.8ms)
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:17:55 -0300
+Completed 200 OK in 788ms (Views: 769.8ms | ActiveRecord: 1.2ms)
+
+
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 149ms (Views: 142.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:17:56 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 119ms (Views: 115.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:17:57 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 126ms (Views: 122.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 08:18:06 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZT4dQbhC/CeHJnq4TC5NWEXnUu0ewbc655ECbDkWiSLUYTLccEt4Is4zhsD8lxsZLtn652SXEH5LljV3HWjdAQ==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m  [["email", "bruno@bruno.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 104ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:18:06 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 99ms (Views: 95.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:18:28 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (18.4ms)
+Completed 200 OK in 695ms (Views: 680.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 08:18:39 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gXZs0ZpJIIhcuChaeWNKwKr5wiQGzjNJVIfEl0PNIVMwKUNMUkCkjRWt1CLJ2hyBwcdqLnyYlA34gPOMZ7N1cA==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m  [["email", "bruno@bruno.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 109ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:18:39 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 129ms (Views: 121.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:19:44 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (16.6ms)
+Completed 200 OK in 636ms (Views: 623.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 08:19:50 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/sTkWOwh1X5gkbkM8Fd+jey65djkVAXAPMh/MAngjNRPm8vFJChReymERXRA7ijMh4RN0p4CooSQz0grLZ7Y9w==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m  [["email", "bruno@bruno.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 118ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:19:50 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 119ms (Views: 111.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:20:07 -0300
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:20:08 -0300
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (16.2ms)
+  Rendered sessions/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 958ms (Views: 939.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 945ms (Views: 940.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 08:20:13 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NWfat3T6syfKVyxUhZ73Upbuzy4Y7pXx0NAlReISTzWEOPUqvPM3IoNC0Cw1J6ET/dBnJGK4MrV81xJexmwbFg==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m  [["email", "bruno@bruno.com"], ["LIMIT", 1]]
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 240ms (ActiveRecord: 2.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 08:20:45 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NWfat3T6syfKVyxUhZ73Upbuzy4Y7pXx0NAlReISTzWEOPUqvPM3IoNC0Cw1J6ET/dBnJGK4MrV81xJexmwbFg==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 240ms (ActiveRecord: 2.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 08:20:56 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NWfat3T6syfKVyxUhZ73Upbuzy4Y7pXx0NAlReISTzWEOPUqvPM3IoNC0Cw1J6ET/dBnJGK4MrV81xJexmwbFg==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m  [["email", "bruno@bruno.com"], ["LIMIT", 1]]
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 208ms (ActiveRecord: 0.7ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 08:21:08 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NWfat3T6syfKVyxUhZ73Upbuzy4Y7pXx0NAlReISTzWEOPUqvPM3IoNC0Cw1J6ET/dBnJGK4MrV81xJexmwbFg==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 112ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:21:08 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 613ms (Views: 604.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:32:04 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:       %h2.User_Header
+    50:         = @current_user.username
+    51:         Profile
+    52:         %h2
+    53:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml___3302620474930122240_70267286258400'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:38:26 -0300
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:38:26 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (12.4ms)
+  Rendered posts/index.html.haml within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 973ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+Completed 500 Internal Server Error in 977ms (ActiveRecord: 1.0ms)
+
+
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:       %h2.User_Header
+    50:         = @current_user.username
+    51:         Profile
+    52:         %h2
+    53:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml__2492567151727970790_70172095880940'
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:       %h2.User_Header
+    50:         = @current_user.username
+    51:         Profile
+    52:         %h2
+    53:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml__2492567151727970790_70172095880940'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:42:27 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 650ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:       %h2.User_Header
+    50:         = @current_user.username
+    51:         Profile
+    52:         %h2
+    53:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml__1650279090872756456_70363910959840'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:42:28 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[35m (5.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (17.3ms)
+Completed 500 Internal Server Error in 227ms (ActiveRecord: 6.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:       %h2.User_Header
+    50:         = @current_user.username
+    51:         Profile
+    52:         %h2
+    53:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml__1650279090872756456_70363885961460'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:42:54 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 152ms (Views: 146.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-07 08:42:58 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 97ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:43:00 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 105ms (Views: 99.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:43:28 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 141ms (Views: 135.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:43:40 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     %h2.User_Header
+    50:       = @current_user.id
+    51:       Profile
+    52:       %h2
+    53:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml__1650279090872756456_70363931109120'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:45:51 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 593ms (Views: 571.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:45:53 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 207ms (Views: 202.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:45:54 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.8ms)
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:45:54 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 197ms (Views: 176.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 393ms (Views: 389.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 08:45:59 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h6xeCfdyWrHh61jIyXYyibwRsgi1NN1i0h0fXG1Kd0E283GUP3vetKj+pLB5z2TI1y8aAs9ieiZ+GihHSTQjYg==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 103ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:45:59 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 103ms (Views: 99.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:46:18 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     %h2.User_Header
+    50:       = @current_user.username
+    51:       Profile
+    52:       %h2
+    53:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml__1088854670584149568_70299438876400'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:51:22 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/application_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/application_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/posts_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:51:22 -0300
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/application_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/application_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/posts_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:51:47 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (undefined local variable or method `session' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/posts_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:54:24 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 591ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     %h2.User_Header
+    50:       = @current_user.username
+    51:       Profile
+    52:       %h2
+    53:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml__2316362111429961104_70320680569060'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:55:33 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 686ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     %h2.User_Header
+    50:       = @current_user.username
+    51:       Profile
+    52:       %h2
+    53:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml__845562498509561624_70236843485900'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:58:50 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    46:               %li
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     %h2= @current_user.username
+    50:     
+    51:     = yield
+  
+app/views/layouts/application.html.haml:49:in `_app_views_layouts_application_html_haml__845562498509561624_70236871303820'
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:59:02 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 112ms (Views: 106.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-07 08:59:06 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 112ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:59:09 -0300
+  
+ActionController::RoutingError (undefined method `before_filter' for SessionsController:Class
+Did you mean?  before_action):
+  
+app/controllers/sessions_controller.rb:25:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<top (required)>'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:59:09 -0300
+  
+ActionController::RoutingError (undefined method `before_filter' for SessionsController:Class
+Did you mean?  before_action):
+  
+app/controllers/sessions_controller.rb:25:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<top (required)>'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 08:59:43 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 158ms (Views: 152.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 08:59:48 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jwVtjA5fZU/gcwlP691W6QLbG6AGzETwZ60js/eJLcI+WkIRxlbhSqlm9TdbZACoaeWzqnya47TLqhSo0/d54Q==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 100ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 08:59:48 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 96ms (Views: 91.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:03:20 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 184ms (Views: 174.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:03:24 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 86ms (Views: 81.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:03:24 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (18.7ms)
+Completed 200 OK in 131ms (Views: 127.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:03:26 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:03:26 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 234ms (Views: 228.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 09:03:33 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v1JuuFXLy+W3vnfP6xiNEbuKhrMpR7XLMH4hOA3vzTsODUElncJP4P6ri7dbodtQ0LQuuVMREo+ceRYjKZGZGA==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 88ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:03:33 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 95ms (Views: 91.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:04:21 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 162ms (Views: 157.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:04:28 -0300
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 585ms (Views: 564.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:04:32 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 112ms (Views: 107.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:04:33 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 139ms (Views: 135.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:04:33 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (24.4ms)
+Completed 200 OK in 216ms (Views: 208.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 09:04:39 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bBp4acW0f3mhoFxpe3QwgIm1hQKkfqPuV7I2S8cj4gPdRVf0Db37fOi1oBHLzWbB4ostCN4oBKr7tQFQ4122IA==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 103ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:04:39 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 91ms (Views: 86.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:06:24 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 582ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    46:               %li
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     %h2= @current_user.username
+    50:     
+    51:     = yield
+  
+app/views/layouts/application.html.haml:49:in `_app_views_layouts_application_html_haml___4055767544006520933_70201763173460'
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:06:39 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 110ms (Views: 103.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:06:43 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 89ms (Views: 85.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:06:43 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 120ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:06:44 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 114ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 09:06:51 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zq0yQDpWT216vFitPYbkfr7xxxEa6ObBFBibICA4LD3X8h3d8l/LaDOppNWNP7I/1c9vG2C+QYW4H6w7BEZ4Hg==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 91ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:06:51 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 121ms (Views: 117.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:08:11 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    46:               %li
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     %h2= @current_user.username
+    50:     
+    51:     = yield
+  
+app/views/layouts/application.html.haml:49:in `_app_views_layouts_application_html_haml___4055767544006520933_70201781013260'
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:12:52 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (undefined local variable or method `session' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:3:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/posts_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:15:24 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 776ms (Views: 769.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:15:29 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 81ms (Views: 77.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:15:30 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 117ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:15:30 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 108ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 09:15:36 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cCKG8pencJzNBMlC12+A+a21JkoE1WGawQ/Jj7w4hQTBfalvX670mYQRNTpn1ta4xouOQH6Dxt5tCP6UmEbRJw==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 86ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:15:36 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 114ms (Views: 111.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:15:48 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 99ms (Views: 92.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:15:52 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 106ms (Views: 102.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:15:53 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 123ms (Views: 119.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 09:15:53 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 247ms (Views: 241.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 09:15:59 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"za2vuN61RezGDxwtf6KEnAdOjLYyNfscZ91hM8VbPsZ88oAlFrzB6Y8a4FXPG9LdbHAkvEhjXFjL2lYo4SVq5Q==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 88ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:15:59 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 101ms (Views: 97.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 09:16:15 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    46:               %li
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     %h2= @current_user.username
+    50:     
+    51:     = yield
+  
+app/views/layouts/application.html.haml:49:in `_app_views_layouts_application_html_haml___1056481622526890290_70194716774620'
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:01:19 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (16.1ms)
+Completed 200 OK in 167ms (Views: 157.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:01:25 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 128ms (Views: 123.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:01:27 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 117ms (Views: 113.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:01:28 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 100ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:01:29 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 123ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:02:34 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 463ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00007faef65c9700>:0x00007faef6582eb8>
+Did you mean?  current_page?):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     #user_nav
+    50:       - if current_user
+    51:         Logged in as #{current_user.email}.
+    52:         \#{link_to "Log out", log_out_path}
+    53:       - else
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml___1056481622526890290_70194716987840'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:04:04 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (15.9ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unknown regexp options - dv
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup
+)).to_s);).to_s);; _hamlout.buffer << ("\n".freeze);; end;; _hamlout.buffer << ("</i
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+; _hamlout.buffer << ("</div>\n</body>\n</html>\n".freeze);:
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unknown regexp options - htl
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+<< ("</div>\n</body>\n</html>\n".freeze);::Haml::Util.html_s
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unterminated string meets end of file
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/layouts/application.html.haml:54: unknown regexp options - dv
+app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup
+app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:54: unknown regexp options - htl
+app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:54: unterminated string meets end of file
+app/views/layouts/application.html.haml:54: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:04:12 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unknown regexp options - dv
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup
+)).to_s);).to_s);; _hamlout.buffer << ("\n".freeze);; end;; _hamlout.buffer << ("</i
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+; _hamlout.buffer << ("</div>\n".freeze);; _hamlout.buffer <
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:58: syntax error, unexpected $undefined, expecting ')'
+to_s);; _hamlout.buffer << ("\n</body>\n</html>\n".freeze);:
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:58: unknown regexp options - htl
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:58: syntax error, unexpected $undefined
+uffer << ("\n</body>\n</html>\n".freeze);::Haml::Util.html_s
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:58: unterminated string meets end of file
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:58: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/layouts/application.html.haml:54: unknown regexp options - dv
+app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup
+app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:58: syntax error, unexpected $undefined, expecting ')'
+app/views/layouts/application.html.haml:58: unknown regexp options - htl
+app/views/layouts/application.html.haml:58: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:58: unterminated string meets end of file
+app/views/layouts/application.html.haml:58: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:04:23 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unknown regexp options - dv
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup
+)).to_s);).to_s);; _hamlout.buffer << ("\n".freeze);; end;; _hamlout.buffer << ("</i
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+; _hamlout.buffer << ("</div>\n".freeze);; _hamlout.buffer <
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined, expecting ')'
+to_s);; _hamlout.buffer << ("\n</body>\n</html>\n".freeze);:
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: unknown regexp options - htl
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined
+uffer << ("\n</body>\n</html>\n".freeze);::Haml::Util.html_s
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: unterminated string meets end of file
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/layouts/application.html.haml:54: unknown regexp options - dv
+app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup
+app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined, expecting ')'
+app/views/layouts/application.html.haml:56: unknown regexp options - htl
+app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:56: unterminated string meets end of file
+app/views/layouts/application.html.haml:56: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:04:38 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unknown regexp options - dv
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup)
+)).to_s);).to_s);; _hamlout.buffer << ("\n".freeze);; end;; _hamlout.buffer << ("</i
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+; _hamlout.buffer << ("</div>\n".freeze);; _hamlout.buffer <
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined, expecting ')'
+to_s);; _hamlout.buffer << ("\n</body>\n</html>\n".freeze);:
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: unknown regexp options - htl
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined
+uffer << ("\n</body>\n</html>\n".freeze);::Haml::Util.html_s
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: unterminated string meets end of file
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/layouts/application.html.haml:54: unknown regexp options - dv
+app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup)
+app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined, expecting ')'
+app/views/layouts/application.html.haml:56: unknown regexp options - htl
+app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:56: unterminated string meets end of file
+app/views/layouts/application.html.haml:56: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:04:45 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unknown regexp options - dv
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup)
+)).to_s);).to_s);; _hamlout.buffer << ("\n".freeze);; end;; _hamlout.buffer << ("</i
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+; _hamlout.buffer << ("</div>\n".freeze);; _hamlout.buffer <
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined, expecting ')'
+to_s);; _hamlout.buffer << ("\n</body>\n</html>\n".freeze);:
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: unknown regexp options - htl
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined
+uffer << ("\n</body>\n</html>\n".freeze);::Haml::Util.html_s
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: unterminated string meets end of file
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/layouts/application.html.haml:54: unknown regexp options - dv
+app/views/layouts/application.html.haml:54: unmatched close parenthesis: /signup)
+app/views/layouts/application.html.haml:54: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined, expecting ')'
+app/views/layouts/application.html.haml:56: unknown regexp options - htl
+app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:56: unterminated string meets end of file
+app/views/layouts/application.html.haml:56: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:06:00 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 453ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00007faef65c9700>:0x00007faef0bc1f50>
+Did you mean?  current_page?):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     #user_nav
+    50:       - if current_user
+    51:         %p= current_user.email
+    52:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml___1056481622526890290_70194669884700'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:08:37 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 459ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00007faef65c9700>:0x00007faef6c330a0>
+Did you mean?  current_page?):
+    47:                 %a{href: "#"} Separated link
+    48:       / /.navbar-collapse
+    49:     #user_nav
+    50:       - if current_user
+    51:         %p= current_user.email
+    52:     = yield
+  
+app/views/layouts/application.html.haml:50:in `_app_views_layouts_application_html_haml___1056481622526890290_70194715776220'
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:11:55 -0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (16.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 678ms (Views: 661.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:11:59 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (16.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 124ms (Views: 113.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:12:09 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 101ms (Views: 96.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:12:09 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (5.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 102ms (Views: 98.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:12:10 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 154ms (Views: 148.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 13:12:18 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yqUYgHSoLMv1eXwklHvwnmOgHtNOYlnXbRlmClOdvIJ7+jcdvKGozrxsgFwkwqbfCJ622TQ0/pPBHlERd+PooQ==", "user"=>{"email"=>"eduardo@eduardo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'eduardo@eduardo.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 81ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:12:18 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (10.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 98ms (Views: 94.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:14:03 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error ("else" is indented at wrong level: expected 5, but was at 6.):
+    46:                   %a{href: "#"} Something else here
+    47:                 %li
+    48:                   %a{href: "#"} Separated link
+    49:             - else
+    50:               %li
+    51:                 %a{href: "/login"} 
+    52:                   Sign In
+  
+app/views/layouts/application.html.haml:49
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:14:17 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    47:                 %li
+    48:                   %a{href: "#"} Separated link
+    49:           - else
+    50:               %li
+    51:                 %a{href: "/login"} 
+    52:                   Sign In
+    53:             
+  
+app/views/layouts/application.html.haml:50
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:14:25 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 93ms (Views: 89.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:16:36 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 114ms (Views: 108.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:16:45 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 118ms (Views: 112.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:17:04 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (8.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 141ms (Views: 134.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:18:07 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 194ms (Views: 188.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2018-05-07 13:18:10 -0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:18:25 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.8ms)
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:18:25 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.7ms)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 198ms (Views: 190.6ms | ActiveRecord: 3.7ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 179ms (Views: 173.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:20:08 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 141ms (Views: 135.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:23:25 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: unknown regexp option - l
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: unmatched close parenthesis: /logout, :method => :delete
+)).to_s);).to_s);; _hamlout.buffer << ("\n</i
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: syntax error, unexpected $undefined
+ _hamlout.buffer << ("\n</li>\n</ul>\n</li>\n".freeze);; 
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: unknown regexp option - l
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: syntax error, unexpected $undefined
+er << ("\n</li>\n</ul>\n</li>\n".freeze);; 
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+; _hamlout.buffer << ("<li>\n<a href='/login'>\nSign In\n<
+                            ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:50: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+lout.buffer << ("<li>\n<a href='/login'>\nSign In\n</a>\n</l
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+ << ("<li>\n<a href='/login'>\nSign In\n</a>\n</li>\n".freez
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:50: unknown regexp option - l
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+login'>\nSign In\n</a>\n</li>\n".freeze);; 
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:51: unknown regexp options - dv
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:51: syntax error, unexpected $undefined
+out.buffer << ("</ul>\n</div>\n<!-- /.navbar-collapse -->\n<
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:51: unknown regexp options - av
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:51: syntax error, unexpected $undefined
+/.navbar-collapse -->\n</nav>\n".freeze);; _hamlout.buffer <
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:57: syntax error, unexpected $undefined, expecting ')'
+to_s);; _hamlout.buffer << ("\n</body>\n</html>\n".freeze);:
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:57: unknown regexp options - htl
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:57: syntax error, unexpected $undefined
+uffer << ("\n</body>\n</html>\n".freeze);::Haml::Util.html_s
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:57: unterminated string meets end of file
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:57: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/layouts/application.html.haml:48: unknown regexp option - l
+app/views/layouts/application.html.haml:48: unmatched close parenthesis: /logout, :method => :delete
+app/views/layouts/application.html.haml:48: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:48: unknown regexp option - l
+app/views/layouts/application.html.haml:48: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:50: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:50: unknown regexp option - l
+app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:51: unknown regexp options - dv
+app/views/layouts/application.html.haml:51: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:51: unknown regexp options - av
+app/views/layouts/application.html.haml:51: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:57: syntax error, unexpected $undefined, expecting ')'
+app/views/layouts/application.html.haml:57: unknown regexp options - htl
+app/views/layouts/application.html.haml:57: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:57: unterminated string meets end of file
+app/views/layouts/application.html.haml:57: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:23:43 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: unknown regexp option - l
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: unmatched close parenthesis: /logout, :method => :delete
+)).to_s);).to_s);; _hamlout.buffer << ("\n</i
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: syntax error, unexpected $undefined
+ _hamlout.buffer << ("\n</li>\n</ul>\n</li>\n".freeze);;  el
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: unknown regexp option - l
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:48: syntax error, unexpected $undefined
+er << ("\n</li>\n</ul>\n</li>\n".freeze);;  else
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:49: syntax error, unexpected $undefined
+; _hamlout.buffer << ("<li>\n<a href='/login'>\nSign In\n<
+                            ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:49: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+lout.buffer << ("<li>\n<a href='/login'>\nSign In\n</a>\n</l
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:49: syntax error, unexpected $undefined
+ << ("<li>\n<a href='/login'>\nSign In\n</a>\n</li>\n".freez
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:49: unknown regexp option - l
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:49: syntax error, unexpected $undefined
+login'>\nSign In\n</a>\n</li>\n".freeze);; 
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:50: unknown regexp options - dv
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+out.buffer << ("</ul>\n</div>\n<!-- /.navbar-collapse -->\n<
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:50: unknown regexp options - av
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+/.navbar-collapse -->\n</nav>\n".freeze);; _hamlout.buffer <
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined, expecting ')'
+to_s);; _hamlout.buffer << ("\n</body>\n</html>\n".freeze);:
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: unknown regexp options - htl
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined
+uffer << ("\n</body>\n</html>\n".freeze);::Haml::Util.html_s
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: unterminated string meets end of file
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/layouts/application.html.haml:56: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/layouts/application.html.haml:48: unknown regexp option - l
+app/views/layouts/application.html.haml:48: unmatched close parenthesis: /logout, :method => :delete
+app/views/layouts/application.html.haml:48: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:48: unknown regexp option - l
+app/views/layouts/application.html.haml:48: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:49: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:49: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.haml:49: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:49: unknown regexp option - l
+app/views/layouts/application.html.haml:49: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:50: unknown regexp options - dv
+app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:50: unknown regexp options - av
+app/views/layouts/application.html.haml:50: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined, expecting ')'
+app/views/layouts/application.html.haml:56: unknown regexp options - htl
+app/views/layouts/application.html.haml:56: syntax error, unexpected $undefined
+app/views/layouts/application.html.haml:56: unterminated string meets end of file
+app/views/layouts/application.html.haml:56: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:24:00 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 182ms (Views: 175.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2018-05-07 13:24:02 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/logout" for 127.0.0.1 at 2018-05-07 13:27:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/logout" for 127.0.0.1 at 2018-05-07 13:27:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:27:31 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.5ms)
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:27:31 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (7.2ms)
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 276ms (Views: 265.9ms | ActiveRecord: 5.6ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 183ms (Views: 175.8ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-05-07 13:27:34 -0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/logout"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/logout" for 127.0.0.1 at 2018-05-07 13:29:21 -0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/logout"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/logout" for 127.0.0.1 at 2018-05-07 13:29:52 -0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/logout"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/logout" for 127.0.0.1 at 2018-05-07 13:30:46 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:30:47 -0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (11.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 659ms (Views: 649.0ms | ActiveRecord: 3.7ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-05-07 13:30:50 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"p7zfOQ0KxtqgopKzP7OJfTEaRHxhqu4LOft6YC2mREAW4/CkxQNC3+m3bsuPCt88WiTsdhv8SU+V/E17CdgQYw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:30:50 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 131ms (Views: 127.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:31:03 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 138ms (Views: 131.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:31:05 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 131ms (Views: 126.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-07 13:31:10 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aSgajy0Obm3W/TVxSNzEZ6lKKEjoqcOcrdtkVbwJJoJIJDFSmE+KPu9A0OSGe7hYjEzcGp6SorkV92UeWPwIVw==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 86ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:31:10 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 107ms (Views: 103.8ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-05-07 13:31:12 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MHkujM3ehqqIAFMqZsXVoPDlnND9aeJEF5En9r/gYfmBJgERBdcCr8EVr1LWfIPhm9s02oc/RQC7lhDtm5412g=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-07 13:31:12 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 128ms (Views: 124.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-07 13:31:16 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 92ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
