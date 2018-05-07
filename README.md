@@ -5,6 +5,7 @@
 - [ ] Criar a página principal de cada "post", aquela pra qual vamos quando clicamos em Read More
 - [ ] Incrementar as entradas do formulário NEW, não precisa estar completo ainda
 - [ ] Começar o login dos usuários mas sem pedir credenciais pra executar ações por enquanto
+- [ ] Criar página settings pra conta do usuário
 
 ### UTILIDADES
 servidor:\
