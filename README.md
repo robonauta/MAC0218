@@ -1,19 +1,15 @@
-## TODO
-- [x] Formulário new precisa guardar um post na db
-- [x] Fazer a página index mostrar os posts existentes
-- [ ] Páginas estáticas ("about", etc)
-- [ ] Criar a página principal de cada "post", aquela pra qual vamos quando clicamos em Read More
-- [ ] Incrementar as entradas do formulário NEW, não precisa estar completo ainda
-- [ ] Começar o login dos usuários mas sem pedir credenciais pra executar ações por enquanto
-- [ ] Criar página settings pra conta do usuário
+## Descrição
+Plataforma que permite a desenvolvedores de inteligências artificiais depositarem conteúdos (imagem/texto/outros) para serem “rotulados” pelos usuários ou mesmo os resultados do processamento desses conteúdos, por algoritmos de aprendizagem de máquina, para serem avaliados por humanos. Ao interagir com cada projeto, avaliando ou rotulando, o usuário pode receber algum tipo de pagamento em créditos/pontos/recompensas, que irão se acumular numa espécie de “saldo da conta”.
 
-### UTILIDADES
-servidor:\
-```rails server```\
-reseta a db:\
-```rake db:drop db:create db:migrate```\
-converter códigos html em haml:\
-```http://htmltohaml.com```\
-ideias pra design:\
-```https://codepen.io```
+## Membros
+- Bruno Carneiro 10376388
+- Daniel Nunes 10297612
+- Eduardo Rocha Laurentino 8988212
+- Pedro Henrique Barbosa de Almeida 10258793
+
+## Como rodar
+TODO
+
+## Dependências
+TODO
 
