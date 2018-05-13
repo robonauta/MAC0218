@@ -8,7 +8,7 @@ class PostsController < ApplicationController
       @post = Post.find(params[:id])
       @show_edit = false;
       if current_user
-        if (@post.author == current_user.username) 
+        if (@post.author == current_user.username || current_user.rank == "admin") 
           @show_edit = true;
         end
       end

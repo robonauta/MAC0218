@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   def create
 #    render plain: params[:user].inspect
     @user = User.new(user_params)
+    @user.rank = "user"
     if(@user.save)
       session[:user_id] = @user.id
       redirect_to '/'
@@ -14,7 +15,7 @@ class UsersController < ApplicationController
   end
   
   private def user_params
-    params.require(:user).permit(:username, :email, :password, :password_confirmation, :salt, :name, :organization)
+    params.require(:user).permit(:username, :email, :password, :password_confirmation, :salt, :name, :organization, :rank)
   end
   
 end
