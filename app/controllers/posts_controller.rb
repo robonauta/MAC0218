@@ -6,15 +6,25 @@ class PostsController < ApplicationController
   
     def show
       @post = Post.find(params[:id])
+      @show_edit = false;
+      if current_user
+        if (@post.author == current_user.username) 
+          @show_edit = true;
+        end
+      end
     end
   
     def new
-      
+      if current_user
+      else
+        redirect_to '/login'
+      end
     end
   
     def create
 #      render plain: params[:post].inspect
       @post = Post.new(post_params)
+      @post.author = current_user.username
       if(@post.save)
         redirect_to @post
       else
@@ -24,8 +34,9 @@ class PostsController < ApplicationController
   
     def edit
       @post = Post.find(params[:id])
+      @post.author = current_user.username
     end
-    
+  
     def update
       @post = Post.find(params[:id])
       

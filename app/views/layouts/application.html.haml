@@ -35,12 +35,9 @@
           - if current_user
             %li.dropdown
               %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-                Account
+                =current_user.username
                 %b.caret
               %ul.dropdown-menu
-                %li
-                  %a= current_user.username
-                %hr
                 %li
                   %a{href: "#"} Settings
                 %li
