@@ -22696,3 +22696,176 @@ Processing by PagesController#about as HTML
 Completed 200 OK in 92ms (Views: 88.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-16 13:45:36 -0300
+  [1m[35m (37.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (13.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (48.3ms)
+Completed 200 OK in 820ms (Views: 795.4ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-16 13:45:41 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 131ms (Views: 66.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-16 13:45:43 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 67ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-16 13:45:44 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-16 13:45:45 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-16 13:45:46 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-16 13:45:46 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-16 13:45:47 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 128ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-16 13:46:43 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-16 13:46:44 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (24.5ms)
+Completed 200 OK in 85ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-16 13:56:09 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-16 13:57:17 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 105ms (Views: 101.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-16 14:21:11 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 247ms (Views: 240.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-16 14:21:51 -0300
+Processing by PostsController#new as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-16 14:21:51 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (70.5ms)
+Completed 200 OK in 141ms (Views: 138.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-16 14:21:58 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H5k13W5WOu7jvFe1Vzb6Bygmc7Jf2gCARx+NS0da+omYUVA8QI7U4Q23uHum7qRV8movznk3j5LJ1Rih2WwVuA==", "user"=>{"email"=>"mfinger", "password"=>"[FILTERED]"}}
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'mfinger' LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 89ms (ActiveRecord: 47.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-16 14:21:58 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (20.8ms)
+Completed 200 OK in 94ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-05-16 14:22:00 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 68ms (Views: 54.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-16 14:22:21 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iOXkFUZeaeiU++4GckNF9rReDWQUqDnNL/TN6VIb53kJ29Sjo/Dj3opePRke091KJLNiQZStizWpdbYGaviCYw==", "user"=>{"username"=>"mfinger", "email"=>"mfinger@uol.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"m finger", "organization"=>"usp"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'mfinger' LIMIT 1[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mfinger@uol.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 67ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-05-16 14:22:21 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-16 14:22:25 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 70ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-16 14:22:30 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yv8m3Gcs9KNZ+3x/7rAurVvEBdi97RNLNz/GMC4PD/9NN0M9SfQarLfwk7EfaHD/gYhZpJsAnFm59VPasDngzg==", "user"=>{"email"=>"mfinger", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'mfinger' LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-16 14:22:30 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (15.4ms)
+Completed 200 OK in 85ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
