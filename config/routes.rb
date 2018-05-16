@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'posts#index'
   # Regular routes:
   get '/about' => 'pages#about'
+  get '/contact' => 'pages#contact'
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
   get '/new' => 'posts#new'
