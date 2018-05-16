@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
   get '/new' => 'posts#new'
+  get '/settings' => 'users#settings'
+  get '/settings/account' => 'users#account'
+  get '/show' => 'users#show'
   delete '/logout' => 'sessions#destroy'
   
   # Resources:

@@ -17,5 +17,30 @@ class UsersController < ApplicationController
   private def user_params
     params.require(:user).permit(:username, :email, :password, :password_confirmation, :salt, :name, :organization, :rank)
   end
+
+  def show
+    @user = User.find(session[:user_id])
+  end
+
+  def settings
+    @user = User.find(session[:user_id])
+  end
+
+  def edit
+    @user = User.find(session[:user_id])
+  end
+
+  def account
+    @user = User.find(session[:user_id])
+  end
+
+  def update
+    @user = User.find(session[:user_id])
+    if(@user.update(user_params))
+      redirect_to @user
+    else
+      render 'edit'
+    end
+  end
   
 end

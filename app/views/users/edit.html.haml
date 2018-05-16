@@ -1,0 +1,25 @@
+.container.text-center
+  .h1 Editar perfil
+  = form_for :user, :url => {:controller => 'users', :action => 'update'}, :method => "patch" do |f|
+    .row
+      .col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "name"} Full Name
+          = f.text_field :name, class: 'form-control'
+    .row
+      .col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "name"} Organization
+          = f.text_field :organization, class: 'form-control'
+    .row
+      .col-md-3
+      .col-md-6
+        .form-group
+          %label{:for => "name"} E-mail
+          = f.text_field :email, class: 'form-control'
+
+          %button.btn.btn-primary{:type => "submit"} Update
+
+          = link_to 'Conta', '/settings/account'

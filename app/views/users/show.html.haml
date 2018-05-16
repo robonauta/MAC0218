@@ -1,0 +1,36 @@
+.container.text-center
+    %h1 Meu perfil
+    %br
+    .row
+    .col-md-3
+    .col-md-6
+        .form-group
+        %label Nome
+        =@user.name
+    .col-md-3
+    %br
+    .row
+    .col-md-3
+    .col-md-6
+        .form-group
+        %label Username
+        =@user.username
+    .col-md-3
+    %br
+    .row
+    .col-md-3
+    .col-md-6
+        .form-group
+        %label E-mail
+        =@user.email
+    .col-md-3
+    %br
+    .row
+    .col-md-3
+    .col-md-6
+        .form-group
+        %label Organization
+        =@user.organization
+    .col-md-3
+    %hr
+    = link_to "Editar perfil", edit_user_path(@user)
