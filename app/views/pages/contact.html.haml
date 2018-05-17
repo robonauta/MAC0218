@@ -3,7 +3,35 @@
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
   %body
-    %center
-      %h1 Don't Panic
+    / Container (Contact Section)
+    #contact.w3-content.w3-container.w3-padding-64
+      %h3.w3-center Dúvidas ou sugestões?
+      %p.w3-center
+        %em Esperamos o seu contato!
+      .w3-row.w3-padding-32.w3-section
+        .w3-col.m4.w3-container
+          
+        .w3-col.m8.w3-panel
+          .w3-large.w3-margin-bottom
+            %i.fa.fa-map-marker.fa-fw.w3-hover-text-black.w3-xlarge.w3-margin-right
+            São Paulo, Brasil
+            %br/
+            %i.fa.fa-phone.fa-fw.w3-hover-text-black.w3-xlarge.w3-margin-right
+            Telefone: +55 36877520
+            %br/
+            %i.fa.fa-envelope.fa-fw.w3-hover-text-black.w3-xlarge.w3-margin-right
+            Email: monolito@gubi.com
+            %br/
+          %p
+          %form{:action => "https://google.com", :target => "_blank"}
+            .w3-row-padding{:style => "margin:0 -16px 8px -16px"}
+              .w3-half
+                %input.w3-input.w3-border{:name => "Nome", :placeholder => "Nome", :required => "", :type => "text"}/
+              .w3-half
+                %input.w3-input.w3-border{:name => "e-mail", :placeholder => "e-mail", :required => "", :type => "text"}/
+            %input.w3-input.w3-border{:name => "Menssagem", :placeholder => "Menssagem", :required => "", :type => "text"}/
+            %button.w3-button.w3-black.w3-right.w3-section{:type => "submit"}
+              %i.fa.fa-paper-plane
+              ENVIAR
 
 

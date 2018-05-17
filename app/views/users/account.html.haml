@@ -1,0 +1,39 @@
+.container.text-center
+  .h1 Editar informações de conta
+  = form_for :user do |f|
+    %br
+    %h2 Editar username
+    .row
+    .col-md-3
+    / col-md-3
+    .col-md-6
+    .form-group
+    %label{:for => "username"} Username
+    = f.text_field :username, class: 'form-control'
+    .row
+    .col-md-3
+    / col-md-3
+    .col-md-6
+    .form-group
+    %label{:for => "password"} Old password
+    = f.password_field :old_password, class: 'form-control'
+    / col-md-6
+    .col-md-3
+    / col-md-3
+    / row
+    .row
+    .col-md-3
+    / col-md-3
+    .col-md-6
+    .form-group
+    %label{:for => "password_confirmation"} New password
+    = f.password_field :password, class: 'form-control'
+    .row
+    .col-md-3
+    / col-md-3
+    .col-md-6
+    .form-group
+    %label{:for => "password_confirmation"} Password Confirmation
+    = f.password_field :password_confirmation, class: 'form-control'
+
+    %button.btn.btn-primary{:type => "submit"} Update

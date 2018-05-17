@@ -34,6 +34,15 @@ class UsersController < ApplicationController
     @user = User.find(session[:user_id])
   end
 
+  def account_update
+    oldp = session[:old_password]
+    @user = User.find(session[:user_id])
+    if (!@user.password.equal? "" and oldp.equal? @user.password)
+      
+    else
+      render 'settings'
+    end
+  end
   def update
     @user = User.find(session[:user_id])
     if(@user.update(user_params))
