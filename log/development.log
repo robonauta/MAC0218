@@ -48690,3 +48690,776 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 1564ms (Views: 1563.2ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/about" for 127.0.0.1 at 2018-05-19 01:39:44 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (10.2ms)
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 01:39:45 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (11.6ms)
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 9864ms (Views: 9860.0ms | ActiveRecord: 2.6ms)
+
+
+Completed 200 OK in 8805ms (Views: 8788.1ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 01:40:01 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (27.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 128ms (Views: 124.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 01:46:44 -0300
+  [1m[35m (271.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (524.0ms)
+Completed 200 OK in 40655ms (Views: 40653.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 01:47:40 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (177.3ms)
+Completed 200 OK in 511ms (Views: 507.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-19 01:47:43 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (203.2ms)
+Completed 200 OK in 318ms (Views: 314.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-19 01:47:46 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nPrVOZwGksbrfT3L14c0TZ3SooaPiOCaCAoYEEZT0MUReZN0rfwd2mq34g8ZrCb1aknNHPr7D75aPxGUkxCDMQ==", "user"=>{"email"=>"mfinger", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'mfinger' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 556ms (ActiveRecord: 317.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 01:47:47 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (10.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2195ms (Views: 2192.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-05-19 01:47:51 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (44.6ms)
+Completed 200 OK in 153ms (Views: 145.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-05-19 01:47:59 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sa9kuKwRPfMZu0lystvqlu0g997VEvMuaEW/i2ylXD48LCL1neuy75hxlrZ88PguGruYRKBhHAo6cLYPueYPyg==", "post"=>{"title"=>"Teste", "description"=>"oioioi\r\n"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.9ms)[0m  [1m[32mINSERT INTO `posts` (`author`, `title`, `description`, `created_at`, `updated_at`) VALUES ('mfinger', 'Teste', 'oioioi\r\n', '2018-05-19 04:47:59', '2018-05-19 04:47:59')[0m
+  [1m[35m (1480.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 1592ms (ActiveRecord: 1551.5ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2018-05-19 01:48:01 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (33.3ms)
+Completed 200 OK in 116ms (Views: 92.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/posts/orange.jpeg" for 127.0.0.1 at 2018-05-19 01:48:01 -0300
+Processing by PostsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=orange):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/dashboard" for 127.0.0.1 at 2018-05-19 01:48:21 -0300
+Processing by PostsController#dashboard as HTML
+  Rendering posts/dashboard.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/dashboard.html.haml within layouts/application (25.8ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 94ms (Views: 92.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-05-19 01:48:34 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (19.8ms)
+Completed 200 OK in 86ms (Views: 82.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/orange.jpeg" for 127.0.0.1 at 2018-05-19 01:48:35 -0300
+Processing by PostsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mPost Load (4.5ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 7ms (ActiveRecord: 4.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=orange):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/" for 127.0.0.1 at 2018-05-19 01:48:37 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (22.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 124ms (Views: 123.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 01:48:38 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (15.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 111ms (Views: 110.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 01:48:39 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (6.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 01:48:40 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (10.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 115ms (Views: 114.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 01:48:57 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (10.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:01:26 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 2 tabs used for indentation, but the rest of the document was indented using 2 spaces.):
+    20:         %h3 Como funciona
+    21:         %p Se você é um desenvolvedor, aqui você pode depositem seus conjuntos de dados,  indicar o que precisa classificado ou avaliado com relação a esses dados e obter a um custo justo um amplo espectro de respostas dadas por usuários comuns, recebendo-os devolta devidamente rotulados para uso em sua aplicação. 
+    22: 
+    23: 		Se você não desenvolve mas enxerga valor em ajudar os projetos na área e ainda ganhar por isso, aqui é para você também. Quanto mais dados você nos ajudar a rotular, mais você ganha. 
+    24: 
+    25: 
+    26: 
+  
+app/views/pages/about.html.haml:23
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:01:40 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 2 tabs used for indentation, but the rest of the document was indented using 2 spaces.):
+    20:         %h3 Como funciona
+    21:         %p Se você é um desenvolvedor, aqui você pode depositem seus conjuntos de dados,  indicar o que precisa classificado ou avaliado com relação a esses dados e obter a um custo justo um amplo espectro de respostas dadas por usuários comuns, recebendo-os devolta devidamente rotulados para uso em sua aplicação. 
+    22: 
+    23: 		%p Se você não desenvolve mas enxerga valor em ajudar os projetos na área e ainda ganhar por isso, aqui é para você também. Quanto mais dados você nos ajudar a rotular, mais você ganha. 
+    24: 
+    25: 
+    26: 
+  
+app/views/pages/about.html.haml:23
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:01:53 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 2 tabs used for indentation, but the rest of the document was indented using 2 spaces.):
+    19: 
+    20:         %h3 Como funciona
+    21:         %p Se você é um desenvolvedor, aqui você pode depositem seus conjuntos de dados,  indicar o que precisa classificado ou avaliado com relação a esses dados e obter a um custo justo um amplo espectro de respostas dadas por usuários comuns, recebendo-os devolta devidamente rotulados para uso em sua aplicação.
+    22: 		%p Se você não desenvolve mas enxerga valor em ajudar os projetos na área e ainda ganhar por isso, aqui é para você também. Quanto mais dados você nos ajudar a rotular, mais você ganha. 
+    23: 
+    24: 
+    25: 
+  
+app/views/pages/about.html.haml:22
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:02:01 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 2 tabs used for indentation, but the rest of the document was indented using 2 spaces.):
+    19: 
+    20:         %h3 Como funciona
+    21:         %p Se você é um desenvolvedor, aqui você pode depositem seus conjuntos de dados,  indicar o que precisa classificado ou avaliado com relação a esses dados e obter a um custo justo um amplo espectro de respostas dadas por usuários comuns, recebendo-os devolta devidamente rotulados para uso em sua aplicação.
+    22: 		Se você não desenvolve mas enxerga valor em ajudar os projetos na área e ainda ganhar por isso, aqui é para você também. Quanto mais dados você nos ajudar a rotular, mais você ganha. 
+    23: 
+    24: 
+    25: 
+  
+app/views/pages/about.html.haml:22
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:02:11 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (5.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:02:38 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (23.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 97ms (Views: 90.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:02:39 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (30.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:04:18 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (7.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 65ms (Views: 64.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:04:40 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (8.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:04:58 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (7.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 70ms (Views: 68.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:05:13 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (18.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 96ms (Views: 92.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:05:31 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "  \t  " used for indentation, but the rest of the document was indented using 2 spaces.):
+    26:         %h3 Veja o vídeo-tutorial abaixo e se inscreva. 
+    27:         %h3 Você pode começar agora mesmo!
+    28:   
+    29:   	  %br/
+    30:   	  %br/
+    31:       %footer.mastfoot.mt-auto
+    32:         .inner
+  
+app/views/pages/about.html.haml:29
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:05:40 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "  \t  " used for indentation, but the rest of the document was indented using 2 spaces.):
+    26:         %h3 Veja o vídeo-tutorial abaixo e se inscreva. 
+    27:         %h3 Você pode começar agora mesmo!
+    28:   
+    29:   	  %br
+    30:   	  %br
+    31:       %footer.mastfoot.mt-auto
+    32:         .inner
+  
+app/views/pages/about.html.haml:29
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:05:56 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (10.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:06:03 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (6.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:06:33 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (18.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 74ms (Views: 73.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:07:03 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (14.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 85ms (Views: 83.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:07:28 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (8.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:08:34 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (24.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 108ms (Views: 103.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:09:24 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (37.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 107ms (Views: 103.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:09:44 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (44.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 117ms (Views: 113.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:10:03 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (18.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 104ms (Views: 101.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:10:11 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (13.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:10:33 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (11.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:10:39 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (19.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 96.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:10:46 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (28.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 93ms (Views: 90.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:10:58 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "      \t" used for indentation, but the rest of the document was indented using 2 spaces.):
+     8:       %header.masthead.mb-auto
+     9:         .inner          
+    10:       %main.inner.cover{:role => "main"}
+    11:       	%br
+    12:         %h1.cover-heading MONOLITO
+    13:         %p.lead Inteligência gera inteligência
+    14:         %br
+  
+app/views/pages/about.html.haml:11
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:11:07 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "      \t" used for indentation, but the rest of the document was indented using 2 spaces.):
+     8:       %header.masthead.mb-auto
+     9:         .inner          
+    10:       %main.inner.cover{:role => "main"}
+    11:       	%br/
+    12:         %h1.cover-heading MONOLITO
+    13:         %p.lead Inteligência gera inteligência
+    14:         %br
+  
+app/views/pages/about.html.haml:11
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:11:08 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "      \t" used for indentation, but the rest of the document was indented using 2 spaces.):
+     8:       %header.masthead.mb-auto
+     9:         .inner          
+    10:       %main.inner.cover{:role => "main"}
+    11:       	%br/
+    12:         %h1.cover-heading MONOLITO
+    13:         %p.lead Inteligência gera inteligência
+    14:         %br
+  
+app/views/pages/about.html.haml:11
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:11:15 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (12.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:11:22 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (41.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 108ms (Views: 104.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:12:36 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (20.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:12:58 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (12.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:13:19 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (29.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 111ms (Views: 107.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:13:29 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (27.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 85ms (Views: 83.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:13:46 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (15.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:14:01 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (11.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:14:09 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (16.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 81ms (Views: 79.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:14:35 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (38.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 112ms (Views: 107.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:14:42 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "      \t" used for indentation, but the rest of the document was indented using 2 spaces.):
+     8:       %header.masthead.mb-auto
+     9:         .inner          
+    10:       %main.inner.cover{:role => "main"}
+    11:       	%br/
+    12:         %h1.cover-heading MONOLITO
+    13:         %p.lead Inteligência gera inteligência
+    14:         %br
+  
+app/views/pages/about.html.haml:11
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:14:55 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (38.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 145ms (Views: 141.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 02:15:02 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (12.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 90ms (Views: 89.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 02:16:45 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (33.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 109ms (Views: 107.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:16:50 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (15.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 75ms (Views: 72.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 02:16:59 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (36.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 108ms (Views: 106.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:17:01 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (31.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 101ms (Views: 97.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:17:06 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (39.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 102.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 02:17:09 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (27.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:17:22 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (24.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 89ms (Views: 86.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 02:17:27 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (25.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 102ms (Views: 101.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:17:29 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (49.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 123ms (Views: 119.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:17:33 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (33.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 106ms (Views: 103.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:17:52 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (37.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 113ms (Views: 109.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 02:18:26 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (33.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 116ms (Views: 114.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:18:31 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (11.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 79ms (Views: 76.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-19 02:18:34 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (52.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 129ms (Views: 125.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 02:18:36 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (10.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 72ms (Views: 71.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:19:05 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (19.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 95ms (Views: 91.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:19:33 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (14.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:20:48 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (17.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 94ms (Views: 90.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-19 02:21:12 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (30.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-19 02:21:12 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (30.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 132ms (Views: 130.8ms | ActiveRecord: 0.4ms)
+
+
