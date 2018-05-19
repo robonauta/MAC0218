@@ -14,4 +14,4 @@ TODO
 TODO
 
 ## Observações
-Os relatórios encontram-se na pasta "docs".
+Os relatórios e manual de instalação e utilização encontram-se na pasta "docs".
