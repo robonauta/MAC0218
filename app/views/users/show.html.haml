@@ -1,36 +1,51 @@
-.container.text-center
-    %h1 Meu perfil
-    %br
-    .row
-    .col-md-3
-    .col-md-6
-        .form-group
-        %label Nome
-        =@user.name
-    .col-md-3
-    %br
-    .row
-    .col-md-3
-    .col-md-6
-        .form-group
-        %label Username
-        =@user.username
-    .col-md-3
-    %br
-    .row
-    .col-md-3
-    .col-md-6
-        .form-group
-        %label E-mail
-        =@user.email
-    .col-md-3
-    %br
-    .row
-    .col-md-3
-    .col-md-6
-        .form-group
-        %label Organization
-        =@user.organization
-    .col-md-3
-    %hr
-    = link_to "Editar perfil", edit_user_path(@user)
+!!!
+%html{:lang => "en"}
+  %head
+    %title Monolito
+  %body.text-center
+    %canvas#stars
+    #container.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.text-light
+      %header.masthead.mb-auto
+        .inner          
+      %main.inner.cover{:role => "main"}
+        %p
+          %h1.cover-heading Meu perfil
+          .form-group
+          %label Nome:
+          =@user.name
+          .form-group
+          %label Username:
+          =@user.username
+          .form-group
+          %label E-mail:
+          =@user.email
+          .form-group
+          %label Organização:
+          =@user.organization
+          %br/
+          = link_to "Editar perfil", edit_user_path(@user), :class => 'btn btn-dark'
+          
+      %footer.mastfoot.mt-auto
+        .inner
+          %p
+            Cover template for
+            = succeed "," do
+              %a{:href => "https://getbootstrap.com/"} Bootstrap
+            by
+            = succeed "." do
+              %a{:href => "https://twitter.com/mdo"} @mdo
+          %p
+            Constellation by
+            = succeed "." do
+              %a{:href => "https://codepen.io/gabrielaoviedo/"} Gabriela Oviedo
+
+        /
+          Bootstrap core JavaScript
+          \==================================================
+        / Placed at the end of the document so the pages load faster
+        %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
+        :javascript
+          window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+        /
+          <script src="bootstrap/js/vendor/popper.min.js"></script>
+          <script src="bootstrap/js/bootstrap.min.js"></script>

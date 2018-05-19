@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 #    protect_from_forgery unless: -> { request.format.json? }
     def index
         @posts = Post.all
+        render 'index'
     end
   
     def show
@@ -53,6 +54,12 @@ class PostsController < ApplicationController
       redirect_to posts_path
     end
   
+    def dashboard
+      @posts = Post.all
+#      render plain: params[:post].inspect
+      render 'dashboard'
+    end
+
     private def post_params
       params.require(:post).permit(:author, :title, :description)
     end

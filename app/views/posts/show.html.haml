@@ -1,10 +1,57 @@
-%h2= @post.title
-%h5= @post.author
-%p= @post.description
-%hr
-- if @show_edit
-  = link_to "Edit", edit_post_path(@post), :class => 'btn btn-default'
-  = link_to "Delete", post_path(@post), 
-                      method: :delete, data: { confirm: 'Are you sure?' },
-                      :class => 'btn btn-danger'
-            
+!!!
+%html{:lang => "en"}
+  %head
+    %title Monolito
+  %body.text-center
+    %canvas#stars
+    #container.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.text-dark
+      %header.masthead.mb-auto
+        .inner          
+      %main.inner.cover{:role => "main"}
+      .row.justify-content-center
+        .card
+          .text-center
+            %img.card-img-top.img-fluid.img-question{:alt => "Card image cap", :src => "orange.jpeg"}/
+          .card-body
+            %h5.card-title= @post.title
+            %p.card-text= @post.description
+          %ul.list-group.list-group-flush
+            %li.list-group-item
+              %button.btn.btn-light{:type => "button"} Cras justo odio
+            %li.list-group-item
+              %button.btn.btn-light{:type => "button"} Dapibus ac facilisis in
+            %li.list-group-item
+              %button.btn.btn-light{:type => "button"} Vestibulum at eros
+          .card-body
+            %hr
+              - if @show_edit
+                %a.card-link{:href => "#"}
+                = link_to "Edit", edit_post_path(@post), :class => 'btn btn-default'
+                %a.card-link{:href => "#"}
+                = link_to "Delete", post_path(@post), 
+                          method: :delete, data: { confirm: 'Are you sure?' },
+                          :class => 'btn btn-danger'
+      %footer.mastfoot.mt-auto.text-light
+        .inner
+          %p
+            Cover template for
+            = succeed "," do
+              %a{:href => "https://getbootstrap.com/"} Bootstrap
+            by
+            = succeed "." do
+              %a{:href => "https://twitter.com/mdo"} @mdo
+          %p
+            Constellation by
+            = succeed "." do
+              %a{:href => "https://codepen.io/gabrielaoviedo/"} Gabriela Oviedo
+
+        /
+          Bootstrap core JavaScript
+          \==================================================
+        / Placed at the end of the document so the pages load faster
+        %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
+        :javascript
+          window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+        /
+          <script src="bootstrap/js/vendor/popper.min.js"></script>
+          <script src="bootstrap/js/bootstrap.min.js"></script>

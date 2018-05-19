@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
+  get '/dashboard' => 'posts#dashboard'
   get '/new' => 'posts#new'
   get '/settings' => 'users#settings'
   get '/settings/account' => 'users#account'

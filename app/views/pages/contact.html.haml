@@ -1,44 +1,58 @@
 !!!
-%html
+%html{:lang => "en"}
   %head
-    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
-  %body
-    / Container (Contact Section)
-    #contact.w3-content.w3-container.w3-padding-64
-      %h3.w3-center CONTATO
-      %p.w3-center
-        %em Tem alguma dúvida ou sugestão?
-      %p
-        Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-
-      .w3-row.w3-padding-32.w3-section
-        .w3-col.m4.w3-container
-          
-        .w3-col.m8.w3-panel
-          .w3-large.w3-margin-bottom
-            %i.fa.fa-map-marker.fa-fw.w3-hover-text-black.w3-xlarge.w3-margin-right
-            São Paulo, Brasil
-            %br/
-            %i.fa.fa-phone.fa-fw.w3-hover-text-black.w3-xlarge.w3-margin-right
-            Telefone: +55 36877520
-            %br/
-            %i.fa.fa-envelope.fa-fw.w3-hover-text-black.w3-xlarge.w3-margin-right
-            Email: monolito@gubi.com
-            %br/
+    %title Monolito
+  %body.text-center
+    %canvas#stars
+    #container.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.text-light.scroll-y
+      %header.masthead.mb-auto
+        .inner 
+      .row.justify-content-center        
+        %main.inner.cover{:role => "main"}
+          %h1.cover-heading Monolito
+          %p.lead Reunindo esforço humano pra criar inteligências
+          %br
+          %h3 Contato
+          %p Tem alguma dúvida ou sugestão?
+          %br/
+          %h3 Ache-nos
+          %p São Paulo, Brasil
+          %p Telefone: +55 36877520
+          %p Email: monolito@gubi.com
+          %h3 Envie-nos uma mensagem
+          %form.form-signin       
+            %label.sr-only{:for => "name"} Nome:   
+            %input.form-control{"aria-describedby" => "basic-addon1", "aria-label" => "name", :placeholder => "Nome", :required => "", :type => "text"}/      
+            /= f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => ""
+            %label.sr-only{:for => "email"} Endereço de e-mail:  
+            %input.form-control{"aria-describedby" => "basic-addon1", "aria-label" => "email", :placeholder => "E-mail", :required => "", :type => "email"}/                
+            /= f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => ""
+            %label.sr-only{:for => "password"} Mensagem:
+            %text_area.form-control
+            /= f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => ""
+            .input              
+            %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar
+      %footer.mastfoot.mt-auto
+        .inner
           %p
-          %form{:action => "https://google.com", :target => "_blank"}
-            .w3-row-padding{:style => "margin:0 -16px 8px -16px"}
-              .w3-half
-                %input.w3-input.w3-border{:name => "Nome", :placeholder => "Nome", :required => "", :type => "text"}/
-              .w3-half
-                %input.w3-input.w3-border{:name => "e-mail", :placeholder => "e-mail", :required => "", :type => "text"}/
-            %input.w3-input.w3-border{:name => "Menssagem", :placeholder => "Menssagem", :required => "", :type => "text"}/
-            %button.w3-button.w3-black.w3-right.w3-section{:type => "submit"}
-              %i.fa.fa-paper-plane
-              ENVIAR
-  
+            Cover template for
+            = succeed "," do
+              %a{:href => "https://getbootstrap.com/"} Bootstrap
+            by
+            = succeed "." do
+              %a{:href => "https://twitter.com/mdo"} @mdo
+          %p
+            Constellation by
+            = succeed "." do
+              %a{:href => "https://codepen.io/gabrielaoviedo/"} Gabriela Oviedo
 
-
-
-
-
+        /
+          Bootstrap core JavaScript
+          \==================================================
+        / Placed at the end of the document so the pages load faster
+        %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
+        :javascript
+          window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+        /
+          <script src="bootstrap/js/vendor/popper.min.js"></script>
+          <script src="bootstrap/js/bootstrap.min.js"></script>

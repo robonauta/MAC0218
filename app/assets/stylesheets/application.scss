@@ -12,12 +12,5 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets";
+/*@import "bootstrap-sprockets";*/
 @import "bootstrap";
-
-body {
-    width: 85%;
-    margin: 0px auto;
-    display: table;
-    background-color: #f2f2f2;
-}

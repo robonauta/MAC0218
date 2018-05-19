@@ -17,7 +17,8 @@ gem 'haml-rails'
 # Refactor para renomear controllers
 gem 'rails_refactor'
 # Bootstrap
-gem 'bootstrap-sass'
+#gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.1.1'
 # jQuery
 gem 'jquery-rails'
 # Flash
