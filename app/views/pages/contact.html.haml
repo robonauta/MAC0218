@@ -15,7 +15,7 @@
           %h3 Contato
           %p Tem alguma dúvida ou sugestão? Fale com a gente!
           %br/
-          %h3 Informações para contato:
+          %h3 Informações para contato
           %p Rua Dont Pânic, 42 - São Paulo, Brasil
           %p Telefone: +55 36877520
           %p Email: monolito@gubi.com
@@ -27,7 +27,7 @@
             %label.sr-only{:for => "email"} Endereço de e-mail:  
             %input.form-control{"aria-describedby" => "basic-addon1", "aria-label" => "email", :placeholder => "E-mail", :required => "", :type => "email"}/                
             /= f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => ""
-            %label.sr-only{:for => "password"} Mensagem:
+            %label.sr-only{:for => "mensagem"} Mensagem:
             %text_area.form-control
             /= f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => ""
             .input              
