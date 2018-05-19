@@ -7,11 +7,24 @@ Plataforma que permite a desenvolvedores de inteligências artificiais depositar
 - Eduardo Rocha Laurentino 8988212
 - Pedro Henrique Barbosa de Almeida 10258793
 
-## Como rodar
-TODO
+## Instalação e Execução
+Esse tutorial supõe que você tenha instalado Ruby v2.3-2.5 e tenha um servidor MySQL v5.7 rodando no computador. Caso não possua, siga as instruções para [Ruby](https://www.ruby-lang.org/pt/documentation/installation/) e [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
 
-## Dependências
-TODO
+O usuário usado no MySQL é ```root```, sem senha.
 
-## Observações
-Os relatórios e manual de instalação e utilização encontram-se na pasta "docs".
+1. Clone o repositório:
+```$ git clone https://github.com/robonauta/MAC0218.git```
+
+2. No diretório criado, instale as dependências:   
+```$ bundle install```
+
+3. Configure o banco de dados:  
+```$ rake db:setup```
+
+4. Inicie o servidor:  
+```$ rails s```
+
+O site estará disponível em: http://localhost:3000
+
+## Docs
+[Relatório completo](https://github.com/robonauta/MAC0218/blob/master/docs/Relatorios/Monolito%20-%20relatório.pdf)
