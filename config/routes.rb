@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get '/settings/account' => 'users#account'
   get '/show' => 'users#show'
   delete '/logout' => 'sessions#destroy'
-  post '/settings/account' => 'users#account_update'
+  get '/settings/account' => 'users#update'
   
   # Resources:
   resources :posts

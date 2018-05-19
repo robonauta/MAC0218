@@ -3,7 +3,6 @@ class UsersController < ApplicationController
     @user = User.new 
   end
   def create
-#    render plain: params[:user].inspect
     @user = User.new(user_params)
     @user.rank = "user"
     if(@user.save)
@@ -29,26 +28,13 @@ class UsersController < ApplicationController
   def edit
     @user = User.find(session[:user_id])
   end
-
-  def account
-    @user = User.find(session[:user_id])
-  end
-
-  def account_update
-    oldp = session[:old_password]
-    @user = User.find(session[:user_id])
-    if (!@user.password.equal? "" and oldp.equal? @user.password)
-      
-    else
-      render 'settings'
-    end
-  end
+  
   def update
     @user = User.find(session[:user_id])
     if(@user.update(user_params))
-      redirect_to @user
+      redirect_to '/'
     else
-      render 'edit'
+      render 'account'
     end
   end
   
