@@ -12,7 +12,7 @@ Esse tutorial supõe que você tenha instalado Ruby v2.3-2.5 e tenha um servidor
 
 O usuário usado no MySQL é ```root```, sem senha.
 
-1. Clone o repositório:
+1. Clone o repositório:  
 ```$ git clone https://github.com/robonauta/MAC0218.git```
 
 2. No diretório criado, instale as dependências:   
