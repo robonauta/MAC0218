@@ -13,3 +13,5 @@ TODO
 ## Dependências
 TODO
 
+## Observações
+Os relatórios encontram-se na pasta "docs".
