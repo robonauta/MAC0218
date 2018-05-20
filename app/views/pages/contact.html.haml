@@ -11,15 +11,12 @@
     %p Telefone: +55 36877520
     %p Email: monolito@gubi.com
     %h3 Envie-nos uma mensagem
-    %form.form-signin       
+    = form_for(:pages, :url => {:controller => 'pages', :action => 'message'}) do |f|   
       %label.sr-only{:for => "name"} Nome:   
-      %input.form-control{"aria-describedby" => "basic-addon1", "aria-label" => "name", :placeholder => "Nome", :required => "", :type => "text"}/      
-      /= f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => ""
-      %label.sr-only{:for => "email"} Endereço de e-mail:  
-      %input.form-control{"aria-describedby" => "basic-addon1", "aria-label" => "email", :placeholder => "E-mail", :required => "", :type => "email"}/                
-      /= f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => ""
+      = f.text_field :name, class: 'form-control', :placeholder => "Nome", :required => ""      
+      %label.sr-only{:for => "email"} Endereço de e-mail:
+      = f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => ""
       %label.sr-only{:for => "mensagem"} Mensagem:
-      %text_area.form-control
-      /= f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => ""
+      = f.text_area :message, class: 'form-control', :placeholder => "Mensagem", :required => ""
       .input              
       %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar

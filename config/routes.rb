@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # Regular routes:
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
+  post '/contact' => 'pages#message'
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
   get '/dashboard' => 'posts#dashboard'
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
   get '/account' => 'users#show'
   delete '/logout' => 'sessions#destroy'
   get '/settings/account' => 'users#update'
+  
   
   # Resources:
   resources :posts
