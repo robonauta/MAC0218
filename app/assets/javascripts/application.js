@@ -15,4 +15,5 @@
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require bg
+//= require global
 //= require_tree .
