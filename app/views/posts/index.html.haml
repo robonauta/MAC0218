@@ -1,28 +1,7 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Monolito
-  %body.text-center
-    %canvas#stars
-    #container.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.text-light
-      %header.masthead.mb-auto
-        .inner          
-      %main.inner.cover{:role => "main"}
-        %h1.cover-heading MONOLITO
-        %p.lead Inteligência gera inteligência
-        %p.lead
-          %a.btn.btn-light.btn-secondary{:href => "/about"} Saiba mais
-      %footer.mastfoot.mt-auto
-        .inner
-        
 
-        /
-          Bootstrap core JavaScript
-          \==================================================
-        / Placed at the end of the document so the pages load faster
-        %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
-        :javascript
-          window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-        /
-          <script src="bootstrap/js/vendor/popper.min.js"></script>
-          <script src="bootstrap/js/bootstrap.min.js"></script>
+%span.text-center
+  %h1.cover-heading MONOLITO
+  %p.lead Inteligência gera inteligência
+  %p.lead
+    %a.btn.btn-light.btn-secondary{:href => "/about"} Saiba mais
+

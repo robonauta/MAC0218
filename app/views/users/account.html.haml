@@ -1,53 +1,19 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Monolito
-  %body.text-center
-    %canvas#stars
-    #container.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.text-light
-      %header.masthead.mb-auto
-        .inner
-          %p
-      .row.justify-content-center
-        %main.inner.cover{:role => "main"}
-          %form.form-signin          
-          = form_for :user do |f|
-            %h1.h3.mb-3.font-weight-normal Configurações avançadas
-            %br/
-            %label{:for => "username"} Username
-            = f.text_field :username, class: 'form-control'
-            %br/
-            %label{:for => "password"} Senha antiga
-            = f.password_field :old_password, class: 'form-control'
-            %br/
-            %label{:for => "password_confirmation"} Nova senha
-            = f.password_field :password, class: 'form-control'
-            %br/
-            %label{:for => "password_confirmation"} Confirmação da nova senha
-            = f.password_field :password_confirmation, class: 'form-control'
-            %br/
-            %button.btn.btn-dark{:type => "submit"} Atualizar
-            
-      %footer.mastfoot.mt-auto
-        .inner
-          %p
-            Cover template for
-            = succeed "," do
-              %a{:href => "https://getbootstrap.com/"} Bootstrap
-            by
-            = succeed "." do
-              %a{:href => "https://twitter.com/mdo"} @mdo
-          %p
-            Constellation by
-            = succeed "." do
-              %a{:href => "https://codepen.io/gabrielaoviedo/"} Gabriela Oviedo
-        /
-          Bootstrap core JavaScript
-          \==================================================
-        / Placed at the end of the document so the pages load faster
-        %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
-        :javascript
-          window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-        /
-          <script src="bootstrap/js/vendor/popper.min.js"></script>
-          <script src="bootstrap/js/bootstrap.min.js"></script>
+.row.justify-content-center
+  %main.inner.cover{:role => "main"}
+    %form.form-signin          
+    = form_for :user do |f|
+      %h1.h3.mb-3.font-weight-normal Configurações avançadas
+      %br/
+      %label{:for => "username"} Username
+      = f.text_field :username, class: 'form-control'
+      %br/
+      %label{:for => "password"} Senha antiga
+      = f.password_field :old_password, class: 'form-control'
+      %br/
+      %label{:for => "password_confirmation"} Nova senha
+      = f.password_field :password, class: 'form-control'
+      %br/
+      %label{:for => "password_confirmation"} Confirmação da nova senha
+      = f.password_field :password_confirmation, class: 'form-control'
+      %br/
+      %button.btn.btn-dark{:type => "submit"} Atualizar

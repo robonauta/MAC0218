@@ -1,50 +1,17 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Monolito
-  %body.text-center
-    %canvas#stars
-    #container.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.text-light
-      %header.masthead.mb-auto
-        .inner
-      .row.justify-content-center
-        %main.inner.cover{:role => "main"}
-          %form.form-signin          
-          = form_for :user, :url => {:controller => 'users', :action => 'update'}, :method => "patch" do |f|
-            %h1.h3.mb-3.font-weight-normal Atualizar conta
-            %br/
-            %label{:for => "name"} Nome completo
-            = f.text_field :name, class: 'form-control'
-            %br/
-            %label{:for => "name"} Organização
-            = f.text_field :organization, class: 'form-control'
-            %br/
-            %label{:for => "name"} E-mail
-            = f.text_field :email, class: 'form-control'
-            %br/
-            = link_to 'Configurações avançadas', '/settings/account', :class => 'btn btn-dark'
-            %button.btn.btn-dark{:type => "submit"} Atualizar
-            
-      %footer.mastfoot.mt-auto
-        .inner
-          %p
-            Cover template for
-            = succeed "," do
-              %a{:href => "https://getbootstrap.com/"} Bootstrap
-            by
-            = succeed "." do
-              %a{:href => "https://twitter.com/mdo"} @mdo
-          %p
-            Constellation by
-            = succeed "." do
-              %a{:href => "https://codepen.io/gabrielaoviedo/"} Gabriela Oviedo
-        /
-          Bootstrap core JavaScript
-          \==================================================
-        / Placed at the end of the document so the pages load faster
-        %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
-        :javascript
-          window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-        /
-          <script src="bootstrap/js/vendor/popper.min.js"></script>
-          <script src="bootstrap/js/bootstrap.min.js"></script>
+.row.justify-content-center
+  %main.inner.cover{:role => "main"}
+    %form.form-signin          
+    = form_for :user, :url => {:controller => 'users', :action => 'update'}, :method => "patch" do |f|
+      %h1.h3.mb-3.font-weight-normal Atualizar conta
+      %br/
+      %label{:for => "name"} Nome completo
+      = f.text_field :name, class: 'form-control'
+      %br/
+      %label{:for => "name"} Organização
+      = f.text_field :organization, class: 'form-control'
+      %br/
+      %label{:for => "name"} E-mail
+      = f.text_field :email, class: 'form-control'
+      %br/
+      = link_to 'Configurações avançadas', '/settings/account', :class => 'btn btn-dark'
+      %button.btn.btn-dark{:type => "submit"} Atualizar

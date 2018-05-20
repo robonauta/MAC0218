@@ -1,10 +1,13 @@
 class SessionsController < ApplicationController
+  # GET: LOGIN
   def new
+    # Tentativa de login já logado redireciona
     if current_user
       redirect_to '/account'
     end
   end
 
+  # POST: LOGIN
   def create
     authorized_user = User.authenticate(params[:user][:email], params[:user][:password])
     # If the user exists AND the password entered is correct.
@@ -20,6 +23,7 @@ class SessionsController < ApplicationController
     end
   end
 
+  # # POST: LOGOUT
   def destroy
     session[:user_id] = nil
     redirect_to '/'
