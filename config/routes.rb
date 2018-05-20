@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get '/new' => 'posts#new'
   get '/settings' => 'users#settings'
   get '/settings/account' => 'users#account'
-  get '/show' => 'users#show'
+  get '/account' => 'users#show'
   delete '/logout' => 'sessions#destroy'
   get '/settings/account' => 'users#update'
   
