@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   
     # POST: manda mensagem e redireciona pro root
     def message
+        #TODO: post mensagem
         redirect_to '/'
     end
 end

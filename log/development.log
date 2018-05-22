@@ -55345,3 +55345,415 @@ Processing by PagesController#contact as HTML
 Completed 200 OK in 108ms (Views: 104.6ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-20 08:44:02 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (58.5ms)
+Completed 200 OK in 514ms (Views: 506.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-20 08:44:23 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.2ms)
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 99ms (Views: 94.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 08:44:24 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 129ms (Views: 128.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-20 08:44:25 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 113ms (Views: 108.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-20 08:44:27 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (7.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 118ms (Views: 113.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/account" for 127.0.0.1 at 2018-05-20 08:44:38 -0300
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (4.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 92ms (Views: 87.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-05-20 08:44:43 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lmT8k/UxvCqXBQ9w46+tfrPgFnhKRnmqqv3R5UVqYxi3lW1n/PsIeHUYp7IvVydxMIYDF3yJB4Yq4S6tfSyVsQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 08:44:43 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 106ms (Views: 104.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 08:44:54 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 269ms (Views: 266.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 08:53:13 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 135ms (Views: 134.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-20 08:53:27 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 97ms (Views: 93.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-20 08:53:35 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bIwwdOi27xep46uYmYtGP9BSahPYj8urtBae0I2Py1ZNfaGA4XxbRUv+A1pVc8wwUzR/fO5AtYc0CmGYtck9/w==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 94ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 08:53:36 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 118ms (Views: 115.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 08:53:45 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 09:47:33 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 94ms (Views: 93.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-20 09:47:35 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 121ms (Views: 116.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-20 09:47:39 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (7.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 162ms (Views: 155.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 09:47:41 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 127ms (Views: 125.3ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-05-20 09:47:44 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Mg3eQvPRlK+ijfr7jR0/pOyopzuOmLbA7DPNdKw2LuAT/E+2+hsg/UCQUjlB5bWrb86yVLhXyOxsLzI8lHDYSQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 09:47:44 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 96ms (Views: 95.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-20 09:47:47 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 09:48:37 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (4.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (27.1ms)
+Completed 200 OK in 317ms (Views: 312.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-20 09:48:44 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 188ms (Views: 181.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-20 09:48:45 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 145ms (Views: 140.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 09:48:46 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 166ms (Views: 165.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-20 09:48:48 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 145ms (Views: 137.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-20 09:48:57 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w+ISVjr6+0Vy7ef+WPSiQrBi4cvuAFdYSNV/gDiWmEQ1WwmtHLcDN5pgcj0V2ElCUW59pGJgwbeX/XBtjTS+4g==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 81ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 09:48:57 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 124ms (Views: 123.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2018-05-20 09:49:03 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 157ms (Views: 145.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/orange.jpeg" for 127.0.0.1 at 2018-05-20 09:49:03 -0300
+Processing by PostsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=orange):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/" for 127.0.0.1 at 2018-05-20 09:49:05 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (15.9ms)
+Completed 200 OK in 204ms (Views: 202.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 09:49:07 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 134ms (Views: 132.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 10:09:23 -0300
+  [1m[35m (12.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (5.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (105.0ms)
+Completed 200 OK in 1046ms (Views: 1023.1ms | ActiveRecord: 18.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-05-20 10:09:27 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kdgvDHAvWteGgxbB71tcBj9pCzV0ZSpFp0wlgUDunYJnYTT3VmKipW4OgwKid7cG3mWXWvgFvKp4ZCps9Uy7JA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 10:09:27 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (33.9ms)
+Completed 200 OK in 259ms (Views: 255.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 10:10:01 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (37.6ms)
+Completed 200 OK in 245ms (Views: 243.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-20 10:10:06 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (19.8ms)
+Completed 200 OK in 221ms (Views: 215.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 10:13:04 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (20.1ms)
+Completed 200 OK in 216ms (Views: 214.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-20 10:13:07 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 139ms (Views: 133.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 10:02:00 -0300
+  [1m[35m (16.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (43.1ms)
+Completed 200 OK in 581ms (Views: 574.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-21 10:02:23 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 99ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-21 10:02:26 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 110ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-21 10:02:28 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 116ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 10:02:29 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-05-21 10:02:39 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 118ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-05-21 10:02:45 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gkLwN/RRuD/p4/3s1Eda846Tx3VuCPjLWDoJCYP7qLvXQQwOSn+OEKaj1sx4MDEDGWfLfpwNjdAtOxT/Cjzcrw==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 103ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 10:02:46 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-05-21 10:08:27 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 141ms (Views: 133.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-05-21 10:08:28 -0300
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.haml within layouts/application
+  Rendered pages/contact.html.haml within layouts/application (7.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 115ms (Views: 110.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 10:08:29 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 115ms (Views: 113.6ms | ActiveRecord: 0.6ms)
+
+
