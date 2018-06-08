@@ -55757,3 +55757,751 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 115ms (Views: 113.6ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-08 08:50:12 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.haml within layouts/application (56.0ms)
+Completed 200 OK in 8404ms (Views: 8399.2ms | ActiveRecord: 2.7ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4087196906081189040', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateProjects (20180608115031)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4087196906081189040')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4087196906081189040', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateProjects (20180608115031)
+  [1m[35m (356.0ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float, `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608115031')[0m
+  [1m[35m (60.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateImages (20180608115617)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4087196906081189040')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4087196906081189040', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateImages (20180608115617)
+  [1m[35m (343.8ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608115617')[0m
+  [1m[35m (87.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (51.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4087196906081189040')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4087196906081189040', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4087196906081189040')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (974.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `dontpanic_development`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (76.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS `dontpanic_test`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `dontpanic_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `dontpanic_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (292.6ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (310.7ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (287.0ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (277.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (254.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (32.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608115617)[0m
+  [1m[35m (44.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012);
+
+[0m
+  [1m[35m (421.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 12:05:35', '2018-06-08 12:05:35')[0m
+  [1m[35m (47.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (283.9ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (288.6ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (299.3ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (310.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (312.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (42.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608115617)[0m
+  [1m[35m (44.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012);
+
+[0m
+  [1m[35m (288.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 12:05:37', '2018-06-08 12:05:37')[0m
+  [1m[35m (41.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (20.1ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (54.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (943.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS `dontpanic_development`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (979.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `dontpanic_test`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `dontpanic_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `dontpanic_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (302.7ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (299.5ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (321.7ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (320.3ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (310.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (42.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608115617)[0m
+  [1m[35m (44.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012);
+
+[0m
+  [1m[35m (388.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 12:08:02', '2018-06-08 12:08:02')[0m
+  [1m[35m (42.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (371.7ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (320.7ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (299.6ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (299.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (320.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (42.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608115617)[0m
+  [1m[35m (55.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012);
+
+[0m
+  [1m[35m (387.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 12:08:05', '2018-06-08 12:08:05')[0m
+  [1m[35m (106.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (37.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `monolito` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `monolito_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (782.9ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (344.0ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (298.3ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (332.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (314.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (45.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608115617)[0m
+  [1m[35m (44.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012);
+
+[0m
+  [1m[35m (420.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 12:15:22', '2018-06-08 12:15:22')[0m
+  [1m[35m (43.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (372.2ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (266.0ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (301.7ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (309.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (310.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (53.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608115617)[0m
+  [1m[35m (44.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012);
+
+[0m
+  [1m[35m (319.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 12:15:24', '2018-06-08 12:15:24')[0m
+  [1m[35m (48.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (39.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (40.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAnswers (20180608131050)
+  [1m[35m (340.5ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608131050')[0m
+  [1m[35m (46.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1057.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (948.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito_test`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `monolito` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `monolito_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  [1m[35m (326.3ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (299.4ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (321.7ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (321.5ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (387.9ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (310.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (40.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608131050)[0m
+  [1m[35m (44.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012),
+(20180608115617);
+
+[0m
+  [1m[35m (421.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 13:15:31', '2018-06-08 13:15:31')[0m
+  [1m[35m (36.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  [1m[35m (355.1ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (310.3ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (310.3ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (309.9ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (299.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (320.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (43.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608131050)[0m
+  [1m[35m (44.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012),
+(20180608115617);
+
+[0m
+  [1m[35m (299.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 13:15:33', '2018-06-08 13:15:33')[0m
+  [1m[35m (39.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (11.2ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (47.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to Createfkanswers (20180608131805)
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to Createfkanswers (20180608131805)
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (996.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1036.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito_test`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `monolito` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `monolito_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  [1m[35m (359.4ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (323.7ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (321.9ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (331.1ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (299.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (321.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (43.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608131050)[0m
+  [1m[35m (43.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012),
+(20180608115617);
+
+[0m
+  [1m[35m (420.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 13:50:27', '2018-06-08 13:50:27')[0m
+  [1m[35m (70.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  [1m[35m (326.1ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  [1m[35m (320.4ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `id_image` int, `id_project` int, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (310.7ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  [1m[35m (312.5ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `author` int, `cost` float(24), `id_project` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (276.3ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (243.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (43.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180608131050)[0m
+  [1m[35m (44.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608115031),
+(20180502170151),
+(20180506051541),
+(20180513003444),
+(20180506043108),
+(20180505165543),
+(20180506042012),
+(20180608115617);
+
+[0m
+  [1m[35m (321.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 13:50:29', '2018-06-08 13:50:29')[0m
+  [1m[35m (37.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test', `updated_at` = '2018-06-08 13:50:30' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (36.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to Createfkanswers (20180608131805)
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdColumnToAnswers (20180608143316)
+  [1m[35m (618.5ms)[0m  [1m[35mALTER TABLE `answers` ADD `user_id` varchar(255)[0m
+  [1m[35m (466.7ms)[0m  [1m[35mALTER TABLE `answers` ADD `integer` varchar(255)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608143316')[0m
+  [1m[35m (62.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddImageIdColumnToAnswers (20180608143352)
+  [1m[35m (434.1ms)[0m  [1m[35mALTER TABLE `answers` ADD `image_id` varchar(255)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE `answers` ADD `integer` varchar(255)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddImageIdColumnToAnswers (20180608143352)
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE `answers` ADD `image_id` varchar(255)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1130.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1094.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito_test`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (315.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (287.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20180502170151)
+  [1m[35m (368.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nickname` varchar(255), `password` varchar(255), `name` varchar(255), `age` int, `origin` varchar(255), `type` int, `specie` varchar(255), `habitat` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180502170151')[0m
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePosts (20180505165543)
+  [1m[35m (343.5ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `author` varchar(255), `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180505165543')[0m
+  [1m[35m (86.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveSeveralFromUsers (20180506042012)
+  [1m[35m (522.7ms)[0m  [1m[35mALTER TABLE `users` DROP `nickname`[0m
+  [1m[35m (456.7ms)[0m  [1m[35mALTER TABLE `users` DROP `password`[0m
+  [1m[35m (545.3ms)[0m  [1m[35mALTER TABLE `users` DROP `name`[0m
+  [1m[35m (581.4ms)[0m  [1m[35mALTER TABLE `users` DROP `age`[0m
+  [1m[35m (522.5ms)[0m  [1m[35mALTER TABLE `users` DROP `origin`[0m
+  [1m[35m (456.7ms)[0m  [1m[35mALTER TABLE `users` DROP `type`[0m
+  [1m[35m (467.4ms)[0m  [1m[35mALTER TABLE `users` DROP `specie`[0m
+  [1m[35m (545.0ms)[0m  [1m[35mALTER TABLE `users` DROP `habitat`[0m
+  [1m[35m (455.9ms)[0m  [1m[35mALTER TABLE `users` ADD `username` varchar(255)[0m
+  [1m[35m (546.7ms)[0m  [1m[35mALTER TABLE `users` ADD `email` varchar(255)[0m
+  [1m[35m (422.8ms)[0m  [1m[35mALTER TABLE `users` ADD `encrypted_password` varchar(255)[0m
+  [1m[35m (544.5ms)[0m  [1m[35mALTER TABLE `users` ADD `salt` varchar(255)[0m
+  [1m[35m (510.9ms)[0m  [1m[35mALTER TABLE `users` ADD `name` varchar(255)[0m
+  [1m[35m (478.8ms)[0m  [1m[35mALTER TABLE `users` ADD `organization` varchar(255)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180506042012')[0m
+  [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveDateFromUsers (20180506043108)
+  [1m[35m (445.4ms)[0m  [1m[35mALTER TABLE `users` DROP `created_at`[0m
+  [1m[35m (524.8ms)[0m  [1m[35mALTER TABLE `users` DROP `updated_at`[0m
+  [1m[35m (467.2ms)[0m  [1m[35mALTER TABLE `users` ADD `created_at` datetime[0m
+  [1m[35m (533.5ms)[0m  [1m[35mALTER TABLE `users` ADD `updated_at` datetime[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180506043108')[0m
+  [1m[35m (74.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveNullFromUsers (20180506051541)
+  [1m[35m (434.5ms)[0m  [1m[35mALTER TABLE `users` DROP `created_at`[0m
+  [1m[35m (611.2ms)[0m  [1m[35mALTER TABLE `users` DROP `updated_at`[0m
+  [1m[35m (522.5ms)[0m  [1m[35mALTER TABLE `users` ADD `created_at` datetime NOT NULL[0m
+  [1m[35m (525.3ms)[0m  [1m[35mALTER TABLE `users` ADD `updated_at` datetime NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180506051541')[0m
+  [1m[35m (53.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddRankToUsers (20180513003444)
+  [1m[35m (445.0ms)[0m  [1m[35mALTER TABLE `users` DROP `username`[0m
+  [1m[35m (567.3ms)[0m  [1m[35mALTER TABLE `users` DROP `email`[0m
+  [1m[35m (511.8ms)[0m  [1m[35mALTER TABLE `users` DROP `encrypted_password`[0m
+  [1m[35m (633.7ms)[0m  [1m[35mALTER TABLE `users` DROP `salt`[0m
+  [1m[35m (422.8ms)[0m  [1m[35mALTER TABLE `users` DROP `name`[0m
+  [1m[35m (536.6ms)[0m  [1m[35mALTER TABLE `users` DROP `organization`[0m
+  [1m[35m (455.6ms)[0m  [1m[35mALTER TABLE `users` DROP `created_at`[0m
+  [1m[35m (533.8ms)[0m  [1m[35mALTER TABLE `users` DROP `updated_at`[0m
+  [1m[35m (744.7ms)[0m  [1m[35mALTER TABLE `users` ADD `username` varchar(255)[0m
+  [1m[35m (490.4ms)[0m  [1m[35mALTER TABLE `users` ADD `email` varchar(255)[0m
+  [1m[35m (535.5ms)[0m  [1m[35mALTER TABLE `users` ADD `encrypted_password` varchar(255)[0m
+  [1m[35m (490.1ms)[0m  [1m[35mALTER TABLE `users` ADD `salt` varchar(255)[0m
+  [1m[35m (566.2ms)[0m  [1m[35mALTER TABLE `users` ADD `name` varchar(255)[0m
+  [1m[35m (511.6ms)[0m  [1m[35mALTER TABLE `users` ADD `organization` varchar(255)[0m
+  [1m[35m (667.5ms)[0m  [1m[35mALTER TABLE `users` ADD `rank` varchar(255)[0m
+  [1m[35m (500.8ms)[0m  [1m[35mALTER TABLE `users` ADD `created_at` datetime NOT NULL[0m
+  [1m[35m (547.3ms)[0m  [1m[35mALTER TABLE `users` ADD `updated_at` datetime NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180513003444')[0m
+  [1m[35m (86.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProjects (20180608115031)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAnswers (20180608131050)
+  [1m[35m (417.2ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608131050')[0m
+  [1m[35m (84.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserRefToAnswers (20180608182630)
+  [1m[35m (477.3ms)[0m  [1m[35mALTER TABLE `answers` ADD `user_id` bigint[0m
+  [1m[35m (243.5ms)[0m  [1m[35mCREATE  INDEX `index_answers_on_user_id`  ON `answers` (`user_id`) [0m
+  [1m[35m (778.2ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608182630')[0m
+  [1m[35m (41.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-08 18:28:11', '2018-06-08 18:28:11')[0m
+  [1m[35m (46.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateProjects (20180608183012)
+  [1m[35m (329.7ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `cost` float, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608183012')[0m
+  [1m[35m (95.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserRefToProject (20180608183133)
+  [1m[35m (477.9ms)[0m  [1m[35mALTER TABLE `projects` ADD `user_id` bigint[0m
+  [1m[35m (232.6ms)[0m  [1m[35mCREATE  INDEX `index_projects_on_user_id`  ON `projects` (`user_id`) [0m
+  [1m[35m (811.2ms)[0m  [1m[35mALTER TABLE `projects` ADD CONSTRAINT `fk_rails_b872a6760a`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608183133')[0m
+  [1m[35m (40.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateImages (20180608183515)
+  [1m[35m (346.3ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608183515')[0m
+  [1m[35m (30.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddProjectRefToImages (20180608183552)
+  [1m[35m (444.4ms)[0m  [1m[35mALTER TABLE `images` ADD `project_id` bigint[0m
+  [1m[35m (232.5ms)[0m  [1m[35mCREATE  INDEX `index_images_on_project_id`  ON `images` (`project_id`) [0m
+  [1m[35m (778.7ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_d34aa88797`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608183552')[0m
+  [1m[35m (98.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (42.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddImageReferenceToAnswers (20180608183742)
+  [1m[35m (938.0ms)[0m  [1m[35mALTER TABLE `answers` ADD `image_id` bigint[0m
+  [1m[35m (232.6ms)[0m  [1m[35mCREATE  INDEX `index_answers_on_image_id`  ON `answers` (`image_id`) [0m
+  [1m[35m (978.2ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_d614baad46`
+FOREIGN KEY (`image_id`)
+  REFERENCES `images` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608183742')[0m
+  [1m[35m (40.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAnswerOpts (20180608183926)
+  [1m[35m (385.0ms)[0m  [1m[35mCREATE TABLE `answer_opts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` text, `nanswers` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608183926')[0m
+  [1m[35m (40.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddProjectRefToAnswerOpt (20180608183948)
+  [1m[35m (444.2ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD `project_id` bigint[0m
+  [1m[35m (234.4ms)[0m  [1m[35mCREATE  INDEX `index_answer_opts_on_project_id`  ON `answer_opts` (`project_id`) [0m
+  [1m[35m (845.0ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_64ebbcb8e8`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608183948')[0m
+  [1m[35m (87.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (33.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateQuestions (20180608184131)
+  [1m[35m (321.0ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nviews` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608184131')[0m
+  [1m[35m (41.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddProjectRefToQuestion (20180608184150)
+  [1m[35m (433.2ms)[0m  [1m[35mALTER TABLE `questions` ADD `project_id` bigint[0m
+  [1m[35m (312.4ms)[0m  [1m[35mCREATE  INDEX `index_questions_on_project_id`  ON `questions` (`project_id`) [0m
+  [1m[35m (799.6ms)[0m  [1m[35mALTER TABLE `questions` ADD CONSTRAINT `fk_rails_170a003733`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608184150')[0m
+  [1m[35m (42.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddQuestionRefToAnswerOpt (20180608184218)
+  [1m[35m (678.6ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD `question_id` bigint[0m
+  [1m[35m (266.2ms)[0m  [1m[35mCREATE  INDEX `index_answer_opts_on_question_id`  ON `answer_opts` (`question_id`) [0m
+  [1m[35m (933.7ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_094c4da436`
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180608184218')[0m
+  [1m[35m (118.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  [1m[35m (32.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
