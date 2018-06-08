@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  link: MyText
+  nviews: 1
+
+two:
+  link: MyText
+  nviews: 1
