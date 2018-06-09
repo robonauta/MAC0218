@@ -8,11 +8,7 @@
       %p.card-text= @post.description
     %ul.list-group.list-group-flush
       %li.list-group-item
-        %button.btn.btn-light{:type => "button"} Cras justo odio
-      %li.list-group-item
-        %button.btn.btn-light{:type => "button"} Dapibus ac facilisis in
-      %li.list-group-item
-        %button.btn.btn-light{:type => "button"} Vestibulum at eros
+        = link_to "Rotular", '/labels/new', :class => 'btn btn-dark'
     .card-body
       %hr
         - if @show_edit
