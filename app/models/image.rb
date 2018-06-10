@@ -1,4 +1,4 @@
 class Image < ApplicationRecord
-	has_many :answers 
-	has_one_attached :file
+    has_many :answers
+    has_one_attached :file
 end

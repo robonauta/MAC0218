@@ -1,5 +1,10 @@
-%h1 New image
-
-= render 'form'
-
-= link_to 'Back', images_path
+%main.inner.cover{:role => "main"}
+  .row.justify-content-center
+    %form
+    = form_for(:image, :url => {:controller => 'images', :action => 'create'}) do |f|
+      %img.mb-4{:alt => "", :height => "72", :src => "https://getbootstrap.com/assets/brand/bootstrap-solid.svg", :width => "72"}/
+      %h1.h3.mb-3.font-weight-normal Image Upload
+      .form-group
+        %label.sr-only{:for => "username"} Arquivo
+        = f.file_field :file, class: 'form-control'
+        %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar

@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :images
-  #get 'file_uploads/new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # Sets the root of the website:
-  
   root 'posts#index'
   # Regular routes:
   get '/about' => 'pages#about'
@@ -19,8 +16,7 @@ Rails.application.routes.draw do
   get '/account' => 'users#show'
   delete '/logout' => 'sessions#destroy'
   get '/settings/account' => 'users#update'
-  get '/upload' => 'file_uploads#new'
-  get '/image' => 'file_uploads#show'
+  get '/upload' => 'images#new'
   
   
   # Resources:
@@ -28,7 +24,6 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
   resources :labels
-  resources :file_uploads
   resources :images
   
 end
