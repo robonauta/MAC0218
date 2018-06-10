@@ -65965,3 +65965,268 @@ Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.9ms)
   [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
 >>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+Migrating to AddProjectRefToImage (20180608193901)
+  [1m[35m (22.1ms)[0m  [1m[35mALTER TABLE `images` ADD `project_id` bigint[0m
+  ↳ db/migrate/20180608193901_add_project_ref_to_image.rb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (420.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito`[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (2563.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito_test`[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `monolito` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `monolito_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answer_opts` CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (873.7ms)[0m  [1m[35mCREATE TABLE `answer_opts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` text, `nanswers` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `question_id` bigint,  INDEX `index_answer_opts_on_question_id`  (`question_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (3154.3ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `image_id` bigint,  INDEX `index_answers_on_image_id`  (`image_id`),  INDEX `index_answers_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  ↳ db/schema.rb:33
+  [1m[35m (769.4ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_images_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (536.7ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `description` text,  INDEX `index_projects_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:42
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `questions` CASCADE[0m
+  ↳ db/schema.rb:51
+  [1m[35m (613.8ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nviews` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_questions_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:51
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  ↳ db/schema.rb:60
+  [1m[35m (591.8ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:60
+  [1m[35m (738.9ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_094c4da436`
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+[0m
+  ↳ db/schema.rb:72
+  [1m[35m (1084.6ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_d614baad46`
+FOREIGN KEY (`image_id`)
+  REFERENCES `images` (`id`)
+[0m
+  ↳ db/schema.rb:73
+  [1m[35m (748.8ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:74
+  [1m[35m (709.8ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_d34aa88797`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:75
+  [1m[35m (882.3ms)[0m  [1m[35mALTER TABLE `projects` ADD CONSTRAINT `fk_rails_b872a6760a`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:76
+  [1m[35m (1301.8ms)[0m  [1m[35mALTER TABLE `questions` ADD CONSTRAINT `fk_rails_170a003733`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:77
+  [1m[35m (713.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (76.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180610162833)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (144.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608193901),
+(20180608184218),
+(20180608184150),
+(20180505165543),
+(20180608183948),
+(20180608183012),
+(20180502170151),
+(20180608183742),
+(20180506051541),
+(20180608183133),
+(20180506043108),
+(20180608183552),
+(20180608183515),
+(20180506042012),
+(20180608183926),
+(20180513003444),
+(20180608184131),
+(20180608182630),
+(20180608131050);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (530.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (10.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-10 20:53:11', '2018-06-10 20:53:11')[0m
+  ↳ db/schema.rb:13
+  [1m[35m (66.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `answer_opts` CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (565.4ms)[0m  [1m[35mCREATE TABLE `answer_opts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` text, `nanswers` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `question_id` bigint,  INDEX `index_answer_opts_on_question_id`  (`question_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (689.7ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `image_id` bigint,  INDEX `index_answers_on_image_id`  (`image_id`),  INDEX `index_answers_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  ↳ db/schema.rb:33
+  [1m[35m (541.8ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_images_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (624.2ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `description` text,  INDEX `index_projects_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:42
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `questions` CASCADE[0m
+  ↳ db/schema.rb:51
+  [1m[35m (738.0ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nviews` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_questions_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:51
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  ↳ db/schema.rb:60
+  [1m[35m (461.3ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:60
+  [1m[35m (2022.9ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_094c4da436`
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+[0m
+  ↳ db/schema.rb:72
+  [1m[35m (1685.1ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_d614baad46`
+FOREIGN KEY (`image_id`)
+  REFERENCES `images` (`id`)
+[0m
+  ↳ db/schema.rb:73
+  [1m[35m (1339.4ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:74
+  [1m[35m (1780.4ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_d34aa88797`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:75
+  [1m[35m (1465.8ms)[0m  [1m[35mALTER TABLE `projects` ADD CONSTRAINT `fk_rails_b872a6760a`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:76
+  [1m[35m (1501.2ms)[0m  [1m[35mALTER TABLE `questions` ADD CONSTRAINT `fk_rails_170a003733`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:77
+  [1m[35m (672.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (51.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180610162833)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (588.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608193901),
+(20180608184218),
+(20180608184150),
+(20180505165543),
+(20180608183948),
+(20180608183012),
+(20180502170151),
+(20180608183742),
+(20180506051541),
+(20180608183133),
+(20180506043108),
+(20180608183552),
+(20180608183515),
+(20180506042012),
+(20180608183926),
+(20180513003444),
+(20180608184131),
+(20180608182630),
+(20180608131050);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (560.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-10 20:53:27', '2018-06-10 20:53:27')[0m
+  ↳ db/schema.rb:13
+  [1m[35m (77.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (16.5ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (76.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
