@@ -28,6 +28,8 @@ class ProjectsController < ApplicationController
       
       if (@project.save)
           @image = @project.images.create!(image_params)
+          @image.file.attach(params[:project][:files])
+          @image.save!
           redirect_to '/'
       else
         render 'new'
