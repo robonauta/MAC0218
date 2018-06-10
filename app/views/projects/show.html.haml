@@ -1,0 +1,20 @@
+%main.inner.cover{:role => "main"}
+.row.justify-content-center
+  .card
+    .text-center
+      %img.card-img-top.img-fluid.img-question{:alt => "Card image cap", :src => "orange.jpeg"}/
+    .card-body
+      %h5.card-title= @project.title
+      -#%p.card-text= @project.description
+    %ul.list-group.list-group-flush
+      %li.list-group-item
+        = link_to "Rotular", '/labels/new', :class => 'btn btn-dark'
+    .card-body
+      %hr
+        - if @show_edit
+          %a.card-link{:href => "#"}
+          = link_to "Edit", edit_project_path(@project), :class => 'btn btn-default'
+          %a.card-link{:href => "#"}
+          = link_to "Delete", project_path(@project), 
+                    method: :delete, data: { confirm: 'Are you sure?' },
+                    :class => 'btn btn-danger'
