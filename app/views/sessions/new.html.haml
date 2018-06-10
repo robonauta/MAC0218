@@ -5,9 +5,9 @@
       %img.mb-4{:alt => "", :height => "72", :src => "https://getbootstrap.com/assets/brand/bootstrap-solid.svg", :width => "72"}/
       %h1.h3.mb-3.font-weight-normal Login
       %label.sr-only{:for => "email"} Endereço de e-mail            
-      = f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => ""
+      = f.text_field :email, class: 'form-control', id: 'email', :placeholder => "E-mail", :required => ""
       %label.sr-only{:for => "password"} Senha
-      = f.password_field :password, class: 'form-control', :placeholder => "Senha", :required => ""
+      = f.password_field :password, class: 'form-control', id: 'password', :placeholder => "Senha", :required => ""
       .checkbox.mb-3
         %br/
         %label
