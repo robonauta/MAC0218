@@ -8,7 +8,6 @@ RSpec.feature 'Visitor signs in' do
     sign_in_with 'test@test.com', 'xuxuxu'
     #save_and_open_page
     expect(page).to have_content('Novo projeto')
-    DatabaseCleaner.clean
   end
 
   scenario 'with invalid email' do
@@ -23,9 +22,10 @@ RSpec.feature 'Visitor signs in' do
 
   def sign_in_with(email, password)
     visit '/sessions/new'
-    user = create(:user)
+    @user = build(:user)
     fill_in 'email', with: email, visible: false
     fill_in 'password', with: password, visible: false
     click_button 'Entrar'
   end
+  DatabaseCleaner.clean
 end
