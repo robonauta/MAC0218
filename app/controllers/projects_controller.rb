@@ -25,11 +25,15 @@ class ProjectsController < ApplicationController
 #      render plain: params[:project].inspect
       @project = Project.new(project_params)
       @project.user_id = current_user.id
-      
       if (@project.save)
-          @image = @project.images.create!(image_params)
-          @image.file.attach(params[:project][:files])
-          @image.save!
+#          @image = @project.images.create!(image_params)
+#          @image.file.attach(params[:project][:files])
+#          @image.save!
+          params[:project][:files].each { |upload|
+            @image = @project.images.create()
+            @image.file.attach(upload)
+            @image.save!
+          }
           redirect_to '/'
       else
         render 'new'
