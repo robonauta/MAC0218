@@ -1,7 +1,7 @@
 .row.justify-content-center
   %main.inner.cover{:role => "main"}
     %form.form-signin          
-    = form_for :post, :url => {:controller => 'posts', :action => 'update'}, :method => "patch" do |f|
+    = form_for :project, :url => {:controller => 'projects', :action => 'update'}, :method => "patch" do |f|
       %h1.h3.mb-3.font-weight-normal Atualizar projeto
       %label.sr-only{:for => "email"} Título            
       = f.text_field :title, class: 'form-control', :placeholder => "Título", :required => ""
