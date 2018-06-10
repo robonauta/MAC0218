@@ -23,20 +23,21 @@ class ProjectsController < ApplicationController
     end
   
     def create
-      @project = Project.new
-#      @project.name = project_params[:project][:name]
-      @project.user_id = current_user.id
-      @project.images.build(project_params[:project][:files])
-#      for file in project_params[:project][:files] do 
-#
-#        puts 'testee'
+      render plain: params[:project].inspect
+#      @project = Project.new
+##      @project.name = project_params[:project][:name]
+#      @project.user_id = current_user.id
+#      @project.images.build(project_params[:project][:files])
+##      for file in project_params[:project][:files] do 
+##
+##        puts 'testee'
+##      end
+#      
+#      if(@project.save)
+#        redirect_to '/'
+#      else
+#        render 'new'
 #      end
-      
-      if(@project.save)
-        redirect_to '/'
-      else
-        render 'new'
-      end
       
     end
   
@@ -63,7 +64,7 @@ class ProjectsController < ApplicationController
   
     def dashboard
       @projects = Project.all
-#      render plain: params[:post].inspect
+
       render 'dashboard'
     end
 

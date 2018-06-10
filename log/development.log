@@ -61668,3 +61668,53 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 137ms (Views: 135.3ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/login" for 127.0.0.1 at 2018-06-10 04:03:01 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 740ms (Views: 728.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-06-10 04:03:06 -0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VLKm8kY/AuPYfZRjpeXK054QGaIDEUa4Xi0bHfYGLnz527uOWj52lB35Gu+uNBOI3IQhRqRQ9rdiGprXT2/HIg==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  ↳ app/models/user.rb:25
+Redirected to http://localhost:3000/
+Completed 302 Found in 117ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 04:03:06 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (33.8ms)
+Completed 200 OK in 247ms (Views: 242.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 04:03:09 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 161ms (Views: 155.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 04:03:19 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NBSoAptoLqE2nZcDLNKspulC+fhoRqghX5YB2eVwZPiZfbV+h2la1vMZGY8nA3X9q9bBHM8HGC5joYATXBmNpg==", "project"=>{"title"=>"sakjslkaj", "description"=>"alksjals", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c5b3827e8 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-2960-1s5599g.jpeg>, @original_filename="oi.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"oi.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
