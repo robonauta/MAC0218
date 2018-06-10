@@ -6,21 +6,21 @@
       %h1.h3.mb-3.font-weight-normal Cadastro
       .form-group
         %label.sr-only{:for => "username"} Nome de usuário
-        = f.text_field :username, class: 'form-control', :placeholder => "Username", :required => ""
+        = f.text_field :username, class: 'form-control', id: 'username', :placeholder => "Username", :required => ""
       .form-group
         %label.sr-only{:for => "text"} E-mail
-        = f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => "", :type => "email"
+        = f.text_field :email, class: 'form-control', id: 'email', :placeholder => "Endereço de e-mail", :required => "", :type => "email"
       .form-group
         %label.sr-only{:for => "text"} Senha
-        = f.password_field :password, class: 'form-control', :placeholder => "Senha", :required => ""
+        = f.password_field :password, class: 'form-control', id: 'password', :placeholder => "Senha", :required => ""
         %label.sr-only{:for => "text"} Confirme sua senha
-        = f.password_field :password_confirmation, class: 'form-control', :placeholder => "Confirme sua senha", :required => ""
+        = f.password_field :password_confirmation, class: 'form-control', id: 'confpassword', :placeholder => "Confirme sua senha", :required => ""
       .form-group
         %label.sr-only{:for => "text"} Nome completo
-        = f.text_field :name, class: 'form-control', :placeholder => "Nome completo", :required => ""
+        = f.text_field :name, class: 'form-control', id: 'name', :placeholder => "Nome completo", :required => ""
       .form-group
         %label.sr-only{:for => "text"} Organização (opcional)
-        = f.text_field :organization, class: 'form-control', :placeholder => "Organização (opcional)"
+        = f.text_field :organization, class: 'form-control', id: 'org', :placeholder => "Organização (opcional)"
         %br/
         %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Registrar
         - if @user.errors.any?
