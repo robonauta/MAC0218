@@ -58155,3 +58155,1450 @@ Completed 404 Not Found in 3ms (ActiveRecord: 1.6ms)
 ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=orange):
   
 app/controllers/posts_controller.rb:9:in `show'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-06-09 22:37:14 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateActiveStorageTables (20180610011253)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-06-09 22:37:36 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-06-09 22:37:38 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateActiveStorageTables (20180610011253)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-06-09 22:39:55 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [50 times] (12.9ms)
+  Rendered /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-09 23:13:47 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 6434ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /home/eduardo/MAC0218/MAC0218/app/assets/config
+  /home/eduardo/MAC0218/MAC0218/app/assets/images
+  /home/eduardo/MAC0218/MAC0218/app/assets/javascripts
+  /home/eduardo/MAC0218/MAC0218/app/assets/stylesheets
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.0/lib/assets/compiled
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.0/app/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.0/lib/assets/compiled
+  /home/eduardo/MAC0218/MAC0218/node_modules
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.12.9/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.1/assets/stylesheets
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.1/assets/javascripts):
+     8:     = csrf_meta_tags
+     9:     /= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    10:     /= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    11:     = stylesheet_link_tag    'application', media: 'all'
+    12:     = javascript_include_tag 'application'
+    13:     
+    14:   %body
+  
+app/assets/javascripts/application.js:20
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml__3724028252047916676_69839898614600'
+app/controllers/posts_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2018-06-09 23:14:51 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /home/eduardo/MAC0218/MAC0218/app/assets/config
+  /home/eduardo/MAC0218/MAC0218/app/assets/images
+  /home/eduardo/MAC0218/MAC0218/app/assets/javascripts
+  /home/eduardo/MAC0218/MAC0218/app/assets/stylesheets
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.0/lib/assets/compiled
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.0/app/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.0/lib/assets/compiled
+  /home/eduardo/MAC0218/MAC0218/node_modules
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.12.9/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.1/assets/stylesheets
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.1/assets/javascripts):
+     8:     = csrf_meta_tags
+     9:     /= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    10:     /= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    11:     = stylesheet_link_tag    'application', media: 'all'
+    12:     = javascript_include_tag 'application'
+    13:     
+    14:   %body
+  
+app/assets/javascripts/application.js:20
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___2272667511092215408_69813121295380'
+app/controllers/posts_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2018-06-09 23:18:05 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /home/eduardo/MAC0218/MAC0218/app/assets/config
+  /home/eduardo/MAC0218/MAC0218/app/assets/images
+  /home/eduardo/MAC0218/MAC0218/app/assets/javascripts
+  /home/eduardo/MAC0218/MAC0218/app/assets/stylesheets
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.0/lib/assets/compiled
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.0/app/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.0/lib/assets/compiled
+  /home/eduardo/MAC0218/MAC0218/node_modules
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.12.9/assets/javascripts
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.1/assets/stylesheets
+  /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.1.1/assets/javascripts):
+     8:     = csrf_meta_tags
+     9:     /= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    10:     /= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    11:     = stylesheet_link_tag    'application', media: 'all'
+    12:     = javascript_include_tag 'application'
+    13:     
+    14:   %body
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml__4392593909546380633_70116486914280'
+app/controllers/posts_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2018-06-09 23:19:04 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 6267ms (Views: 6259.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:19:21 -0300
+Processing by FileUploadsController#new as HTML
+Completed 404 Not Found in 287ms (ActiveRecord: 201.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image without an ID):
+  
+app/controllers/file_uploads_controller.rb:3:in `new'
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:21:40 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"file_uploads", :image_id=>nil}, missing required keys: [:image_id]):
+     5:   Progress:
+     6:   = succeed "%" do
+     7:     %span.progress_count
+     8: = form_with model: @image, url: image_file_uploads_path(@image), method: :post, id: "upload_file", local: true do |f|
+     9:   = f.file_field :files, multiple: true, direct_upload: true
+    10:   %br/
+    11:   %br/
+  
+app/views/file_uploads/new.html.haml:8:in `_app_views_file_uploads_new_html_haml___2903060269574979609_70068404724420'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateImages (20180610023014)
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20180610023014_create_images.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for 127.0.0.1 at 2018-06-09 23:31:49 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (13.9ms)
+Completed 200 OK in 4753ms (Views: 4745.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:32:02 -0300
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"create", :controller=>"file_uploads", :image_id=>nil}, missing required keys: [:image_id]):
+     5:   Progress:
+     6:   = succeed "%" do
+     7:     %span.progress_count
+     8: = form_with model: @image, url: image_file_uploads_path(@image), method: :post, id: "upload_file", local: true do |f|
+     9:   = f.file_field :files, multiple: true, direct_upload: true
+    10:   %br/
+    11:   %br/
+  
+app/views/file_uploads/new.html.haml:8:in `_app_views_file_uploads_new_html_haml___2545693067291738979_70224260951840'
+Started GET "/" for 127.0.0.1 at 2018-06-09 23:40:37 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 358ms (Views: 350.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:40:45 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+Completed 404 Not Found in 14ms (ActiveRecord: 4.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image without an ID):
+  
+app/controllers/file_uploads_controller.rb:3:in `new'
+Started GET "/" for 127.0.0.1 at 2018-06-09 23:43:08 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 286ms (Views: 278.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:43:13 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (256.6ms)
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_file_uploads_path' for #<#<Class:0x00007f8828b12eb8>:0x00007f8828af5638>
+Did you mean?  edit_file_upload_path
+               new_file_upload_path):
+     5:   Progress:
+     6:   = succeed "%" do
+     7:     %span.progress_count
+     8: = form_with model: @image, url: image_file_uploads_path(@image), method: :post, id: "upload_file", local: true do |f|
+     9:   = f.file_field :files, multiple: true, direct_upload: true
+    10:   %br/
+    11:   %br/
+  
+app/views/file_uploads/new.html.haml:8:in `_app_views_file_uploads_new_html_haml__884516984569612098_70111387529580'
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:44:36 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (168.3ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_image_file_uploads_path' for #<#<Class:0x000055dd8789b0d8>:0x000055dd87898478>
+Did you mean?  new_file_upload_path):
+     5:   Progress:
+     6:   = succeed "%" do
+     7:     %span.progress_count
+     8: = form_with model: @image, url: new_image_file_uploads_path(@image), method: :post, id: "upload_file", local: true do |f|
+     9:   = f.file_field :files, multiple: true, direct_upload: true
+    10:   %br/
+    11:   %br/
+  
+app/views/file_uploads/new.html.haml:8:in `_app_views_file_uploads_new_html_haml__1521679561386566035_47204975042320'
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:44:59 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (24.9ms)
+Completed 200 OK in 335ms (Views: 320.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-09 23:45:22 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"UAU.png", "content_type"=>"image/png", "byte_size"=>193574, "checksum"=>"N3GdcfuYAW+p+rLszHrKOQ=="}, "direct_upload"=>{"blob"=>{"filename"=>"UAU.png", "content_type"=>"image/png", "byte_size"=>193574, "checksum"=>"N3GdcfuYAW+p+rLszHrKOQ=="}}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('fezhJqSLZo8CkFPadSYeRhf4', 'UAU.png', 'image/png', 193574, 'N3GdcfuYAW+p+rLszHrKOQ==', '2018-06-10 02:45:22')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (45.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (2.0ms) [0m[34mGenerated URL for file at key: fezhJqSLZo8CkFPadSYeRhf4 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRabVY2YUVweFUweGFiemhEYTBaUVlXUlRXV1ZTYUdZMEJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNbTlBSTZEV05vWldOcmMzVnRTU0lkVGpOSFpHTm1kVmxCVnl0d0szSk1jM3BJY2t0UFVUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTA6MjIuMjQzWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--c493210f65985fa3dce9424a455cf480ef2b01e5)[0m
+Completed 200 OK in 127ms (Views: 1.6ms | ActiveRecord: 47.4ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRabVY2YUVweFUweGFiemhEYTBaUVlXUlRXV1ZTYUdZMEJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNbTlBSTZEV05vWldOcmMzVnRTU0lkVGpOSFpHTm1kVmxCVnl0d0szSk1jM3BJY2t0UFVUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTA6MjIuMjQzWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--c493210f65985fa3dce9424a455cf480ef2b01e5" for 127.0.0.1 at 2018-06-09 23:45:22 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRabVY2YUVweFUweGFiemhEYTBaUVlXUlRXV1ZTYUdZMEJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNbTlBSTZEV05vWldOcmMzVnRTU0lkVGpOSFpHTm1kVmxCVnl0d0szSk1jM3BJY2t0UFVUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTA6MjIuMjQzWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--c493210f65985fa3dce9424a455cf480ef2b01e5"}
+[36m  Disk Storage (3.1ms) [0m[32mUploaded file to key: fezhJqSLZo8CkFPadSYeRhf4 (checksum: N3GdcfuYAW+p+rLszHrKOQ==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-09 23:45:22 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Iulvyf7e2tNKrxlEHG0JP6zf17KWIjjxqbZuTiAplW7V8/RFEvmMFODlgoZqHjv2g1cpIuF3ui6CvqMuXLjx6Q==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ab20b893ac591f32a3e640b2930262efeb650f2f"]}, "commit"=>"Upload"}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image without an ID):
+  
+app/controllers/file_uploads_controller.rb:7:in `create'
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:46:22 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+Completed 404 Not Found in 8ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image without an ID):
+  
+app/controllers/file_uploads_controller.rb:3:in `new'
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:50:06 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 256ms (Views: 243.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-09 23:50:14 -0300
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('kjTYQrLqDAdVg9kCUeDGx8bD', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 02:50:14')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (527.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: kjTYQrLqDAdVg9kCUeDGx8bD (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRhMnBVV1ZGeVRIRkVRV1JXWnpsclExVmxSRWQ0T0dKRUJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTU6MTQuOTk5WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--355d608c085d16fa6a26a1d055f3943ada33bd78)[0m
+Completed 200 OK in 578ms (Views: 0.7ms | ActiveRecord: 529.6ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRhMnBVV1ZGeVRIRkVRV1JXWnpsclExVmxSRWQ0T0dKRUJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTU6MTQuOTk5WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--355d608c085d16fa6a26a1d055f3943ada33bd78" for 127.0.0.1 at 2018-06-09 23:50:15 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRhMnBVV1ZGeVRIRkVRV1JXWnpsclExVmxSRWQ0T0dKRUJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTU6MTQuOTk5WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--355d608c085d16fa6a26a1d055f3943ada33bd78"}
+[36m  Disk Storage (2.4ms) [0m[32mUploaded file to key: kjTYQrLqDAdVg9kCUeDGx8bD (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 27ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-09 23:50:15 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pfd/6WQW8yroOEtF6XMotkjiPeimAT70zbLPNLIL/3rK7eRliDGl7UJy0IefABp/Z2rDeNFUvCvmugJUzpqb/Q==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b111df3aa7a3f48c5cc3a3a3abad05a22a057690"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `files' for #<Image:0x00007f4551b34668>):
+  
+app/controllers/file_uploads_controller.rb:8:in `create'
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:52:27 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 318ms (Views: 300.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-09 23:52:34 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.9ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('XqfSWsNFWVJNYt2uagRKHpk2', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 02:52:34')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (66.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.7ms) [0m[34mGenerated URL for file at key: XqfSWsNFWVJNYt2uagRKHpk2 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRXSEZtVTFkelRrWlhWa3BPV1hReWRXRm5Va3RJY0dzeUJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTc6MzQuMjYyWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--06385f40cf68591c6b583a744769cdf94cb1c4f3)[0m
+Completed 200 OK in 105ms (Views: 0.5ms | ActiveRecord: 69.2ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRXSEZtVTFkelRrWlhWa3BPV1hReWRXRm5Va3RJY0dzeUJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTc6MzQuMjYyWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--06385f40cf68591c6b583a744769cdf94cb1c4f3" for 127.0.0.1 at 2018-06-09 23:52:34 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRXSEZtVTFkelRrWlhWa3BPV1hReWRXRm5Va3RJY0dzeUJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTc6MzQuMjYyWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--06385f40cf68591c6b583a744769cdf94cb1c4f3"}
+[36m  Disk Storage (3.1ms) [0m[32mUploaded file to key: XqfSWsNFWVJNYt2uagRKHpk2 (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 43ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-09 23:52:34 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9PxWuzinCFPNG+pI3gbjryHURwYwDfQzCueVFvdCIDgD5s031IBelGdRcYqoddFmDly5lkdYduwh71h2i9NEvw==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3d4f756910a7ba717cf8fcfeb095e2fc7d634c55"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `files' for #<Image:0x00007f9b96605a98>
+Did you mean?  file
+               file=):
+  
+app/controllers/file_uploads_controller.rb:8:in `create'
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:53:00 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 304ms (Views: 283.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-09 23:53:06 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('y5PcruiBvBtHXTxBi8qwBfPB', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 02:53:06')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (91.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: y5PcruiBvBtHXTxBi8qwBfPB (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRlVFZRWTNKMWFVSjJRblJJV0ZSNFFtazRjWGRDWmxCQ0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTg6MDYuMzMwWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--7bd675b64667100d99013f187b9cbe6fa4eb7648)[0m
+Completed 200 OK in 141ms (Views: 0.7ms | ActiveRecord: 94.2ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRlVFZRWTNKMWFVSjJRblJJV0ZSNFFtazRjWGRDWmxCQ0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTg6MDYuMzMwWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--7bd675b64667100d99013f187b9cbe6fa4eb7648" for 127.0.0.1 at 2018-06-09 23:53:06 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRlVFZRWTNKMWFVSjJRblJJV0ZSNFFtazRjWGRDWmxCQ0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTg6MDYuMzMwWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--7bd675b64667100d99013f187b9cbe6fa4eb7648"}
+[36m  Disk Storage (1.8ms) [0m[32mUploaded file to key: y5PcruiBvBtHXTxBi8qwBfPB (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 30ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-09 23:53:06 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Or4JgtueEEdOFLlFkkhKIwcELIg9HJPP4w7oEpmG+rnNpJION7lGgOReIofkO3jqKIzSGEpJERDIBiVy5ReePg==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f731ed3affe91603e19db21146fcfc4d93682cbb"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `files' for #<Image:0x00007fd98815f5b8>
+Did you mean?  file
+               file=):
+  
+app/controllers/file_uploads_controller.rb:8:in `create'
+Started GET "/upload" for 127.0.0.1 at 2018-06-09 23:53:35 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 269ms (Views: 254.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-09 23:53:41 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (1.0ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('G7zFfE8Fi5UoAJTGzdPP81Ph', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 02:53:41')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (50.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (3.0ms) [0m[34mGenerated URL for file at key: G7zFfE8Fi5UoAJTGzdPP81Ph (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRSemQ2Um1aRk9FWnBOVlZ2UVVwVVIzcGtVRkE0TVZCb0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTg6NDEuOTU1WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--f6c393be31bd689fd02e55aa68329b6d939ed9e8)[0m
+Completed 200 OK in 85ms (Views: 1.3ms | ActiveRecord: 53.2ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRSemQ2Um1aRk9FWnBOVlZ2UVVwVVIzcGtVRkE0TVZCb0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTg6NDEuOTU1WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--f6c393be31bd689fd02e55aa68329b6d939ed9e8" for 127.0.0.1 at 2018-06-09 23:53:42 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRSemQ2Um1aRk9FWnBOVlZ2UVVwVVIzcGtVRkE0TVZCb0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDI6NTg6NDEuOTU1WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--f6c393be31bd689fd02e55aa68329b6d939ed9e8"}
+[36m  Disk Storage (5.5ms) [0m[32mUploaded file to key: G7zFfE8Fi5UoAJTGzdPP81Ph (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 45ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-09 23:53:42 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BAuId4qXxrbHcZQcqLf6cNoM/gffUogMPoXRdS+uSE/zERP7ZrCQcW07D97exMi59YQAl6gHCtMVjRwVUz8syA==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--902f8f9eff090ac10d86baf856f1a35fb4859978"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 3.3ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"images", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/file_uploads_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2018-06-10 00:13:04 -0300
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 335ms (Views: 326.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2018-06-10 00:13:07 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 103ms (Views: 84.3ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-10 00:13:16 -0300
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('sfH4tpyQqJ4b8VFq7DebCHSw', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 03:13:16')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (131.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: sfH4tpyQqJ4b8VFq7DebCHSw (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRjMlpJTkhSd2VWRnhTalJpT0ZaR2NUZEVaV0pEU0ZOM0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MTg6MTYuOTYwWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--af54250c175841a1f7d54274b2106747b83b69c2)[0m
+Completed 200 OK in 159ms (Views: 0.3ms | ActiveRecord: 133.2ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRjMlpJTkhSd2VWRnhTalJpT0ZaR2NUZEVaV0pEU0ZOM0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MTg6MTYuOTYwWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--af54250c175841a1f7d54274b2106747b83b69c2" for 127.0.0.1 at 2018-06-10 00:13:16 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRjMlpJTkhSd2VWRnhTalJpT0ZaR2NUZEVaV0pEU0ZOM0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MTg6MTYuOTYwWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--af54250c175841a1f7d54274b2106747b83b69c2"}
+[36m  Disk Storage (1.4ms) [0m[32mUploaded file to key: sfH4tpyQqJ4b8VFq7DebCHSw (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 25ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-10 00:13:17 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KETmklkqgg6AJgIcNdUkbGkhiuRgiBgv3sa8iRlOcqzfXn0etQ3UySpsmd5DphalRql0dBfdmvD1znHpZd8WKw==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e88ecee78d7239a6bc689b805b5d4bb6127eb624"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"images", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/file_uploads_controller.rb:9:in `create'
+Started GET "/file_uploads" for 127.0.0.1 at 2018-06-10 00:14:58 -0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for FileUploadsController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-10 00:15:05 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KETmklkqgg6AJgIcNdUkbGkhiuRgiBgv3sa8iRlOcqzfXn0etQ3UySpsmd5DphalRql0dBfdmvD1znHpZd8WKw==", "commit"=>"Upload"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: image):
+  
+app/controllers/file_uploads_controller.rb:19:in `image_params'
+app/controllers/file_uploads_controller.rb:7:in `create'
+Started GET "/" for 127.0.0.1 at 2018-06-10 00:22:08 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 298ms (Views: 291.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2018-06-10 00:22:13 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 99ms (Views: 79.8ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-10 00:22:18 -0300
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.8ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('NUqCMUnF1Js2Xq4gRM1yFFTe', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 03:22:18')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (48.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (2.6ms) [0m[34mGenerated URL for file at key: NUqCMUnF1Js2Xq4gRM1yFFTe (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRUbFZ4UTAxVmJrWXhTbk15V0hFMFoxSk5NWGxHUmxSbEJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6Mjc6MTguMTk4WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--ee37cea4a38149fb070f1707f6d61bebf38cddbe)[0m
+Completed 200 OK in 84ms (Views: 2.1ms | ActiveRecord: 49.8ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRUbFZ4UTAxVmJrWXhTbk15V0hFMFoxSk5NWGxHUmxSbEJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6Mjc6MTguMTk4WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--ee37cea4a38149fb070f1707f6d61bebf38cddbe" for 127.0.0.1 at 2018-06-10 00:22:18 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRUbFZ4UTAxVmJrWXhTbk15V0hFMFoxSk5NWGxHUmxSbEJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6Mjc6MTguMTk4WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--ee37cea4a38149fb070f1707f6d61bebf38cddbe"}
+[36m  Disk Storage (3.9ms) [0m[32mUploaded file to key: NUqCMUnF1Js2Xq4gRM1yFFTe (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 32ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-10 00:22:18 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ldd25SAPsCekTBbs6hT85dTTGm2YZwPXXamJXDbJz+9ize1pzCjm4A4GjS6cZ84s+1vk/e8ygQh2oUQ8SliraA==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--408051951cf822ff8f482e5a6221f4b1cce1dcce"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`) VALUES ('2018-06-10 03:22:18', '2018-06-10 03:22:18')[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[35m (50.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+Redirected to http://localhost:3000/images/1
+Completed 302 Found in 65ms (ActiveRecord: 51.0ms)
+
+
+Started GET "/images/1" for 127.0.0.1 at 2018-06-10 00:22:18 -0300
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:68
+Completed 404 Not Found in 42ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image without an ID):
+  
+app/controllers/images_controller.rb:13:in `show'
+Started GET "/images/1" for 127.0.0.1 at 2018-06-10 00:23:12 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  Rendered images/show.html.haml within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Image:0x00007f78e44fa6a0>):
+    1: %p#notice= notice
+    2: %h3= @image.name
+    3: = link_to 'Edit', edit_image_path(@image)
+    4: |
+    5: = link_to 'Back', image_path
+  
+app/views/images/show.html.haml:2:in `_app_views_images_show_html_haml___243692746585329546_70078605145980'
+Started GET "/upload" for 127.0.0.1 at 2018-06-10 00:23:17 -0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 319ms (Views: 313.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-10 00:23:23 -0300
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('tkd19eq3F7s7Jcu46BHou8Uw', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 03:23:23')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (84.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: tkd19eq3F7s7Jcu46BHou8Uw (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRkR3RrTVRsbGNUTkdOM00zU21OMU5EWkNTRzkxT0ZWM0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6Mjg6MjMuODc2WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--92033b3bd942f99ff79168226b886c5fe8d8be9a)[0m
+Completed 200 OK in 123ms (Views: 0.3ms | ActiveRecord: 87.1ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRkR3RrTVRsbGNUTkdOM00zU21OMU5EWkNTRzkxT0ZWM0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6Mjg6MjMuODc2WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--92033b3bd942f99ff79168226b886c5fe8d8be9a" for 127.0.0.1 at 2018-06-10 00:23:23 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRkR3RrTVRsbGNUTkdOM00zU21OMU5EWkNTRzkxT0ZWM0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6Mjg6MjMuODc2WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--92033b3bd942f99ff79168226b886c5fe8d8be9a"}
+[36m  Disk Storage (1.5ms) [0m[32mUploaded file to key: tkd19eq3F7s7Jcu46BHou8Uw (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 28ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-10 00:23:23 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u/0Iwugd8XRAU6Ma3mHZTlFzQM4PUoBo90SzbPLbvJdM55NOBDqns+oZONioEuuHfvu+XngHArfcTH4MjkrYEA==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c988088ecd27739b6d36e09894402ea4c48d2f2c"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[36mImage Create (0.2ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`) VALUES ('2018-06-10 03:23:23', '2018-06-10 03:23:23')[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[35m (149.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+Redirected to http://localhost:3000/images/2
+Completed 302 Found in 161ms (ActiveRecord: 149.9ms)
+
+
+Started GET "/images/2" for 127.0.0.1 at 2018-06-10 00:23:24 -0300
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  Rendered images/show.html.haml within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Image:0x00007f78dc196408>):
+    1: %p#notice= notice
+    2: %h3= @image.name
+    3: = link_to 'Edit', edit_image_path(@image)
+    4: |
+    5: = link_to 'Back', image_path
+  
+app/views/images/show.html.haml:2:in `_app_views_images_show_html_haml___243692746585329546_70078532724860'
+Started GET "/upload" for 127.0.0.1 at 2018-06-10 00:24:44 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 262ms (Views: 247.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-10 00:24:50 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('37oSCUVK1T9b1ZJzD3eVwySN', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 03:24:50')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (88.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (2.6ms) [0m[34mGenerated URL for file at key: 37oSCUVK1T9b1ZJzD3eVwySN (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRNemR2VTBOVlZrc3hWRGxpTVZwS2VrUXpaVlozZVZOT0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6Mjk6NTAuOTE0WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--32243d99db9f6f4cfb0d51b87b20275e913f5372)[0m
+Completed 200 OK in 123ms (Views: 2.2ms | ActiveRecord: 89.6ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRNemR2VTBOVlZrc3hWRGxpTVZwS2VrUXpaVlozZVZOT0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6Mjk6NTAuOTE0WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--32243d99db9f6f4cfb0d51b87b20275e913f5372" for 127.0.0.1 at 2018-06-10 00:24:50 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRNemR2VTBOVlZrc3hWRGxpTVZwS2VrUXpaVlozZVZOT0Jqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6Mjk6NTAuOTE0WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--32243d99db9f6f4cfb0d51b87b20275e913f5372"}
+[36m  Disk Storage (3.2ms) [0m[32mUploaded file to key: 37oSCUVK1T9b1ZJzD3eVwySN (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 33ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-10 00:24:51 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WOAkxCryQLxDUoseIJZ2uOPGtu9Pp27Kr4pAyQj6/nyv+r9IxtUWe+kYENxW5URxzE5Ifzjy7BWEgo2pdGua+w==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cada881a7ff8d6d2706d8fafb6e3796e5eb45e40"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`) VALUES ('2018-06-10 03:24:51', '2018-06-10 03:24:51')[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[35m (47.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+Redirected to http://localhost:3000/images/3
+Completed 302 Found in 60ms (ActiveRecord: 48.0ms)
+
+
+Started GET "/images/3" for 127.0.0.1 at 2018-06-10 00:24:51 -0300
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  Rendered images/show.html.haml within layouts/application (194.4ms)
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_image_file_uploads_path' for #<#<Class:0x00007f8c3a4599a8>:0x00007f8c3a443dd8>
+Did you mean?  new_file_upload_path):
+    4: |
+    5: = link_to 'Back', image_path
+    6: |
+    7: = link_to 'Upload Files', new_image_file_uploads_path(@image)
+    8: %h5 Files
+    9: %ul
+   10:   - @image.files.each do |file|
+  
+app/views/images/show.html.haml:7:in `_app_views_images_show_html_haml___1455120177304081245_70120124895520'
+Started GET "/" for 127.0.0.1 at 2018-06-10 00:25:24 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 308ms (Views: 300.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2018-06-10 00:25:29 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 88ms (Views: 66.5ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-10 00:25:36 -0300
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('wmtLh7zHqYnRgLGXop9akxxo', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 03:25:36')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (90.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (2.0ms) [0m[34mGenerated URL for file at key: wmtLh7zHqYnRgLGXop9akxxo (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRkMjEwVEdnM2VraHhXVzVTWjB4SFdHOXdPV0ZyZUhodkJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzA6MzYuOTA2WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--04366460c18b358318328ca6a965219ee47b6e1f)[0m
+Completed 200 OK in 129ms (Views: 1.8ms | ActiveRecord: 92.7ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRkMjEwVEdnM2VraHhXVzVTWjB4SFdHOXdPV0ZyZUhodkJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzA6MzYuOTA2WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--04366460c18b358318328ca6a965219ee47b6e1f" for 127.0.0.1 at 2018-06-10 00:25:36 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRkMjEwVEdnM2VraHhXVzVTWjB4SFdHOXdPV0ZyZUhodkJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzA6MzYuOTA2WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--04366460c18b358318328ca6a965219ee47b6e1f"}
+[36m  Disk Storage (4.8ms) [0m[32mUploaded file to key: wmtLh7zHqYnRgLGXop9akxxo (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 34ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-10 00:25:37 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VCBIChpDbrvVRNvAFLT+FAHNokfp+G7bc3+E34gR2nujOtOG9mQ4fH8OQAJix8zdLkVc156t7ARYd0m/9IC+/A==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8e02586b741985d636e00d316e446e0adbdc5246"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[36mImage Create (0.2ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`) VALUES ('2018-06-10 03:25:37', '2018-06-10 03:25:37')[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[35m (93.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+Redirected to http://localhost:3000/images/4
+Completed 302 Found in 104ms (ActiveRecord: 94.5ms)
+
+
+Started GET "/images/4" for 127.0.0.1 at 2018-06-10 00:25:37 -0300
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  Rendered images/show.html.haml within layouts/application (192.8ms)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_file_uploads_path' for #<#<Class:0x00007f06d0221950>:0x00007f06d0217e78>
+Did you mean?  new_file_upload_path
+               new_file_upload_url
+               edit_file_upload_path):
+    4: |
+    5: = link_to 'Back', image_path
+    6: |
+    7: = link_to 'Upload Files', new_file_uploads_path(@image)
+    8: %h5 Files
+    9: %ul
+   10:   - @image.files.each do |file|
+  
+app/views/images/show.html.haml:7:in `_app_views_images_show_html_haml__4141647544919104734_69833619214500'
+Started GET "/upload" for 127.0.0.1 at 2018-06-10 00:26:30 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 221ms (Views: 206.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-10 00:26:39 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('1fErAAzdtQrV9xXAM6cJSMNC', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 03:26:39')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (87.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: 1fErAAzdtQrV9xXAM6cJSMNC (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRNV1pGY2tGQmVtUjBVWEpXT1hoWVFVMDJZMHBUVFU1REJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzE6MzkuODc1WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--5fe990df9f1e3c8298761788a504f4dadac698e2)[0m
+Completed 200 OK in 137ms (Views: 1.3ms | ActiveRecord: 89.6ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRNV1pGY2tGQmVtUjBVWEpXT1hoWVFVMDJZMHBUVFU1REJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzE6MzkuODc1WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--5fe990df9f1e3c8298761788a504f4dadac698e2" for 127.0.0.1 at 2018-06-10 00:26:39 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRNV1pGY2tGQmVtUjBVWEpXT1hoWVFVMDJZMHBUVFU1REJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzE6MzkuODc1WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--5fe990df9f1e3c8298761788a504f4dadac698e2"}
+[36m  Disk Storage (2.6ms) [0m[32mUploaded file to key: 1fErAAzdtQrV9xXAM6cJSMNC (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 32ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-10 00:26:39 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PxexUjfONnPh8vHFNta9gz4z1T4lsmEZcDElHGlB2ujIDSre2+lgtEu4agdApY9KEbsrrlLn48ZbOeh8FdC+bw==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--24ae23e2bba6d21a212c70485f3b7d48ae36e04b"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[36mImage Create (1.5ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`) VALUES ('2018-06-10 03:26:39', '2018-06-10 03:26:39')[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[35m (45.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+Redirected to http://localhost:3000/images/5
+Completed 302 Found in 64ms (ActiveRecord: 47.7ms)
+
+
+Started GET "/images/5" for 127.0.0.1 at 2018-06-10 00:26:40 -0300
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  Rendered images/show.html.haml within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `files' for #<Image:0x00007f2099f4a860>
+Did you mean?  file
+               file=):
+     7: = link_to 'Upload Files', new_file_upload_path(@image)
+     8: %h5 Files
+     9: %ul
+    10:   - @image.files.each do |file|
+    11:     %li
+    12:       = link_to file.filename, url_for(file)
+    13:       = link_to "X", image_file_upload_path(@image, file), method: :delete, data: { confirm: "Tem certeza?" }
+  
+app/views/images/show.html.haml:10:in `_app_views_images_show_html_haml___3934452696884316751_69888999284180'
+Started GET "/images/5" for 127.0.0.1 at 2018-06-10 00:27:27 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (17.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/images/show.html.haml:10
+  Rendered images/show.html.haml within layouts/application (125.8ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 20.8ms)
+
+
+  
+ActionView::Template::Error (each delegated to attachment, but attachment is nil):
+     7: = link_to 'Upload Files', new_file_upload_path(@image)
+     8: %h5 Files
+     9: %ul
+    10:   - @image.file.each do |file|
+    11:     %li
+    12:       = link_to file.filename, url_for(file)
+    13:       = link_to "X", file_upload_path(@image, file), method: :delete, data: { confirm: "Tem certeza?" }
+  
+app/views/images/show.html.haml:10:in `_app_views_images_show_html_haml__4327887508707816112_70329390915340'
+Started GET "/images/3" for 127.0.0.1 at 2018-06-10 00:27:43 -0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mImage Load (1.4ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/images/show.html.haml:10
+  Rendered images/show.html.haml within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (each delegated to attachment, but attachment is nil):
+     7: = link_to 'Upload Files', new_file_upload_path(@image)
+     8: %h5 Files
+     9: %ul
+    10:   - @image.file.each do |file|
+    11:     %li
+    12:       = link_to file.filename, url_for(file)
+    13:       = link_to "X", file_upload_path(@image, file), method: :delete, data: { confirm: "Tem certeza?" }
+  
+app/views/images/show.html.haml:10:in `_app_views_images_show_html_haml__4327887508707816112_70329392928260'
+Started GET "/images/3" for 127.0.0.1 at 2018-06-10 00:27:46 -0300
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/images/show.html.haml:10
+  Rendered images/show.html.haml within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (each delegated to attachment, but attachment is nil):
+     7: = link_to 'Upload Files', new_file_upload_path(@image)
+     8: %h5 Files
+     9: %ul
+    10:   - @image.file.each do |file|
+    11:     %li
+    12:       = link_to file.filename, url_for(file)
+    13:       = link_to "X", file_upload_path(@image, file), method: :delete, data: { confirm: "Tem certeza?" }
+  
+app/views/images/show.html.haml:10:in `_app_views_images_show_html_haml__4327887508707816112_70329393475360'
+Started GET "/upload" for 127.0.0.1 at 2018-06-10 00:27:54 -0300
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 286ms (Views: 283.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-10 00:28:00 -0300
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('CP27cdeTsLGtRwQDWm9ZgAv4', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 03:28:00')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (97.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (5.4ms) [0m[34mGenerated URL for file at key: CP27cdeTsLGtRwQDWm9ZgAv4 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRRMUF5TjJOa1pWUnpURWQwVW5kUlJGZHRPVnBuUVhZMEJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzM6MDAuNjE0WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--d552110c8ee8438d0f74be4b09dd632a2a712b89)[0m
+Completed 200 OK in 152ms (Views: 1.3ms | ActiveRecord: 99.7ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRRMUF5TjJOa1pWUnpURWQwVW5kUlJGZHRPVnBuUVhZMEJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzM6MDAuNjE0WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--d552110c8ee8438d0f74be4b09dd632a2a712b89" for 127.0.0.1 at 2018-06-10 00:28:00 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRRMUF5TjJOa1pWUnpURWQwVW5kUlJGZHRPVnBuUVhZMEJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzM6MDAuNjE0WiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--d552110c8ee8438d0f74be4b09dd632a2a712b89"}
+[36m  Disk Storage (5.7ms) [0m[32mUploaded file to key: CP27cdeTsLGtRwQDWm9ZgAv4 (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 43ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-10 00:28:00 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SwDc2zNXTzFkpY2573Nvie1nyXmvSDOp7QAVlul7jJC8GkdX33AZ9s7vFnuZAF1Awu836dgdsXbGCNj2leroFw==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b159b70527dc9c65c49b75339071af555568be7e"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`) VALUES ('2018-06-10 03:28:00', '2018-06-10 03:28:00')[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[35m (91.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+Redirected to http://localhost:3000/images/6
+Completed 302 Found in 99ms (ActiveRecord: 92.7ms)
+
+
+Started GET "/images/6" for 127.0.0.1 at 2018-06-10 00:28:00 -0300
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/images/show.html.haml:10
+  Rendered images/show.html.haml within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (each delegated to attachment, but attachment is nil):
+     7: = link_to 'Upload Files', new_file_upload_path(@image)
+     8: %h5 Files
+     9: %ul
+    10:   - @image.file.each do |file|
+    11:     %li
+    12:       = link_to file.filename, url_for(file)
+    13:       = link_to "X", file_upload_path(@image, file), method: :delete, data: { confirm: "Tem certeza?" }
+  
+app/views/images/show.html.haml:10:in `_app_views_images_show_html_haml__4327887508707816112_70329355378440'
+Started GET "/images/5" for 127.0.0.1 at 2018-06-10 00:28:46 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/images/show.html.haml:10
+  Rendered images/show.html.haml within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (each delegated to attachment, but attachment is nil):
+     7: = link_to 'Upload Files', new_file_upload_path(@image)
+     8: %h5 Files
+     9: %ul
+    10:   - @image.file.each do |file|
+    11:     %li
+    12:       = link_to image.file.filename, url_for(file)
+    13:       = link_to "X", file_upload_path(@image, file), method: :delete, data: { confirm: "Tem certeza?" }
+  
+app/views/images/show.html.haml:10:in `_app_views_images_show_html_haml__3298020262504844160_47170936436020'
+Started GET "/upload" for 127.0.0.1 at 2018-06-10 00:30:17 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by FileUploadsController#new as HTML
+  Rendering file_uploads/new.html.haml within layouts/application
+  Rendered file_uploads/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 275ms (Views: 260.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2018-06-10 00:30:22 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}, "direct_upload"=>{"blob"=>{"filename"=>"walter.png", "content_type"=>"image/png", "byte_size"=>161051, "checksum"=>"jOCGYWsrTZBpOH1JHVD53A=="}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `byte_size`, `checksum`, `created_at`) VALUES ('8P8TCtoMwQHsH9PU1sWrpe5f', 'walter.png', 'image/png', 161051, 'jOCGYWsrTZBpOH1JHVD53A==', '2018-06-10 03:30:22')[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (42.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/eduardo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: 8P8TCtoMwQHsH9PU1sWrpe5f (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRPRkE0VkVOMGIwMTNVVWh6U0RsUVZURnpWM0p3WlRWbUJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzU6MjIuNjQxWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--a4a12e2640c5e5a47b671b0c27118ddc0837c391)[0m
+Completed 200 OK in 66ms (Views: 0.3ms | ActiveRecord: 43.9ms)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRPRkE0VkVOMGIwMTNVVWh6U0RsUVZURnpWM0p3WlRWbUJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzU6MjIuNjQxWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--a4a12e2640c5e5a47b671b0c27118ddc0837c391" for 127.0.0.1 at 2018-06-10 00:30:22 -0300
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWRPRkE0VkVOMGIwMTNVVWh6U0RsUVZURnpWM0p3WlRWbUJqb0dSVlE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkUyTnZiblJsYm5SZmJHVnVaM1JvYVFNYmRRSTZEV05vWldOcmMzVnRTU0lkYWs5RFIxbFhjM0pVV2tKd1QwZ3hTa2hXUkRVelFUMDlCanNHVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMDM6MzU6MjIuNjQxWiIsInB1ciI6ImJsb2JfdG9rZW4ifX0=--a4a12e2640c5e5a47b671b0c27118ddc0837c391"}
+[36m  Disk Storage (2.0ms) [0m[32mUploaded file to key: 8P8TCtoMwQHsH9PU1sWrpe5f (checksum: jOCGYWsrTZBpOH1JHVD53A==)[0m
+No template found for ActiveStorage::DiskController#update, rendering head :no_content
+Completed 204 No Content in 30ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/file_uploads" for 127.0.0.1 at 2018-06-10 00:30:22 -0300
+Processing by FileUploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtSPPBokuaLM4OERIZA/3OC4RtEXWug1DxbkmizihjjRzhSw9gPvZWaqetNX4w0VzzC4QWAPauokHin6UHPivw==", "image"=>{"files"=>["eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ed898686576abd671caf19e002a7b382ba6abcfb"]}, "commit"=>"Upload"}
+Unpermitted parameter: :files
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[36mImage Create (0.2ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`) VALUES ('2018-06-10 03:30:22', '2018-06-10 03:30:22')[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+  [1m[35m (43.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/file_uploads_controller.rb:11
+Redirected to http://localhost:3000/images/7
+Completed 302 Found in 53ms (ActiveRecord: 44.2ms)
+
+
+Started GET "/images/7" for 127.0.0.1 at 2018-06-10 00:30:22 -0300
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/images_controller.rb:67
+  Rendering images/show.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/images/show.html.haml:3
+  Rendered images/show.html.haml within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (Can't resolve image into URL: to_model delegated to attachment, but attachment is nil):
+    1: %p#notice= notice
+    2: 
+    3: = image_tag @image.file
+  
+app/views/images/show.html.haml:3:in `_app_views_images_show_html_haml___78683004195265623_70013422315940'

@@ -10,6 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require activestorage
+//= require turbolinks
 //= require jquery
 //= require bootstrap
 //= require bootstrap-sprockets
@@ -17,3 +19,14 @@
 //= require bg
 //= require global
 //= require_tree .
+
+
+$(document).on("turbolinks:load", function(){
+ $("#upload_file").on("direct-uploads:start", function(){
+    $("h4.progress").show();
+ });
+ 
+ $("#bucket_files").on("direct-upload:progress", function(event){
+    $("h4.progress span.progress_count").html(event.detail.progress);
+ });
+});
