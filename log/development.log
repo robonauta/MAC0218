@@ -63005,6 +63005,120 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 236ms (Views: 233.9ms | ActiveRecord: 1.5ms)
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:18:05 -0300
+  [1m[35m (40.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (16.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (21.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (1858.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (1438.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito_test`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `monolito` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `monolito_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_attachments` CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (448.1ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_blobs` CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (332.2ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answer_opts` CASCADE[0m
+  ↳ db/schema.rb:36
+  [1m[35m (321.2ms)[0m  [1m[35mCREATE TABLE `answer_opts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` text, `nanswers` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `question_id` bigint,  INDEX `index_answer_opts_on_question_id`  (`question_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (468.1ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `image_id` bigint,  INDEX `index_answers_on_image_id`  (`image_id`),  INDEX `index_answers_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:45
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  ↳ db/schema.rb:54
+  [1m[35m (343.5ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_images_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  ↳ db/schema.rb:63
+  [1m[35m (342.4ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `description` text,  INDEX `index_projects_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `questions` CASCADE[0m
+  ↳ db/schema.rb:72
+  [1m[35m (332.2ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nviews` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_questions_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:72
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  ↳ db/schema.rb:81
+  [1m[35m (288.0ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:81
+  [1m[35m (1011.6ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_094c4da436`
+=======
 Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:53:36 -0300
   [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
@@ -64020,3 +64134,1834 @@ Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
 ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
   
 app/controllers/projects_controller.rb:8:in `show'
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:37:40 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 151ms (Views: 146.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:37:44 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:38:53 -0300
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (2.6ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 878ms (Views: 828.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:38:54 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 3ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:38:55 -0300
+  [1m[35m (145.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+Completed 500 Internal Server Error in 677ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `id' for #<LabelsController:0x00007fbdf71cb0d0>):
+  
+app/controllers/labels_controller.rb:3:in `new'
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:40:02 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 821ms (Views: 786.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:40:59 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 213ms (Views: 206.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:41:39 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 1024ms (Views: 985.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:42:57 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 208ms (Views: 201.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:43:08 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 280ms (Views: 274.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:43:19 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 245ms (Views: 238.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:43:32 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 193ms (Views: 187.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:43:36 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 149ms (Views: 143.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:44:06 -0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (3.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+Completed 404 Not Found in 24ms (ActiveRecord: 6.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=id):
+  
+app/controllers/labels_controller.rb:3:in `new'
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:44:21 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=id):
+  
+app/controllers/labels_controller.rb:3:in `new'
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:44:37 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (1.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 888ms (Views: 844.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=99" for 127.0.0.1 at 2018-06-10 15:45:09 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"99"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 99 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=99):
+  
+app/controllers/labels_controller.rb:3:in `new'
+Started GET "/labels/new?class=btn+btn-dark&id=23" for 127.0.0.1 at 2018-06-10 15:45:12 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"23"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 23 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=23):
+  
+app/controllers/labels_controller.rb:3:in `new'
+Started GET "/labels/new?class=btn+btn-dark&id=21" for 127.0.0.1 at 2018-06-10 15:45:15 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"21"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 21 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+Completed 404 Not Found in 3ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=21):
+  
+app/controllers/labels_controller.rb:3:in `new'
+Started GET "/labels/new?class=btn+btn-dark&id=20" for 127.0.0.1 at 2018-06-10 15:45:18 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"20"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 20 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=20):
+  
+app/controllers/labels_controller.rb:3:in `new'
+Started GET "/labels/new?class=btn+btn-dark&id=19" for 127.0.0.1 at 2018-06-10 15:45:21 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"19"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 19 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=19):
+  
+app/controllers/labels_controller.rb:3:in `new'
+Started GET "/labels/new?class=btn+btn-dark&id=10" for 127.0.0.1 at 2018-06-10 15:45:23 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"10"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 162ms (Views: 155.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:46:49 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 182ms (Views: 177.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:47:00 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  [1m[35m (7.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (86.1ms)
+Completed 200 OK in 317ms (Views: 296.1ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:47:40 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mImage Load (1.8ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (50.3ms)
+Completed 200 OK in 315ms (Views: 304.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:47:42 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 238ms (Views: 229.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:47:43 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (3.8ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mImage Load (33.3ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (39.2ms)
+Completed 200 OK in 432ms (Views: 386.5ms | ActiveRecord: 37.2ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:52:49 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:3
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 220ms (Views: 212.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:52:57 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:9
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:10
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 1424ms (Views: 1328.8ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:53:00 -0300
+  [1m[35m (3.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:9
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:10
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 460ms (Views: 443.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=-1" for 127.0.0.1 at 2018-06-10 15:53:04 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"-1"}
+  [1m[36mProject Load (36.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = -1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:9
+Completed 404 Not Found in 41ms (ActiveRecord: 36.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=-1):
+  
+app/controllers/labels_controller.rb:9:in `new'
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:54:13 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 807ms (Views: 738.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:54:18 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[36mImage Load (3.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` WHERE `images`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:10
+Completed 404 Not Found in 6ms (ActiveRecord: 3.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image with 'id'=all):
+  
+app/controllers/labels_controller.rb:10:in `new'
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:55:41 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 22[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `images' for nil:NilClass):
+    1: %p= @project.images.sample
+  
+app/views/labels/new.html.haml:1:in `_app_views_labels_new_html_haml__3053430592635770210_70134429286420'
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:56:04 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 929ms (Views: 920.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:56:07 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 11[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 325ms (Views: 309.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:56:08 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 9[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 422ms (Views: 403.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:56:24 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 21[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (4.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 22 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 34 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (135.7ms)
+Completed 200 OK in 361ms (Views: 340.7ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--83f9963a5d878f44890e4ff5cb5f4f892ec22ff8/8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg" for 127.0.0.1 at 2018-06-10 15:56:24 -0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--83f9963a5d878f44890e4ff5cb5f4f892ec22ff8", "filename"=>"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 34 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (14.4ms) [0m[34mGenerated URL for file at key: GDoS9bEmewLSDWN5Vgd7s4f3 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651/8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%228b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg%22%3B+filename%2A%3DUTF-8%27%278b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651/8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%228b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg%22%3B+filename%2A%3DUTF-8%27%278b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg
+Completed 302 Found in 19ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651/8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%228b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg%22%3B+filename%2A%3DUTF-8%27%278b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg" for 127.0.0.1 at 2018-06-10 15:56:25 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg\"; filename*=UTF-8''8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651", "filename"=>"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8"}
+[36m  Disk Storage (0.6ms) [0m[34mDownloaded file from key: GDoS9bEmewLSDWN5Vgd7s4f3[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (3.6ms)
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:56:26 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 187ms (Views: 173.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--408051951cf822ff8f482e5a6221f4b1cce1dcce/WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg" for 127.0.0.1 at 2018-06-10 15:56:26 -0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--408051951cf822ff8f482e5a6221f4b1cce1dcce", "filename"=>"WhatsApp Image 2018-04-19 at 07.27.33"}
+  [1m[36mActiveStorage::Blob Load (4.1ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 7 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.3ms) [0m[34mGenerated URL for file at key: UiKXWAdUB84RaBbjPUuG791S (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFWYVV0WVYwRmtWVUk0TkZKaFFtSnFVRlYxUnpjNU1WTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjYuNTE1WiIsInB1ciI6ImJsb2Jfa2V5In19--f612b7f4ebc19b430e05e57e2d82b6e47d7b5db6/WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22WhatsApp+Image+2018-04-19+at+07.27.33.jpeg%22%3B+filename%2A%3DUTF-8%27%27WhatsApp%2520Image%25202018-04-19%2520at%252007.27.33.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFWYVV0WVYwRmtWVUk0TkZKaFFtSnFVRlYxUnpjNU1WTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjYuNTE1WiIsInB1ciI6ImJsb2Jfa2V5In19--f612b7f4ebc19b430e05e57e2d82b6e47d7b5db6/WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22WhatsApp+Image+2018-04-19+at+07.27.33.jpeg%22%3B+filename%2A%3DUTF-8%27%27WhatsApp%2520Image%25202018-04-19%2520at%252007.27.33.jpeg
+Completed 302 Found in 9ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFWYVV0WVYwRmtWVUk0TkZKaFFtSnFVRlYxUnpjNU1WTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjYuNTE1WiIsInB1ciI6ImJsb2Jfa2V5In19--f612b7f4ebc19b430e05e57e2d82b6e47d7b5db6/WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22WhatsApp+Image+2018-04-19+at+07.27.33.jpeg%22%3B+filename%2A%3DUTF-8%27%27WhatsApp%2520Image%25202018-04-19%2520at%252007.27.33.jpeg" for 127.0.0.1 at 2018-06-10 15:56:26 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"WhatsApp Image 2018-04-19 at 07.27.33.jpeg\"; filename*=UTF-8''WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFWYVV0WVYwRmtWVUk0TkZKaFFtSnFVRlYxUnpjNU1WTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjYuNTE1WiIsInB1ciI6ImJsb2Jfa2V5In19--f612b7f4ebc19b430e05e57e2d82b6e47d7b5db6", "filename"=>"WhatsApp Image 2018-04-19 at 07.27.33"}
+[36m  Disk Storage (1.3ms) [0m[34mDownloaded file from key: UiKXWAdUB84RaBbjPUuG791S[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.6ms)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:56:27 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 7[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (8.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (6.8ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 15 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (26.7ms)
+Completed 200 OK in 446ms (Views: 417.4ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8f3478880ecfed4191cd5623073cbec3d71889b9/oi.jpeg" for 127.0.0.1 at 2018-06-10 15:56:28 -0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8f3478880ecfed4191cd5623073cbec3d71889b9", "filename"=>"oi"}
+  [1m[36mActiveStorage::Blob Load (3.0ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 15 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: 6Q9xoSEATmuWJWBoyFXes757 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDAyVVRsNGIxTkZRVlJ0ZFZkS1YwSnZlVVpZWlhNM05UY0dPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjguMDE3WiIsInB1ciI6ImJsb2Jfa2V5In19--a44340be302635d076e38dbc624a5d8f9db44055/oi.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22oi.jpeg%22%3B+filename%2A%3DUTF-8%27%27oi.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDAyVVRsNGIxTkZRVlJ0ZFZkS1YwSnZlVVpZWlhNM05UY0dPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjguMDE3WiIsInB1ciI6ImJsb2Jfa2V5In19--a44340be302635d076e38dbc624a5d8f9db44055/oi.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22oi.jpeg%22%3B+filename%2A%3DUTF-8%27%27oi.jpeg
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDAyVVRsNGIxTkZRVlJ0ZFZkS1YwSnZlVVpZWlhNM05UY0dPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjguMDE3WiIsInB1ciI6ImJsb2Jfa2V5In19--a44340be302635d076e38dbc624a5d8f9db44055/oi.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22oi.jpeg%22%3B+filename%2A%3DUTF-8%27%27oi.jpeg" for 127.0.0.1 at 2018-06-10 15:56:28 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"oi.jpeg\"; filename*=UTF-8''oi.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDAyVVRsNGIxTkZRVlJ0ZFZkS1YwSnZlVVpZWlhNM05UY0dPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjguMDE3WiIsInB1ciI6ImJsb2Jfa2V5In19--a44340be302635d076e38dbc624a5d8f9db44055", "filename"=>"oi"}
+[36m  Disk Storage (1.2ms) [0m[34mDownloaded file from key: 6Q9xoSEATmuWJWBoyFXes757[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (65.1ms)
+Completed 200 OK in 68ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:56:32 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (5.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 21 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 33 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 222ms (Views: 165.6ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--92210ab5a1ffbe22b2cd8b935ffa0f4ca598ba60/0.jpeg" for 127.0.0.1 at 2018-06-10 15:56:32 -0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--92210ab5a1ffbe22b2cd8b935ffa0f4ca598ba60", "filename"=>"0"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 33 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: RaKxacqGz3ePWdAxb7TcnhG2 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFTWVV0NFlXTnhSM296WlZCWFpFRjRZamRVWTI1b1J6SUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzIuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--57157ded0e2a76cd1d2c211331326ee4dac3e417/0.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%220.jpeg%22%3B+filename%2A%3DUTF-8%27%270.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFTWVV0NFlXTnhSM296WlZCWFpFRjRZamRVWTI1b1J6SUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzIuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--57157ded0e2a76cd1d2c211331326ee4dac3e417/0.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%220.jpeg%22%3B+filename%2A%3DUTF-8%27%270.jpeg
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFTWVV0NFlXTnhSM296WlZCWFpFRjRZamRVWTI1b1J6SUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzIuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--57157ded0e2a76cd1d2c211331326ee4dac3e417/0.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%220.jpeg%22%3B+filename%2A%3DUTF-8%27%270.jpeg" for 127.0.0.1 at 2018-06-10 15:56:32 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"0.jpeg\"; filename*=UTF-8''0.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFTWVV0NFlXTnhSM296WlZCWFpFRjRZamRVWTI1b1J6SUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzIuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--57157ded0e2a76cd1d2c211331326ee4dac3e417", "filename"=>"0"}
+[36m  Disk Storage (1.0ms) [0m[34mDownloaded file from key: RaKxacqGz3ePWdAxb7TcnhG2[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (0.8ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:56:35 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 23 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 35 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 181ms (Views: 173.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBLQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2ce25a2c2495635d2351901b3c32145f44b76556/82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg" for 127.0.0.1 at 2018-06-10 15:56:35 -0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBLQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2ce25a2c2495635d2351901b3c32145f44b76556", "filename"=>"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 35 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.7ms) [0m[34mGenerated URL for file at key: v9vkMCaqMgagPVaYxKGB2C5c (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78/82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%2282dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg%22%3B+filename%2A%3DUTF-8%27%2782dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78/82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%2282dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg%22%3B+filename%2A%3DUTF-8%27%2782dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78/82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%2282dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg%22%3B+filename%2A%3DUTF-8%27%2782dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg" for 127.0.0.1 at 2018-06-10 15:56:35 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg\"; filename*=UTF-8''82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78", "filename"=>"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b"}
+[36m  Disk Storage (0.5ms) [0m[34mDownloaded file from key: v9vkMCaqMgagPVaYxKGB2C5c[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:56:37 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 22 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 34 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 239ms (Views: 226.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651/8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%228b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg%22%3B+filename%2A%3DUTF-8%27%278b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg" for 127.0.0.1 at 2018-06-10 15:56:37 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg\"; filename*=UTF-8''8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651", "filename"=>"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8"}
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: GDoS9bEmewLSDWN5Vgd7s4f3[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.5ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:56:38 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (6.7ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (10.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 23 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (2.8ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 35 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 380ms (Views: 349.1ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78/82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%2282dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg%22%3B+filename%2A%3DUTF-8%27%2782dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg" for 127.0.0.1 at 2018-06-10 15:56:39 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg\"; filename*=UTF-8''82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78", "filename"=>"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b"}
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: v9vkMCaqMgagPVaYxKGB2C5c[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (2.3ms)
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:57:20 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (22.6ms)
+Completed 200 OK in 762ms (Views: 722.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:57:21 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (1.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 6ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:57:22 -0300
+  [1m[35m (32.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (2.3ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 1[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  Rendered labels/new.html.haml within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 9.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `file' for nil:NilClass):
+    1: = image_tag @image.file
+  
+app/views/labels/new.html.haml:1:in `_app_views_labels_new_html_haml__4449949550197364599_70330105153320'
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:57:35 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 23 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 35 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (80.6ms)
+Completed 200 OK in 232ms (Views: 204.7ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78/82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%2282dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg%22%3B+filename%2A%3DUTF-8%27%2782dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg" for 127.0.0.1 at 2018-06-10 15:57:35 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg\"; filename*=UTF-8''82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78", "filename"=>"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b"}
+[36m  Disk Storage (0.7ms) [0m[34mDownloaded file from key: v9vkMCaqMgagPVaYxKGB2C5c[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (3.2ms)
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:57:37 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 23 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 35 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 237ms (Views: 223.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78/82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%2282dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg%22%3B+filename%2A%3DUTF-8%27%2782dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg" for 127.0.0.1 at 2018-06-10 15:57:37 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg\"; filename*=UTF-8''82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDEyT1haclRVTmhjVTFuWVdkUVZtRlplRXRIUWpKRE5XTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzUuNTEyWiIsInB1ciI6ImJsb2Jfa2V5In19--84ca6fa00438c9e8f553f5adde17d1cc9cbaad78", "filename"=>"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b"}
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: v9vkMCaqMgagPVaYxKGB2C5c[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.4ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:57:38 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 22 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 34 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 195ms (Views: 184.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651/8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%228b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg%22%3B+filename%2A%3DUTF-8%27%278b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg" for 127.0.0.1 at 2018-06-10 15:57:39 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg\"; filename*=UTF-8''8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651", "filename"=>"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8"}
+[36m  Disk Storage (0.9ms) [0m[34mDownloaded file from key: GDoS9bEmewLSDWN5Vgd7s4f3[0m
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data  (2.2ms)
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark&id=17" for 127.0.0.1 at 2018-06-10 15:57:40 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"17"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/labels_controller.rb:6
+  [1m[36mImage Load (1.3ms)[0m  [1m[34mSELECT `images`.* FROM `images` WHERE `images`.`project_id` = 17[0m
+  ↳ app/controllers/labels_controller.rb:7
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 21 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 33 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 251ms (Views: 239.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFTWVV0NFlXTnhSM296WlZCWFpFRjRZamRVWTI1b1J6SUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzIuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--57157ded0e2a76cd1d2c211331326ee4dac3e417/0.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%220.jpeg%22%3B+filename%2A%3DUTF-8%27%270.jpeg" for 127.0.0.1 at 2018-06-10 15:57:40 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"0.jpeg\"; filename*=UTF-8''0.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFTWVV0NFlXTnhSM296WlZCWFpFRjRZamRVWTI1b1J6SUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MzIuMzgwWiIsInB1ciI6ImJsb2Jfa2V5In19--57157ded0e2a76cd1d2c211331326ee4dac3e417", "filename"=>"0"}
+[36m  Disk Storage (0.9ms) [0m[34mDownloaded file from key: RaKxacqGz3ePWdAxb7TcnhG2[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.2ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:57:43 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 21[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 22 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 34 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 173ms (Views: 165.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651/8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%228b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg%22%3B+filename%2A%3DUTF-8%27%278b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg" for 127.0.0.1 at 2018-06-10 15:57:43 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg\"; filename*=UTF-8''8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFIUkc5VE9XSkZiV1YzVEZORVYwNDFWbWRrTjNNMFpqTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjUuMDMyWiIsInB1ciI6ImJsb2Jfa2V5In19--9d8227b958e3be3f6b249bd82a88cd040ade1651", "filename"=>"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8"}
+[36m  Disk Storage (0.5ms) [0m[34mDownloaded file from key: GDoS9bEmewLSDWN5Vgd7s4f3[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (0.9ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:57:45 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 8[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (3.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 17 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (16.4ms)
+Completed 200 OK in 246ms (Views: 228.9ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--771688586c250c0027bff22e24e9fecfe0e1a0d7/r9PuMlM-night-sky-stars-wallpaper.jpg" for 127.0.0.1 at 2018-06-10 15:57:45 -0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--771688586c250c0027bff22e24e9fecfe0e1a0d7", "filename"=>"r9PuMlM-night-sky-stars-wallpaper"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 17 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (7.9ms) [0m[34mGenerated URL for file at key: ZEi7pHjJ3Dofw7jrBF2eER7A (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFhUldrM2NFaHFTak5FYjJaM04ycHlRa1l5WlVWU04wRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NDUuNDE4WiIsInB1ciI6ImJsb2Jfa2V5In19--a813a03a81fd964b93caced9aa4b0a3b7dca916c/r9PuMlM-night-sky-stars-wallpaper.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22r9PuMlM-night-sky-stars-wallpaper.jpg%22%3B+filename%2A%3DUTF-8%27%27r9PuMlM-night-sky-stars-wallpaper.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFhUldrM2NFaHFTak5FYjJaM04ycHlRa1l5WlVWU04wRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NDUuNDE4WiIsInB1ciI6ImJsb2Jfa2V5In19--a813a03a81fd964b93caced9aa4b0a3b7dca916c/r9PuMlM-night-sky-stars-wallpaper.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22r9PuMlM-night-sky-stars-wallpaper.jpg%22%3B+filename%2A%3DUTF-8%27%27r9PuMlM-night-sky-stars-wallpaper.jpg
+Completed 302 Found in 13ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFhUldrM2NFaHFTak5FYjJaM04ycHlRa1l5WlVWU04wRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NDUuNDE4WiIsInB1ciI6ImJsb2Jfa2V5In19--a813a03a81fd964b93caced9aa4b0a3b7dca916c/r9PuMlM-night-sky-stars-wallpaper.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22r9PuMlM-night-sky-stars-wallpaper.jpg%22%3B+filename%2A%3DUTF-8%27%27r9PuMlM-night-sky-stars-wallpaper.jpg" for 127.0.0.1 at 2018-06-10 15:57:45 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"r9PuMlM-night-sky-stars-wallpaper.jpg\"; filename*=UTF-8''r9PuMlM-night-sky-stars-wallpaper.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFhUldrM2NFaHFTak5FYjJaM04ycHlRa1l5WlVWU04wRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NDUuNDE4WiIsInB1ciI6ImJsb2Jfa2V5In19--a813a03a81fd964b93caced9aa4b0a3b7dca916c", "filename"=>"r9PuMlM-night-sky-stars-wallpaper"}
+[36m  Disk Storage (0.7ms) [0m[34mDownloaded file from key: ZEi7pHjJ3Dofw7jrBF2eER7A[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.3ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:57:46 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (23.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 374ms (Views: 338.1ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFWYVV0WVYwRmtWVUk0TkZKaFFtSnFVRlYxUnpjNU1WTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjYuNTE1WiIsInB1ciI6ImJsb2Jfa2V5In19--f612b7f4ebc19b430e05e57e2d82b6e47d7b5db6/WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22WhatsApp+Image+2018-04-19+at+07.27.33.jpeg%22%3B+filename%2A%3DUTF-8%27%27WhatsApp%2520Image%25202018-04-19%2520at%252007.27.33.jpeg" for 127.0.0.1 at 2018-06-10 15:57:46 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"WhatsApp Image 2018-04-19 at 07.27.33.jpeg\"; filename*=UTF-8''WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDFWYVV0WVYwRmtWVUk0TkZKaFFtSnFVRlYxUnpjNU1WTUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDE6MjYuNTE1WiIsInB1ciI6ImJsb2Jfa2V5In19--f612b7f4ebc19b430e05e57e2d82b6e47d7b5db6", "filename"=>"WhatsApp Image 2018-04-19 at 07.27.33"}
+[36m  Disk Storage (0.9ms) [0m[34mDownloaded file from key: UiKXWAdUB84RaBbjPUuG791S[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (2.3ms)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:57:48 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 10[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 11 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 21 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 426ms (Views: 416.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--86af7a06f7338fe03e3435ff9e1c1a30f81164df/r9PuMlM-night-sky-stars-wallpaper.jpg" for 127.0.0.1 at 2018-06-10 15:57:48 -0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--86af7a06f7338fe03e3435ff9e1c1a30f81164df", "filename"=>"r9PuMlM-night-sky-stars-wallpaper"}
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 21 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: 8swJSjUWPPZ7dR5u91EEQzPa (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA0YzNkS1UycFZWMUJRV2pka1VqVjFPVEZGUlZGNlVHRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NDguNjg5WiIsInB1ciI6ImJsb2Jfa2V5In19--9a36660abc00bc94ecc399576ce6eb70e4a54e74/r9PuMlM-night-sky-stars-wallpaper.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22r9PuMlM-night-sky-stars-wallpaper.jpg%22%3B+filename%2A%3DUTF-8%27%27r9PuMlM-night-sky-stars-wallpaper.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA0YzNkS1UycFZWMUJRV2pka1VqVjFPVEZGUlZGNlVHRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NDguNjg5WiIsInB1ciI6ImJsb2Jfa2V5In19--9a36660abc00bc94ecc399576ce6eb70e4a54e74/r9PuMlM-night-sky-stars-wallpaper.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22r9PuMlM-night-sky-stars-wallpaper.jpg%22%3B+filename%2A%3DUTF-8%27%27r9PuMlM-night-sky-stars-wallpaper.jpg
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA0YzNkS1UycFZWMUJRV2pka1VqVjFPVEZGUlZGNlVHRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NDguNjg5WiIsInB1ciI6ImJsb2Jfa2V5In19--9a36660abc00bc94ecc399576ce6eb70e4a54e74/r9PuMlM-night-sky-stars-wallpaper.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22r9PuMlM-night-sky-stars-wallpaper.jpg%22%3B+filename%2A%3DUTF-8%27%27r9PuMlM-night-sky-stars-wallpaper.jpg" for 127.0.0.1 at 2018-06-10 15:57:48 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"r9PuMlM-night-sky-stars-wallpaper.jpg\"; filename*=UTF-8''r9PuMlM-night-sky-stars-wallpaper.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA0YzNkS1UycFZWMUJRV2pka1VqVjFPVEZGUlZGNlVHRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NDguNjg5WiIsInB1ciI6ImJsb2Jfa2V5In19--9a36660abc00bc94ecc399576ce6eb70e4a54e74", "filename"=>"r9PuMlM-night-sky-stars-wallpaper"}
+[36m  Disk Storage (0.7ms) [0m[34mDownloaded file from key: 8swJSjUWPPZ7dR5u91EEQzPa[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.9ms)
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:57:49 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 19[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 20 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (Can't resolve image into URL: to_model delegated to attachment, but attachment is nil):
+    1: = image_tag @image.file
+  
+app/views/labels/new.html.haml:1:in `_app_views_labels_new_html_haml__4449949550197364599_70330144063400'
+Started GET "/labels/new?class=btn+btn-dark" for 127.0.0.1 at 2018-06-10 15:57:55 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `images`[0m
+  ↳ app/controllers/labels_controller.rb:10
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT  `images`.* FROM `images` ORDER BY `images`.`id` ASC LIMIT 1 OFFSET 6[0m
+  ↳ app/controllers/labels_controller.rb:12
+  Rendering labels/new.html.haml within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 13 LIMIT 1[0m
+  ↳ app/views/labels/new.html.haml:1
+  Rendered labels/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 144ms (Views: 137.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ed898686576abd671caf19e002a7b382ba6abcfb/WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg" for 127.0.0.1 at 2018-06-10 15:57:55 -0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ed898686576abd671caf19e002a7b382ba6abcfb", "filename"=>"WhatsApp Image 2018-04-19 at 07.27.33"}
+  [1m[36mActiveStorage::Blob Load (3.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 13 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: yGyecKHV3JYsiie8FokEs98d (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDE1UjNsbFkwdElWak5LV1hOcGFXVTRSbTlyUlhNNU9HUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NTUuNDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--48ccfc71020bf6cbf5b7c286bbe9a19ee162e213/WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22WhatsApp+Image+2018-04-19+at+07.27.33.jpeg%22%3B+filename%2A%3DUTF-8%27%27WhatsApp%2520Image%25202018-04-19%2520at%252007.27.33.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDE1UjNsbFkwdElWak5LV1hOcGFXVTRSbTlyUlhNNU9HUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NTUuNDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--48ccfc71020bf6cbf5b7c286bbe9a19ee162e213/WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22WhatsApp+Image+2018-04-19+at+07.27.33.jpeg%22%3B+filename%2A%3DUTF-8%27%27WhatsApp%2520Image%25202018-04-19%2520at%252007.27.33.jpeg
+Completed 302 Found in 8ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDE1UjNsbFkwdElWak5LV1hOcGFXVTRSbTlyUlhNNU9HUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NTUuNDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--48ccfc71020bf6cbf5b7c286bbe9a19ee162e213/WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22WhatsApp+Image+2018-04-19+at+07.27.33.jpeg%22%3B+filename%2A%3DUTF-8%27%27WhatsApp%2520Image%25202018-04-19%2520at%252007.27.33.jpeg" for 127.0.0.1 at 2018-06-10 15:57:55 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"WhatsApp Image 2018-04-19 at 07.27.33.jpeg\"; filename*=UTF-8''WhatsApp%20Image%202018-04-19%20at%2007.27.33.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDE1UjNsbFkwdElWak5LV1hOcGFXVTRSbTlyUlhNNU9HUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMTBUMTk6MDI6NTUuNDQyWiIsInB1ciI6ImJsb2Jfa2V5In19--48ccfc71020bf6cbf5b7c286bbe9a19ee162e213", "filename"=>"WhatsApp Image 2018-04-19 at 07.27.33"}
+[36m  Disk Storage (1.1ms) [0m[34mDownloaded file from key: yGyecKHV3JYsiie8FokEs98d[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.0ms)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (3.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (91.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito`[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (48.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito_test`[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE `monolito` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE `monolito_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_attachments` CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (55.6ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_blobs` CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (44.1ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS `answer_opts` CASCADE[0m
+  ↳ db/schema.rb:36
+  [1m[35m (38.5ms)[0m  [1m[35mCREATE TABLE `answer_opts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` text, `nanswers` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `question_id` bigint,  INDEX `index_answer_opts_on_question_id`  (`question_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (41.3ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `image_id` bigint,  INDEX `index_answers_on_image_id`  (`image_id`),  INDEX `index_answers_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  ↳ db/schema.rb:54
+  [1m[35m (39.2ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_images_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  ↳ db/schema.rb:63
+  [1m[35m (37.8ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `description` text,  INDEX `index_projects_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `questions` CASCADE[0m
+  ↳ db/schema.rb:72
+  [1m[35m (49.4ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nviews` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_questions_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:72
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  ↳ db/schema.rb:81
+  [1m[35m (46.0ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:81
+  [1m[35m (51.4ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_094c4da436`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+[0m
+  ↳ db/schema.rb:93
+<<<<<<< HEAD
+  [1m[35m (803.5ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_d614baad46`
+=======
+  [1m[35m (72.0ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_d614baad46`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`image_id`)
+  REFERENCES `images` (`id`)
+[0m
+  ↳ db/schema.rb:94
+<<<<<<< HEAD
+  [1m[35m (790.2ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+=======
+  [1m[35m (84.1ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:95
+<<<<<<< HEAD
+  [1m[35m (734.6ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_d34aa88797`
+=======
+  [1m[35m (47.2ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_d34aa88797`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:96
+<<<<<<< HEAD
+  [1m[35m (1489.4ms)[0m  [1m[35mALTER TABLE `projects` ADD CONSTRAINT `fk_rails_b872a6760a`
+=======
+  [1m[35m (44.1ms)[0m  [1m[35mALTER TABLE `projects` ADD CONSTRAINT `fk_rails_b872a6760a`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:97
+<<<<<<< HEAD
+  [1m[35m (902.3ms)[0m  [1m[35mALTER TABLE `questions` ADD CONSTRAINT `fk_rails_170a003733`
+=======
+  [1m[35m (46.4ms)[0m  [1m[35mALTER TABLE `questions` ADD CONSTRAINT `fk_rails_170a003733`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:98
+<<<<<<< HEAD
+  [1m[35m (321.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (42.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180610162833)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (55.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608183012),
+(20180608131050),
+(20180608183948),
+(20180502170151),
+(20180608193901),
+(20180506051541),
+(20180513003444),
+(20180608182630),
+(20180608183742),
+(20180506043108),
+(20180608183515),
+(20180505165543),
+(20180608184218),
+(20180608183552),
+(20180608184150),
+(20180608183133),
+(20180608184131),
+(20180506042012),
+(20180608183926);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (421.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-10 18:18:35', '2018-06-10 18:18:35')[0m
+  ↳ db/schema.rb:13
+  [1m[35m (36.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_attachments` CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (361.5ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_blobs` CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (432.0ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answer_opts` CASCADE[0m
+  ↳ db/schema.rb:36
+  [1m[35m (365.6ms)[0m  [1m[35mCREATE TABLE `answer_opts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` text, `nanswers` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `question_id` bigint,  INDEX `index_answer_opts_on_question_id`  (`question_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (378.8ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `image_id` bigint,  INDEX `index_answers_on_image_id`  (`image_id`),  INDEX `index_answers_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  ↳ db/schema.rb:54
+  [1m[35m (332.1ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_images_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  ↳ db/schema.rb:63
+  [1m[35m (720.6ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `description` text,  INDEX `index_projects_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `questions` CASCADE[0m
+  ↳ db/schema.rb:72
+  [1m[35m (330.9ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nviews` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_questions_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:72
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  ↳ db/schema.rb:81
+  [1m[35m (321.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:81
+  [1m[35m (812.1ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_094c4da436`
+=======
+  [1m[35m (48.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180610162833)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180502170151),
+(20180505165543),
+(20180506042012),
+(20180506043108),
+(20180506051541),
+(20180513003444),
+(20180608131050),
+(20180608182630),
+(20180608183012),
+(20180608183133),
+(20180608183515),
+(20180608183552),
+(20180608183742),
+(20180608183926),
+(20180608183948),
+(20180608184131),
+(20180608184150),
+(20180608184218);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (30.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-10 18:58:09', '2018-06-10 18:58:09')[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_attachments` CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (43.6ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_blobs` CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (46.1ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answer_opts` CASCADE[0m
+  ↳ db/schema.rb:36
+  [1m[35m (44.4ms)[0m  [1m[35mCREATE TABLE `answer_opts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` text, `nanswers` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `question_id` bigint,  INDEX `index_answer_opts_on_question_id`  (`question_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (44.7ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `image_id` bigint,  INDEX `index_answers_on_image_id`  (`image_id`),  INDEX `index_answers_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  ↳ db/schema.rb:54
+  [1m[35m (38.1ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_images_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  ↳ db/schema.rb:63
+  [1m[35m (39.5ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `description` text,  INDEX `index_projects_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:63
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `questions` CASCADE[0m
+  ↳ db/schema.rb:72
+  [1m[35m (34.1ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nviews` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_questions_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:72
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  ↳ db/schema.rb:81
+  [1m[35m (41.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:81
+  [1m[35m (48.5ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_094c4da436`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+[0m
+  ↳ db/schema.rb:93
+<<<<<<< HEAD
+  [1m[35m (870.2ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_d614baad46`
+=======
+  [1m[35m (57.6ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_d614baad46`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`image_id`)
+  REFERENCES `images` (`id`)
+[0m
+  ↳ db/schema.rb:94
+<<<<<<< HEAD
+  [1m[35m (812.9ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+=======
+  [1m[35m (44.6ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:95
+<<<<<<< HEAD
+  [1m[35m (811.3ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_d34aa88797`
+=======
+  [1m[35m (50.1ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_d34aa88797`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:96
+<<<<<<< HEAD
+  [1m[35m (934.4ms)[0m  [1m[35mALTER TABLE `projects` ADD CONSTRAINT `fk_rails_b872a6760a`
+=======
+  [1m[35m (49.9ms)[0m  [1m[35mALTER TABLE `projects` ADD CONSTRAINT `fk_rails_b872a6760a`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:97
+<<<<<<< HEAD
+  [1m[35m (825.3ms)[0m  [1m[35mALTER TABLE `questions` ADD CONSTRAINT `fk_rails_170a003733`
+=======
+  [1m[35m (58.6ms)[0m  [1m[35mALTER TABLE `questions` ADD CONSTRAINT `fk_rails_170a003733`
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:98
+<<<<<<< HEAD
+  [1m[35m (288.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (31.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180610162833)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (33.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608183012),
+(20180608131050),
+(20180608183948),
+(20180502170151),
+(20180608193901),
+(20180506051541),
+(20180513003444),
+(20180608182630),
+(20180608183742),
+(20180506043108),
+(20180608183515),
+(20180505165543),
+(20180608184218),
+(20180608183552),
+(20180608184150),
+(20180608183133),
+(20180608184131),
+(20180506042012),
+(20180608183926);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (321.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-10 18:18:44', '2018-06-10 18:18:44')[0m
+  ↳ db/schema.rb:13
+  [1m[35m (48.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:18:46 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (2.5ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (34.6ms)
+Completed 200 OK in 11253ms (Views: 11204.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-06-10 15:27:29 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 113ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:27:34 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (23.0ms)
+Completed 200 OK in 140ms (Views: 139.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 15:27:40 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (24.8ms)
+Completed 200 OK in 145ms (Views: 141.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 15:27:43 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (31.5ms)
+Completed 200 OK in 154ms (Views: 116.1ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-10 15:28:00 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xf90Jr0vMvMfGPle/6wQ8YbOdwpzlUazO04+281Mk01kYIx8gdHro7iGUzvPCwK4qQKhP5/tbWk2Elbx5iZbXQ==", "user"=>{"username"=>"nina", "email"=>"nina@ime.usp.br", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"NIna", "organization"=>"ime"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'nina' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nina@ime.usp.br' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 168ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 15:28:01 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 141ms (Views: 139.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 15:28:06 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 138ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-06-10 15:28:11 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9N8TMSERjHcbSCE036nLWxOwNCpwF4h0h+fy82BpNOZVQOtrHe9VJ7zWi1HvDtkSPHziH5xvo66Ku5rZSwP89g==", "user"=>{"email"=>"nina", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'nina' LIMIT 1[0m
+  ↳ app/models/user.rb:28
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 15:28:11 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 15:28:14 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (21.9ms)
+Completed 200 OK in 153ms (Views: 146.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-10 15:28:25 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P4z794RpnQWKlFWan/TR7dDvZ+HvyycjDq0Sc8NBSJGeEwOtuJdEVS0K//+vU8Ok/yOx1AOzDPkD8XpZ6CuAgQ==", "user"=>{"username"=>"nina", "email"=>"nina@ime.usp.br", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"nina", "organization"=>"nina"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'nina' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nina@ime.usp.br' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 15:28:25 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 123ms (Views: 119.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-10 15:28:56 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3w7nCG2RjXADE4x2uToKTfSCan41j9mQuvcWXVphKU9+kR9SUW9UIKSNJhOJnRgE2068S9n38kq3q353cQvhXw==", "user"=>{"username"=>"mandel", "email"=>"mandel@ime.usp.br", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"mandel", "organization"=>"IME-USP"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'mandel' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mandel@ime.usp.br' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `encrypted_password`, `salt`, `name`, `organization`, `rank`, `created_at`, `updated_at`) VALUES ('mandel', 'mandel@ime.usp.br', '$2a$10$k.WfPxsC8xWIJgA04slV6utEqZ9Aw0gqnYanmABzq4Ehy8h8Bfavi', '$2a$10$k.WfPxsC8xWIJgA04slV6u', 'mandel', 'IME-USP', 'user', '2018-06-10 18:28:56', '2018-06-10 18:28:56')[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (61.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/
+Completed 302 Found in 160ms (ActiveRecord: 63.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:28:56 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (37.9ms)
+Completed 200 OK in 125ms (Views: 123.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 15:29:00 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 119ms (Views: 114.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:29:05 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 115ms (Views: 113.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:35:53 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 119ms (Views: 118.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-06-10 15:35:55 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pN8I6kdgT3FaqHjsvN3VMtvCGvUJl6wYP8HrrXqw37AFQPCwe56WIf020omMesd79A7MwOXvh8IynYOHUdoXoA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:35:55 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:41:46 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (25.5ms)
+Completed 200 OK in 136ms (Views: 134.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-06-10 15:41:52 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 116ms (Views: 115.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-06-10 15:41:55 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:41:58 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 86ms (Views: 86.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:45:22 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 96ms (Views: 95.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:53:38 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 104ms (Views: 97.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/show" for 127.0.0.1 at 2018-06-10 15:53:44 -0300
+Processing by ProjectsController#show as HTML
+Completed 404 Not Found in 2ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:54:23 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 103ms (Views: 97.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/show" for 127.0.0.1 at 2018-06-10 15:54:26 -0300
+Processing by ProjectsController#dashboard as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template projects/dashboard, application/dashboard with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/dan/Documents/bcc/mac0218/MAC0218/app/views"
+):
+  
+app/controllers/projects_controller.rb:64:in `dashboard'
+Started GET "/show" for 127.0.0.1 at 2018-06-10 15:55:19 -0300
+Processing by ProjectsController#dashboard as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template projects/dashboard, application/dashboard with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/dan/Documents/bcc/mac0218/MAC0218/app/views"
+):
+  
+app/controllers/projects_controller.rb:64:in `dashboard'
+Started GET "/show" for 127.0.0.1 at 2018-06-10 15:55:21 -0300
+Processing by ProjectsController#dashboard as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template projects/dashboard, application/dashboard with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/dan/Documents/bcc/mac0218/MAC0218/app/views"
+):
+  
+app/controllers/projects_controller.rb:64:in `dashboard'
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:55:25 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 99ms (Views: 99.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-06-10 15:55:30 -0300
+Processing by ProjectsController#new as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 15:55:30 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-06-10 15:55:38 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VoFhm15JqDDIB66GfpMZfri+G0GnHiDfvQR8526Z9EX3HpnBYrdxYG+ZBONONAs3l3LNdEtmCwWwWBTNRfM8VQ==", "user"=>{"email"=>"mandel", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'mandel' LIMIT 1[0m
+  ↳ app/models/user.rb:28
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:55:38 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 102ms (Views: 101.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:55:41 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 110ms (Views: 109.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 15:55:47 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 152ms (Views: 148.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:55:55 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.9ms)
+
+
+=======
+  [1m[35m (44.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180610162833)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180502170151),
+(20180505165543),
+(20180506042012),
+(20180506043108),
+(20180506051541),
+(20180513003444),
+(20180608131050),
+(20180608182630),
+(20180608183012),
+(20180608183133),
+(20180608183515),
+(20180608183552),
+(20180608183742),
+(20180608183926),
+(20180608183948),
+(20180608184131),
+(20180608184150),
+(20180608184218);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (32.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-10 18:58:10', '2018-06-10 18:58:10')[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17

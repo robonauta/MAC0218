@@ -16,6 +16,12 @@ Rails.application.routes.draw do
   get '/account' => 'users#show'
   delete '/logout' => 'sessions#destroy'
   get '/settings/account' => 'users#update'
+<<<<<<< HEAD
+  get '/upload' => 'images#new'
+  get '/show' => 'projects#dashboard'
+  get '/label' => 'labels#new'
+=======
+>>>>>>> 31a2bac07bf0f3c97c9daa547cb586749bf23e17
   
   
   # Resources:
