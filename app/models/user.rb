@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-#  attr_accessor :username, :email, :password, :password_confirmation
+  has_many :projects
+
   attr_accessor :password, :password_confirmation
   EMAIL_REGEX = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i
   validates :username, :presence => true, :uniqueness => true, :length => { :in => 3..20 }
@@ -36,5 +37,4 @@ def match_password(login_password="")
   encrypted_password == BCrypt::Engine.hash_secret(login_password, salt)
 end
 
-has_many :projects
 end

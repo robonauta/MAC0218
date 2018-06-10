@@ -62189,3 +62189,1834 @@ Completed 200 OK in 137ms (Views: 135.3ms | ActiveRecord: 0.5ms)
 >>>>>>> adb47739c3352dceb4b78f1d7dfccad5ea55a991
 
 
+Started GET "/login" for 127.0.0.1 at 2018-06-10 04:03:01 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 740ms (Views: 728.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-06-10 04:03:06 -0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VLKm8kY/AuPYfZRjpeXK054QGaIDEUa4Xi0bHfYGLnz527uOWj52lB35Gu+uNBOI3IQhRqRQ9rdiGprXT2/HIg==", "user"=>{"email"=>"bruno@bruno.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'bruno@bruno.com' LIMIT 1[0m
+  ↳ app/models/user.rb:25
+Redirected to http://localhost:3000/
+Completed 302 Found in 117ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 04:03:06 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (33.8ms)
+Completed 200 OK in 247ms (Views: 242.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 04:03:09 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 161ms (Views: 155.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 04:03:19 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NBSoAptoLqE2nZcDLNKspulC+fhoRqghX5YB2eVwZPiZfbV+h2la1vMZGY8nA3X9q9bBHM8HGC5joYATXBmNpg==", "project"=>{"title"=>"sakjslkaj", "description"=>"alksjals", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c5b3827e8 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-2960-1s5599g.jpeg>, @original_filename="oi.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"oi.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 13:02:46 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (84.6ms)
+Completed 200 OK in 909ms (Views: 897.7ms | ActiveRecord: 4.5ms)
+
+
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+Migrating to ForeignKeyAdjustments (20180610162833)
+  [1m[35m (80.9ms)[0m  [1m[35mALTER TABLE `answer_opts` DROP FOREIGN KEY fk_rails_64ebbcb8e8[0m
+  ↳ db/migrate/20180610162833_foreign_key_adjustments.rb:3
+  [1m[35m (84.1ms)[0m  [1m[35mALTER TABLE `answer_opts` DROP COLUMN `project_id`[0m
+  ↳ db/migrate/20180610162833_foreign_key_adjustments.rb:3
+  [1m[35m (162.1ms)[0m  [1m[35mALTER TABLE `projects` ADD `description` text[0m
+  ↳ db/migrate/20180610162833_foreign_key_adjustments.rb:4
+  [1m[35m (150.1ms)[0m  [1m[35mALTER TABLE `projects` DROP COLUMN `cost`[0m
+  ↳ db/migrate/20180610162833_foreign_key_adjustments.rb:5
+  [1m[35m (6.7ms)[0m  [1m[35mDROP TABLE `posts`[0m
+  ↳ db/migrate/20180610162833_foreign_key_adjustments.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180610162833')[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-06-10 13:57:14 -0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/projects_controller.rb:68: syntax error, unexpected ':', expecting ')'
+).permit(:name, :description :files)
+                              ^):
+  
+app/controllers/projects_controller.rb:68: syntax error, unexpected ':', expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-06-10 13:57:58 -0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (4.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (81.5ms)
+Completed 200 OK in 700ms (Views: 679.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 13:58:01 -0300
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Project:0x00007f85610fcee8>):
+    4:     = form_for :project, :url => {:controller => 'projects', :action => 'create'} do |f|
+    5:       %h1.h3.mb-3.font-weight-normal Novo projeto
+    6:       %label.sr-only{:for => "title"} Título            
+    7:       = f.text_field :title, class: 'form-control', :placeholder => "Título", :required => ""
+    8:       %label.sr-only{:for => "description"} Descrição curta do conjunto de imagens
+    9:       = f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => "" 
+   10:       %label.sr-only{:for => "files"} Descrição curta do conjunto de imagens
+  
+app/views/projects/new.html.haml:7:in `block in _app_views_projects_new_html_haml___1082945473226227274_70105411571900'
+app/views/projects/new.html.haml:4:in `_app_views_projects_new_html_haml___1082945473226227274_70105411571900'
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 13:58:25 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 146ms (Views: 139.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:00:40 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 210ms (Views: 203.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:00:54 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oxVOhtqlqvmbIdfXJcjY/11JpozT2mOOms+OK0GaFaIOfFP6xqTejl6lWVsuGQGkH92eaHSb04Gm+A/h+PP8/A==", "project"=>{"name"=>"IA1", "description"=>"blablabla", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007f8561316990 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3482-yg2rm3.jpg>, @original_filename="retro_background_wallpaper_004.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"retro_background_wallpaper_004.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'files' for Project.):
+  
+app/controllers/projects_controller.rb:28:in `create'
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:02:09 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oxVOhtqlqvmbIdfXJcjY/11JpozT2mOOms+OK0GaFaIOfFP6xqTejl6lWVsuGQGkH92eaHSb04Gm+A/h+PP8/A==", "project"=>{"name"=>"IA1", "description"=>"blablabla", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007fdb2425e048 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3494-malp7b.jpg>, @original_filename="retro_background_wallpaper_004.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"retro_background_wallpaper_004.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+Unpermitted parameter: :files
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 4.5ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/projects_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:06:04 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (3.7ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (75.2ms)
+Completed 200 OK in 745ms (Views: 724.7ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:06:23 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (23.3ms)
+Completed 200 OK in 143ms (Views: 134.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:06:36 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GawwXD7S2JgMJzEYdae5rbemf+0V4lYOPa0GCVkxRC60xS0gItOs78mjv5R+dmD29TJHCbKj5gEBmofD4FitcA==", "project"=>{"name"=>"IA2", "description"=>"KJBJbsakjnskjansjkan sak nsakjn sa", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007fa0160ce668 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3510-27qj2u.jpeg>, @original_filename="oi.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"oi.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+Unpermitted parameter: :files
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/projects_controller.rb:28:in `create'
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:11:23 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/projects_controller.rb:34: syntax error, unexpected keyword_else, expecting '}'
+      else
+          ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/projects_controller.rb:71: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/projects_controller.rb:34: syntax error, unexpected keyword_else, expecting '}'
+app/controllers/projects_controller.rb:71: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:11:53 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/projects_controller.rb:33: syntax error, unexpected keyword_end, expecting '}'
+        end
+           ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/projects_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/projects_controller.rb:33: syntax error, unexpected keyword_end, expecting '}'
+app/controllers/projects_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:11:55 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/projects_controller.rb:33: syntax error, unexpected keyword_end, expecting '}'
+        end
+           ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/projects_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/projects_controller.rb:33: syntax error, unexpected keyword_end, expecting '}'
+app/controllers/projects_controller.rb:72: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:13:08 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/controllers/projects_controller.rb:74: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/projects_controller.rb:74: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:13:41 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (3.9ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (60.0ms)
+Completed 200 OK in 743ms (Views: 721.8ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:13:44 -0300
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 164ms (Views: 153.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:13:52 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wyUibDpijctiRgC6h3rA5RRNVbBgpIwj4pNcViQKPg1uTD8QJmP5vKfCjjaMqxm+VtltVMflPCzepN2cnWPXUw==", "project"=>{"name"=>"IA3", "description"=>"laksaksa", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007ffe32a20980 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3564-99i8gp.jpeg>, @original_filename="WhatsApp Image 2018-04-19 at 07.27.33.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"WhatsApp Image 2018-04-19 at 07.27.33.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mProject Create (1.7ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA3', '2018-06-10 17:13:52', '2018-06-10 17:13:52', 1, 'laksaksa')[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:29
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 3.0ms)
+
+
+  
+NoMethodError (undefined method `each' for #<ActionDispatch::Http::UploadedFile:0x00007ffe32a20980>):
+  
+app/controllers/projects_controller.rb:31:in `create'
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:16:16 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (4.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (79.7ms)
+Completed 200 OK in 701ms (Views: 681.3ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:16:18 -0300
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (15.9ms)
+Completed 200 OK in 178ms (Views: 164.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:16:26 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qofDxzL0sC5ADaOHNSoBxHo07oAtD8VJNHT0esjcjjsH7t67LvXEWYWJLQs++9ifOKDWZIpOdUYIQ3WwcbVnZQ==", "project"=>{"name"=>"IA4", "description"=>"laksalksa", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007fe7b471cd40 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3581-dekofx.jpeg>, @original_filename="oi.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"oi.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mProject Create (2.9ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA4', '2018-06-10 17:16:26', '2018-06-10 17:16:26', 1, 'laksalksa')[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/projects_controller.rb:30
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 9.8ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'images' for Image.):
+  
+app/controllers/projects_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:18:28 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (59.9ms)
+Completed 200 OK in 733ms (Views: 718.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:18:31 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (16.8ms)
+Completed 200 OK in 171ms (Views: 159.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:18:48 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7UlvSznjQI7hXJZbuAHCY+GCV+YAGDogxBQVNnqyyitAIHI3JeI0+STYGNez0Bs4oxZvAqdZii/4I5T8w9sjdQ==", "project"=>{"name"=>"IA3", "description"=>"alksja", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc54c1a0950 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3594-1s7mo0i.jpeg>, @original_filename="0.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"0.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA3', '2018-06-10 17:18:48', '2018-06-10 17:18:48', 1, 'alksja')[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:29
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 4.7ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'images' for Image.):
+  
+app/controllers/projects_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:27:36 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (3.9ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (85.8ms)
+Completed 200 OK in 696ms (Views: 673.4ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:27:39 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 155ms (Views: 146.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:27:47 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dsMIxBON4gmLJuYXvH905vnll8ONpz4JGs4Gb/cBrlnbqhW4D4yWfk6iaJu3rq29u3GvJyrmjgYm+YelTmhHBw==", "project"=>{"name"=>"IA4", "description"=>"akjslka", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007fd275872fb8 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3624-n1ath8.jpeg>, @original_filename="0.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"0.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA4', '2018-06-10 17:27:47', '2018-06-10 17:27:47', 1, 'akjslka')[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/projects_controller.rb:30
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 10.3ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/controllers/projects_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:32:15 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (57.8ms)
+Completed 200 OK in 726ms (Views: 711.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:32:17 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 176ms (Views: 162.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:32:28 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X+ORC+09LCEllgLXNB8EhoDXdJXgEr5EKMgIOmWreJ7yiox38TxYVuASjFs/zt3dwkNMcUdTDksU/4nw3MKRwA==", "project"=>{"name"=>"IA3", "description"=>"lakjs", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007fa36a7d4640 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3647-w8u117.jpg>, @original_filename="82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA3', '2018-06-10 17:32:28', '2018-06-10 17:32:28', 1, 'lakjs')[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:29
+Unpermitted parameters: :name, :description, :files
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`, `project_id`) VALUES ('2018-06-10 17:32:28', '2018-06-10 17:32:28', 11)[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:30
+Redirected to http://localhost:3000/
+Completed 302 Found in 61ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:32:28 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 151ms (Views: 149.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2018-06-10 14:36:34 -0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.haml within layouts/application
+  Rendered images/new.html.haml within layouts/application (20.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 918ms (Views: 884.7ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2018-06-10 14:36:41 -0300
+  [1m[35m (8.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wsHaVnVNCU50QnAf1exyeykW86ewVJMhVyN+NYSX1SJvqMcqaUx9ObHG/pPePasga4LLQxcVIy5rFP//Pf48fA==", "image"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007ff398e0e3e8 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3673-fkuwan.jpeg>, @original_filename="0.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[file]\"; filename=\"0.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+[36m  Disk Storage (3.5ms) [0m[32mUploaded file to key: 6t93zjqiHrrkeMGrHXdshBrX (checksum: pzUgHD55noydt7juOUU9ug==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:8
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('6t93zjqiHrrkeMGrHXdshBrX', '0.jpeg', 'image/jpeg', '{\"identified\":true}', 138767, 'pzUgHD55noydt7juOUU9ug==', '2018-06-10 17:36:41')[0m
+  ↳ app/controllers/images_controller.rb:8
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/images_controller.rb:8
+Completed 422 Unprocessable Entity in 129ms (ActiveRecord: 8.6ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Project must exist):
+  
+app/controllers/images_controller.rb:8:in `create'
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:37:06 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 150ms (Views: 139.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:37:21 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Uavs8tLApdO3g30tcV9M3KzcMnevyud/xvjkoII86B8L7LP10p24Itag3i+FKRoMCdILXn+m5LDLGJYO2Ea/g==", "project"=>{"name"=>"IA2", "description"=>"aoisa", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007ff398e6db90 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3673-5myo40.jpg>, @original_filename="8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mProject Create (0.8ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA2', '2018-06-10 17:37:21', '2018-06-10 17:37:21', 1, 'aoisa')[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:29
+Unpermitted parameters: :name, :description, :files
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`, `project_id`) VALUES ('2018-06-10 17:37:21', '2018-06-10 17:37:21', 12)[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:30
+Redirected to http://localhost:3000/
+Completed 302 Found in 43ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:37:21 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 145ms (Views: 143.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:39:46 -0300
+  [1m[35m (3.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (80.8ms)
+Completed 200 OK in 929ms (Views: 905.7ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:39:49 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 177ms (Views: 169.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:39:58 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KihI1CroQpK/PnQLM1MTTMDXsSmflKXzmhx1YgD8u/GHQVWoNuk25Xq6+oc4gsoXgkOJzTjVFfymK/SouZVSrw==", "project"=>{"name"=>"IA4", "description"=>"akhsalkjhsa", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc0e55c8188 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3688-1n1g7la.jpg>, @original_filename="8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mProject Create (0.8ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA4', '2018-06-10 17:39:58', '2018-06-10 17:39:58', 1, 'akhsalkjhsa')[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:29
+Unpermitted parameters: :name, :description, :files
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`, `project_id`) VALUES ('2018-06-10 17:39:58', '2018-06-10 17:39:58', 13)[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 18 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:31
+[36m  Disk Storage (3.7ms) [0m[32mUploaded file to key: joBpbgB5SzAT4ds7iP1HNqpH (checksum: 9WLNsvwyGzdlYI5MmbtUNw==)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('joBpbgB5SzAT4ds7iP1HNqpH', '8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg', 'image/jpeg', '{\"identified\":true}', 41226, '9WLNsvwyGzdlYI5MmbtUNw==', '2018-06-10 17:39:58')[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[36mActiveStorage::Attachment Create (1.0ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('file', 'Image', 18, 31, '2018-06-10 17:39:58')[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[36mImage Update (0.4ms)[0m  [1m[33mUPDATE `images` SET `updated_at` = '2018-06-10 17:39:58' WHERE `images`.`id` = 18[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:31
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: eff73db7-9f86-41d7-ac80-a2911334e915) to Async(default) with arguments: #<GlobalID:0x00007fc0e628d418 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/31>>
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:32
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 31 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [eff73db7-9f86-41d7-ac80-a2911334e915] Performing ActiveStorage::AnalyzeJob (Job ID: eff73db7-9f86-41d7-ac80-a2911334e915) from Async(default) with arguments: #<GlobalID:0x00007fc0e625e550 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/31>>
+  ↳ app/controllers/projects_controller.rb:32
+Redirected to http://localhost:3000/
+Completed 302 Found in 224ms (ActiveRecord: 18.9ms)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [eff73db7-9f86-41d7-ac80-a2911334e915] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [eff73db7-9f86-41d7-ac80-a2911334e915]   [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [eff73db7-9f86-41d7-ac80-a2911334e915]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [eff73db7-9f86-41d7-ac80-a2911334e915]   [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `metadata` = '{\"identified\":true,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 31[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [eff73db7-9f86-41d7-ac80-a2911334e915]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:39:58 -0300
+[ActiveJob] [ActiveStorage::AnalyzeJob] [eff73db7-9f86-41d7-ac80-a2911334e915]   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Processing by ProjectsController#index as HTML
+[ActiveJob] [ActiveStorage::AnalyzeJob] [eff73db7-9f86-41d7-ac80-a2911334e915]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [eff73db7-9f86-41d7-ac80-a2911334e915] Performed ActiveStorage::AnalyzeJob (Job ID: eff73db7-9f86-41d7-ac80-a2911334e915) from Async(default) in 31.26ms
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (23.3ms)
+Completed 200 OK in 220ms (Views: 218.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:42:56 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (89.8ms)
+Completed 200 OK in 952ms (Views: 934.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:42:58 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 220ms (Views: 210.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:43:08 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8rQme/oUEJEv9OGzEIYcjRhTgMxy/DBRQNaJlGibc+Jf3TsH5hVk5upwbz8bV8XWWse4KNW9gF584Qhe0fKavA==", "project"=>{"name"=>"IA0198", "description"=>"laksklajskj", "files"=>#<ActionDispatch::Http::UploadedFile:0x00007f9415fcdfe0 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3701-2lx2y1.jpg>, @original_filename="82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files]\"; filename=\"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mProject Create (0.6ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA0198', '2018-06-10 17:43:08', '2018-06-10 17:43:08', 1, 'laksklajskj')[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:29
+Unpermitted parameters: :name, :description, :files
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[36mImage Create (1.3ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`, `project_id`) VALUES ('2018-06-10 17:43:08', '2018-06-10 17:43:08', 14)[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[36mActiveStorage::Attachment Load (2.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 19 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:31
+[36m  Disk Storage (2.2ms) [0m[32mUploaded file to key: KuQh6X97qH7n3MkFXspQUhHs (checksum: 8P5JKPWIZBzFh+radELtig==)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('KuQh6X97qH7n3MkFXspQUhHs', '82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg', 'image/jpeg', '{\"identified\":true}', 13672, '8P5JKPWIZBzFh+radELtig==', '2018-06-10 17:43:08')[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('file', 'Image', 19, 32, '2018-06-10 17:43:08')[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[36mImage Update (0.4ms)[0m  [1m[33mUPDATE `images` SET `updated_at` = '2018-06-10 17:43:08' WHERE `images`.`id` = 19[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:31
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 8a1c06d9-a6ca-40f5-a075-2a634c48fb91) to Async(default) with arguments: #<GlobalID:0x00007f9415cf2cf8 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/32>>
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:32
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:32
+Redirected to http://localhost:3000/
+Completed 302 Found in 246ms (ActiveRecord: 27.9ms)
+
+
+  [1m[36mActiveStorage::Blob Load (2.8ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 32 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a1c06d9-a6ca-40f5-a075-2a634c48fb91] Performing ActiveStorage::AnalyzeJob (Job ID: 8a1c06d9-a6ca-40f5-a075-2a634c48fb91) from Async(default) with arguments: #<GlobalID:0x00007f9416b3dfb0 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/32>>
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:43:08 -0300
+Processing by ProjectsController#index as HTML
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a1c06d9-a6ca-40f5-a075-2a634c48fb91] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a1c06d9-a6ca-40f5-a075-2a634c48fb91]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a1c06d9-a6ca-40f5-a075-2a634c48fb91]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering projects/index.html.haml within layouts/application
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a1c06d9-a6ca-40f5-a075-2a634c48fb91]   [1m[36mActiveStorage::Blob Update (16.3ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `metadata` = '{\"identified\":true,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 32[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a1c06d9-a6ca-40f5-a075-2a634c48fb91]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a1c06d9-a6ca-40f5-a075-2a634c48fb91]   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a1c06d9-a6ca-40f5-a075-2a634c48fb91]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a1c06d9-a6ca-40f5-a075-2a634c48fb91] Performed ActiveStorage::AnalyzeJob (Job ID: 8a1c06d9-a6ca-40f5-a075-2a634c48fb91) from Async(default) in 48.67ms
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (21.2ms)
+Completed 200 OK in 236ms (Views: 233.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:53:36 -0300
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 4.1ms)
+
+
+  
+SyntaxError (/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/projects/new.html.haml:11: syntax error, unexpected keyword_class, expecting ')'
+d :files, multiple: true class: 'form-control', :placeholder
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/projects/new.html.haml:11: syntax error, unexpected ',', expecting ')'
+e: true class: 'form-control', :placeholder => "Imagens", :r
+                              ^
+/Users/batmacumba/bcc/usp/3S/218 - Técnicas de Programação II/MAC0218/app/views/projects/new.html.haml:11: syntax error, unexpected ',', expecting ')'
+l', :placeholder => "Imagens", :required => ""
+                              ^):
+  
+app/views/projects/new.html.haml:11: syntax error, unexpected keyword_class, expecting ')'
+app/views/projects/new.html.haml:11: syntax error, unexpected ',', expecting ')'
+app/views/projects/new.html.haml:11: syntax error, unexpected ',', expecting ')'
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 14:53:57 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 648ms (Views: 641.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 14:54:12 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j+kbOtAsSmfxdltYj9vtWqnHSmOCrW6QzQOitTaaIFUigAZGzC0+EDTy1dSECjQB61NyhyXs3p/xNCN/j/PJCw==", "project"=>{"name"=>"IA4", "description"=>"aoskmalkmsas", "files"=>[#<ActionDispatch::Http::UploadedFile:0x00007fbecbae2ba8 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3739-rf6u8b.jpeg>, @original_filename="0.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files][]\"; filename=\"0.jpeg\"\r\nContent-Type: image/jpeg\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007fbecbae2b58 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3739-19mfce.jpg>, @original_filename="8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files][]\"; filename=\"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg\"\r\nContent-Type: image/jpeg\r\n">]}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA4', '2018-06-10 17:54:12', '2018-06-10 17:54:12', 1, 'aoskmalkmsas')[0m
+  ↳ app/controllers/projects_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:29
+Unpermitted parameters: :name, :description, :files
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`, `project_id`) VALUES ('2018-06-10 17:54:12', '2018-06-10 17:54:12', 15)[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:30
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 20 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:32
+Redirected to http://localhost:3000/
+Completed 302 Found in 105ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 14:54:12 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 147ms (Views: 146.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:02:07 -0300
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (77.5ms)
+Completed 200 OK in 906ms (Views: 887.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 15:02:09 -0300
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 207ms (Views: 196.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 15:02:23 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AP2V4/NVFS8QXfXJh/BgdtfuxGMfKJkrBzNs8Fka4p2tlIif71RhWNXZe0WMIbktlXr8h7hpKSQ7BO064HMLww==", "project"=>{"name"=>"IA99", "description"=>"alkjslajsas", "files"=>[#<ActionDispatch::Http::UploadedFile:0x00007fa8b1ed6910 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3779-zbcpyo.jpeg>, @original_filename="0.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files][]\"; filename=\"0.jpeg\"\r\nContent-Type: image/jpeg\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007fa8b1ed6758 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3779-bm2isv.jpg>, @original_filename="8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files][]\"; filename=\"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg\"\r\nContent-Type: image/jpeg\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007fa8b1ed6410 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3779-q2go99.jpg>, @original_filename="82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files][]\"; filename=\"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg\"\r\nContent-Type: image/jpeg\r\n">]}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:28
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:28
+  [1m[36mProject Create (0.6ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('IA99', '2018-06-10 18:02:23', '2018-06-10 18:02:23', 1, 'alkjslajsas')[0m
+  ↳ app/controllers/projects_controller.rb:28
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:28
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:02:23 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 149ms (Views: 147.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:05:20 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (83.9ms)
+Completed 200 OK in 975ms (Views: 952.6ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 15:05:22 -0300
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 253ms (Views: 246.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-06-10 15:05:32 -0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qmxmCIqWYTzgNKuGi1KlLKj5fxyVYheNPV1QqVqNNCgHBXt0lpcVSyWwJQqAg3x36m1H+DIjp4IBatFj4+Tddg==", "project"=>{"name"=>"Ia91082", "description"=>"asjlajslkasa", "files"=>[#<ActionDispatch::Http::UploadedFile:0x00007fce3f1dbbf8 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3794-1l8umz.jpeg>, @original_filename="0.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files][]\"; filename=\"0.jpeg\"\r\nContent-Type: image/jpeg\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007fce3f1db680 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3794-14rb0zh.jpg>, @original_filename="8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files][]\"; filename=\"8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg\"\r\nContent-Type: image/jpeg\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007fce3f1db0e0 @tempfile=#<Tempfile:/var/folders/nf/8xrlkg3x61xfvndzcy2_vhjw0000gn/T/RackMultipart20180610-3794-svuwq4.jpg>, @original_filename="82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[files][]\"; filename=\"82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg\"\r\nContent-Type: image/jpeg\r\n">]}}
+Unpermitted parameter: :files
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:28
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:28
+  [1m[36mProject Create (0.6ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `created_at`, `updated_at`, `user_id`, `description`) VALUES ('Ia91082', '2018-06-10 18:05:32', '2018-06-10 18:05:32', 1, 'asjlajslkasa')[0m
+  ↳ app/controllers/projects_controller.rb:28
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`, `project_id`) VALUES ('2018-06-10 18:05:32', '2018-06-10 18:05:32', 17)[0m
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 21 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:34
+[36m  Disk Storage (5.0ms) [0m[32mUploaded file to key: RaKxacqGz3ePWdAxb7TcnhG2 (checksum: pzUgHD55noydt7juOUU9ug==)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[36mActiveStorage::Blob Create (0.9ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('RaKxacqGz3ePWdAxb7TcnhG2', '0.jpeg', 'image/jpeg', '{\"identified\":true}', 138767, 'pzUgHD55noydt7juOUU9ug==', '2018-06-10 18:05:32')[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('file', 'Image', 21, 33, '2018-06-10 18:05:32')[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[36mImage Update (0.4ms)[0m  [1m[33mUPDATE `images` SET `updated_at` = '2018-06-10 18:05:32' WHERE `images`.`id` = 21[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:34
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 885d4ccb-e58a-4a3d-9045-474c7bd00d35) to Async(default) with arguments: #<GlobalID:0x00007fce444f5d98 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/33>>
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:35
+  [1m[35m (2.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[36mActiveStorage::Blob Load (3.6ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 33 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mImage Create (0.7ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`, `project_id`) VALUES ('2018-06-10 18:05:32', '2018-06-10 18:05:32', 17)[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [885d4ccb-e58a-4a3d-9045-474c7bd00d35] Performing ActiveStorage::AnalyzeJob (Job ID: 885d4ccb-e58a-4a3d-9045-474c7bd00d35) from Async(default) with arguments: #<GlobalID:0x00007fce3f56f620 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/33>>
+  ↳ app/controllers/projects_controller.rb:33
+[ActiveJob] [ActiveStorage::AnalyzeJob] [885d4ccb-e58a-4a3d-9045-474c7bd00d35] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [885d4ccb-e58a-4a3d-9045-474c7bd00d35]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [885d4ccb-e58a-4a3d-9045-474c7bd00d35]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:33
+[ActiveJob] [ActiveStorage::AnalyzeJob] [885d4ccb-e58a-4a3d-9045-474c7bd00d35]   [1m[36mActiveStorage::Blob Update (0.8ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `metadata` = '{\"identified\":true,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 33[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [885d4ccb-e58a-4a3d-9045-474c7bd00d35]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 22 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:34
+[ActiveJob] [ActiveStorage::AnalyzeJob] [885d4ccb-e58a-4a3d-9045-474c7bd00d35]   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [885d4ccb-e58a-4a3d-9045-474c7bd00d35]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [885d4ccb-e58a-4a3d-9045-474c7bd00d35] Performed ActiveStorage::AnalyzeJob (Job ID: 885d4ccb-e58a-4a3d-9045-474c7bd00d35) from Async(default) in 15.52ms
+[36m  Disk Storage (3.3ms) [0m[32mUploaded file to key: GDoS9bEmewLSDWN5Vgd7s4f3 (checksum: 9WLNsvwyGzdlYI5MmbtUNw==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[36mActiveStorage::Blob Create (1.3ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('GDoS9bEmewLSDWN5Vgd7s4f3', '8b7f99e8acb189749a223ce8fe326fd0fe0985486b19badd0a32e0f28d6c33d8.jpg', 'image/jpeg', '{\"identified\":true}', 41226, '9WLNsvwyGzdlYI5MmbtUNw==', '2018-06-10 18:05:32')[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[36mActiveStorage::Attachment Create (2.0ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('file', 'Image', 22, 34, '2018-06-10 18:05:32')[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[36mImage Update (0.5ms)[0m  [1m[33mUPDATE `images` SET `updated_at` = '2018-06-10 18:05:32' WHERE `images`.`id` = 22[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:34
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 1c1d1d51-169b-4306-b7c8-a770068bb187) to Async(default) with arguments: #<GlobalID:0x00007fce3f50fc48 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/34>>
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 34 LIMIT 1[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1c1d1d51-169b-4306-b7c8-a770068bb187] Performing ActiveStorage::AnalyzeJob (Job ID: 1c1d1d51-169b-4306-b7c8-a770068bb187) from Async(default) with arguments: #<GlobalID:0x00007fce3f4fc288 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/34>>
+  ↳ app/controllers/projects_controller.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:35
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1c1d1d51-169b-4306-b7c8-a770068bb187] Skipping image analysis because the mini_magick gem isn't installed
+  ↳ app/controllers/projects_controller.rb:33
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1c1d1d51-169b-4306-b7c8-a770068bb187]   [1m[35m (5.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1c1d1d51-169b-4306-b7c8-a770068bb187]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mImage Create (1.5ms)[0m  [1m[32mINSERT INTO `images` (`created_at`, `updated_at`, `project_id`) VALUES ('2018-06-10 18:05:32', '2018-06-10 18:05:32', 17)[0m
+  ↳ app/controllers/projects_controller.rb:33
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1c1d1d51-169b-4306-b7c8-a770068bb187]   [1m[36mActiveStorage::Blob Update (1.0ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `metadata` = '{\"identified\":true,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 34[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1c1d1d51-169b-4306-b7c8-a770068bb187]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  ↳ app/controllers/projects_controller.rb:33
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1c1d1d51-169b-4306-b7c8-a770068bb187]   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1c1d1d51-169b-4306-b7c8-a770068bb187]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1c1d1d51-169b-4306-b7c8-a770068bb187] Performed ActiveStorage::AnalyzeJob (Job ID: 1c1d1d51-169b-4306-b7c8-a770068bb187) from Async(default) in 15.98ms
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 23 AND `active_storage_attachments`.`record_type` = 'Image' AND `active_storage_attachments`.`name` = 'file' LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:34
+[36m  Disk Storage (2.0ms) [0m[32mUploaded file to key: v9vkMCaqMgagPVaYxKGB2C5c (checksum: 8P5JKPWIZBzFh+radELtig==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('v9vkMCaqMgagPVaYxKGB2C5c', '82dc67cfa241ae7d446efbe9478c64bd831a1bca7d1d61195aefa96a8588fe3b.jpg', 'image/jpeg', '{\"identified\":true}', 13672, '8P5JKPWIZBzFh+radELtig==', '2018-06-10 18:05:32')[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('file', 'Image', 23, 35, '2018-06-10 18:05:32')[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[36mImage Update (1.5ms)[0m  [1m[33mUPDATE `images` SET `updated_at` = '2018-06-10 18:05:32' WHERE `images`.`id` = 23[0m
+  ↳ app/controllers/projects_controller.rb:34
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:34
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7) to Async(default) with arguments: #<GlobalID:0x00007fce3fc41c78 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/35>>
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 35 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  ↳ app/controllers/projects_controller.rb:35
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7] Performing ActiveStorage::AnalyzeJob (Job ID: 7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7) from Async(default) with arguments: #<GlobalID:0x00007fce3fc8d0b0 @uri=#<URI::GID gid://dontpanic/ActiveStorage::Blob/35>>
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:35
+Redirected to http://localhost:3000/
+Completed 302 Found in 355ms (ActiveRecord: 50.6ms)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7]   [1m[35m (4.4ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:05:32 -0300
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7]   [1m[36mActiveStorage::Blob Update (1.8ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `metadata` = '{\"identified\":true,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 35[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7]   [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7]   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7] Performed ActiveStorage::AnalyzeJob (Job ID: 7b3fd7d2-7262-4b9c-a4b8-6b26953ec3e7) from Async(default) in 25.05ms
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 222ms (Views: 220.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/account" for 127.0.0.1 at 2018-06-10 15:18:08 -0300
+  [1m[35m (6.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:28
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (17.5ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 934ms (Views: 884.1ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2018-06-10 15:18:16 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (57.0ms)
+Completed 200 OK in 463ms (Views: 446.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:18:19 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (25.7ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Project:0x00007f91fcb6e370>):
+    4:     .text-center
+    5:       %img.card-img-top.img-fluid.img-question{:alt => "Card image cap", :src => "orange.jpeg"}/
+    6:     .card-body
+    7:       %h5.card-title= @project.title
+    8:       -#%p.card-text= @project.description
+    9:     %ul.list-group.list-group-flush
+   10:       %li.list-group-item
+  
+app/views/projects/show.html.haml:7:in `_app_views_projects_show_html_haml__3151087917461727462_70132493694920'
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:18:29 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 156ms (Views: 142.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:18:30 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (1.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 3ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:18:54 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    10:       %li.list-group-item
+    11:         = link_to "Rotular", '/labels/new', :class => 'btn btn-dark'
+    12:     .card-body
+    13:         - if @show_edit
+    14:           %hr
+    15:           %a.card-link{:href => "#"}
+    16:           = link_to "Edit", edit_project_path(@project), :class => 'btn btn-default'
+  
+app/views/projects/show.html.haml:13
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:19:04 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 151ms (Views: 142.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:19:04 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 2ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started DELETE "/logout" for 127.0.0.1 at 2018-06-10 15:19:08 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zkV4kySYsdJ3xYe/K27yI7PdXud+aSzdygY5ZIDf7VdjLGXvOJnFpbJBCTMgvyt48UlmA9konNL2MbiuObYECQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:19:08 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (11.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 177ms (Views: 164.9ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:19:12 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 235ms (Views: 225.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:19:13 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 6ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:20:23 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 161ms (Views: 155.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:20:24 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (8.1ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 9ms (ActiveRecord: 8.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/labels/new" for 127.0.0.1 at 2018-06-10 15:21:15 -0300
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for LabelsController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:24:11 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 2ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:24:12 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (8.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 254ms (Views: 237.1ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:24:12 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 6ms (ActiveRecord: 2.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/labels/1" for 127.0.0.1 at 2018-06-10 15:24:13 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for LabelsController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:24:23 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/labels/1" for 127.0.0.1 at 2018-06-10 15:24:24 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for LabelsController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/labels/1" for 127.0.0.1 at 2018-06-10 15:24:36 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for LabelsController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:24:38 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (344.7ms)
+Completed 500 Internal Server Error in 379ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `label_path_new' for #<#<Class:0x00007f91fca789e8>:0x00007f91fcb74b80>
+Did you mean?  label_path):
+     8:       -#%p.card-text= @project.description
+     9:     %ul.list-group.list-group-flush
+    10:       %li.list-group-item
+    11:         = link_to "Rotular", label_path_new(@project), :class => 'btn btn-dark'
+    12:     .card-body
+    13:       - if @show_edit
+    14:         %hr
+  
+app/views/projects/show.html.haml:11:in `_app_views_projects_show_html_haml__3151087917461727462_70132493444600'
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:24:46 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 217ms (Views: 209.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:24:46 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (2.6ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 5ms (ActiveRecord: 2.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/labels/1" for 127.0.0.1 at 2018-06-10 15:24:48 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for LabelsController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:25:11 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 3ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:35:02 -0300
+  [1m[35m (4.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 930ms (Views: 883.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:35:03 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (6.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 9ms (ActiveRecord: 6.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/labels/new?class=btn+btn-dark&id=1" for 127.0.0.1 at 2018-06-10 15:35:08 -0300
+Processing by LabelsController#new as HTML
+  Parameters: {"class"=>"btn btn-dark", "id"=>"1"}
+Completed 406 Not Acceptable in 417ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (LabelsController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.0) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.0) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.0) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:35:21 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/projects/" for 127.0.0.1 at 2018-06-10 15:36:19 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (17.7ms)
+Completed 200 OK in 187ms (Views: 185.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-06-10 15:36:21 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+  Rendering projects/show.html.haml within layouts/application
+  Rendered projects/show.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 187ms (Views: 179.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/orange.jpeg" for 127.0.0.1 at 2018-06-10 15:36:22 -0300
+Processing by ProjectsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/projects_controller.rb:8
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=orange):
+  
+app/controllers/projects_controller.rb:8:in `show'

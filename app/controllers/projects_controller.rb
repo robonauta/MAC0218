@@ -1,5 +1,4 @@
 class ProjectsController < ApplicationController
-#    protect_from_forgery unless: -> { request.format.json? }
     def index
         @projects = Project.all
         render 'index'
@@ -23,17 +22,16 @@ class ProjectsController < ApplicationController
     end
   
     def create
-      @project = Project.new
-#      @project.name = project_params[:project][:name]
+#      render plain: params[:project].inspect
+      @project = Project.new(project_params)
       @project.user_id = current_user.id
-      @project.images.build(project_params[:project][:files])
-#      for file in project_params[:project][:files] do 
-#
-#        puts 'testee'
-#      end
-      
-      if(@project.save)
-        redirect_to '/'
+      if (@project.save)
+          params[:project][:files].each { |upload|
+            @image = @project.images.create()
+            @image.file.attach(upload)
+            @image.save!
+          }
+          redirect_to '/'
       else
         render 'new'
       end
@@ -63,12 +61,16 @@ class ProjectsController < ApplicationController
   
     def dashboard
       @projects = Project.all
-#      render plain: params[:post].inspect
+
       render 'dashboard'
     end
 
     private def project_params
-      params.require(:project).permit(:name, :files)
+      params.require(:project).permit(:name, :description)
+    end
+  
+    private def image_params
+      params.require(:project).permit(:file)
     end
       
 end

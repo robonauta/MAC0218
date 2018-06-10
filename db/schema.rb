@@ -10,16 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_08_184218) do
+ActiveRecord::Schema.define(version: 2018_06_10_162833) do
 
   create_table "answer_opts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "text"
     t.integer "nanswers"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "project_id"
     t.bigint "question_id"
-    t.index ["project_id"], name: "index_answer_opts_on_project_id"
     t.index ["question_id"], name: "index_answer_opts_on_question_id"
   end
 
@@ -41,20 +39,12 @@ ActiveRecord::Schema.define(version: 2018_06_08_184218) do
     t.index ["project_id"], name: "index_images_on_project_id"
   end
 
-  create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "author"
-    t.string "title"
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "projects", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "name"
-    t.float "cost"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
+    t.text "description"
     t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
@@ -79,7 +69,6 @@ ActiveRecord::Schema.define(version: 2018_06_08_184218) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "answer_opts", "projects"
   add_foreign_key "answer_opts", "questions"
   add_foreign_key "answers", "images"
   add_foreign_key "answers", "users"
