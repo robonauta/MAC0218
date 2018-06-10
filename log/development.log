@@ -63005,3 +63005,678 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 236ms (Views: 233.9ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:18:05 -0300
+  [1m[35m (40.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (16.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (21.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (1858.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (1438.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `monolito_test`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `monolito` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `monolito_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_attachments` CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (448.1ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_blobs` CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (332.2ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answer_opts` CASCADE[0m
+  ↳ db/schema.rb:36
+  [1m[35m (321.2ms)[0m  [1m[35mCREATE TABLE `answer_opts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` text, `nanswers` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `question_id` bigint,  INDEX `index_answer_opts_on_question_id`  (`question_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (468.1ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `image_id` bigint,  INDEX `index_answers_on_image_id`  (`image_id`),  INDEX `index_answers_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:45
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  ↳ db/schema.rb:54
+  [1m[35m (343.5ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_images_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  ↳ db/schema.rb:63
+  [1m[35m (342.4ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `description` text,  INDEX `index_projects_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `questions` CASCADE[0m
+  ↳ db/schema.rb:72
+  [1m[35m (332.2ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nviews` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_questions_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:72
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  ↳ db/schema.rb:81
+  [1m[35m (288.0ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:81
+  [1m[35m (1011.6ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_094c4da436`
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+[0m
+  ↳ db/schema.rb:93
+  [1m[35m (803.5ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_d614baad46`
+FOREIGN KEY (`image_id`)
+  REFERENCES `images` (`id`)
+[0m
+  ↳ db/schema.rb:94
+  [1m[35m (790.2ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:95
+  [1m[35m (734.6ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_d34aa88797`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:96
+  [1m[35m (1489.4ms)[0m  [1m[35mALTER TABLE `projects` ADD CONSTRAINT `fk_rails_b872a6760a`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:97
+  [1m[35m (902.3ms)[0m  [1m[35mALTER TABLE `questions` ADD CONSTRAINT `fk_rails_170a003733`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:98
+  [1m[35m (321.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (42.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180610162833)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (55.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608183012),
+(20180608131050),
+(20180608183948),
+(20180502170151),
+(20180608193901),
+(20180506051541),
+(20180513003444),
+(20180608182630),
+(20180608183742),
+(20180506043108),
+(20180608183515),
+(20180505165543),
+(20180608184218),
+(20180608183552),
+(20180608184150),
+(20180608183133),
+(20180608184131),
+(20180506042012),
+(20180608183926);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (421.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-10 18:18:35', '2018-06-10 18:18:35')[0m
+  ↳ db/schema.rb:13
+  [1m[35m (36.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_attachments` CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (361.5ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `active_storage_blobs` CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (432.0ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `answer_opts` CASCADE[0m
+  ↳ db/schema.rb:36
+  [1m[35m (365.6ms)[0m  [1m[35mCREATE TABLE `answer_opts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` text, `nanswers` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `question_id` bigint,  INDEX `index_answer_opts_on_question_id`  (`question_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `answers` CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (378.8ms)[0m  [1m[35mCREATE TABLE `answers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `image_id` bigint,  INDEX `index_answers_on_image_id`  (`image_id`),  INDEX `index_answers_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `images` CASCADE[0m
+  ↳ db/schema.rb:54
+  [1m[35m (332.1ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `link` text, `nviews` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_images_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `projects` CASCADE[0m
+  ↳ db/schema.rb:63
+  [1m[35m (720.6ms)[0m  [1m[35mCREATE TABLE `projects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` bigint, `description` text,  INDEX `index_projects_on_user_id`  (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `questions` CASCADE[0m
+  ↳ db/schema.rb:72
+  [1m[35m (330.9ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nviews` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` bigint,  INDEX `index_questions_on_project_id`  (`project_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:72
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  ↳ db/schema.rb:81
+  [1m[35m (321.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `name` varchar(255), `organization` varchar(255), `rank` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  ↳ db/schema.rb:81
+  [1m[35m (812.1ms)[0m  [1m[35mALTER TABLE `answer_opts` ADD CONSTRAINT `fk_rails_094c4da436`
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+[0m
+  ↳ db/schema.rb:93
+  [1m[35m (870.2ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_d614baad46`
+FOREIGN KEY (`image_id`)
+  REFERENCES `images` (`id`)
+[0m
+  ↳ db/schema.rb:94
+  [1m[35m (812.9ms)[0m  [1m[35mALTER TABLE `answers` ADD CONSTRAINT `fk_rails_584be190c2`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:95
+  [1m[35m (811.3ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_d34aa88797`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:96
+  [1m[35m (934.4ms)[0m  [1m[35mALTER TABLE `projects` ADD CONSTRAINT `fk_rails_b872a6760a`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/schema.rb:97
+  [1m[35m (825.3ms)[0m  [1m[35mALTER TABLE `questions` ADD CONSTRAINT `fk_rails_170a003733`
+FOREIGN KEY (`project_id`)
+  REFERENCES `projects` (`id`)
+[0m
+  ↳ db/schema.rb:98
+  [1m[35m (288.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (31.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20180610162833)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (33.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20180608183012),
+(20180608131050),
+(20180608183948),
+(20180502170151),
+(20180608193901),
+(20180506051541),
+(20180513003444),
+(20180608182630),
+(20180608183742),
+(20180506043108),
+(20180608183515),
+(20180505165543),
+(20180608184218),
+(20180608183552),
+(20180608184150),
+(20180608183133),
+(20180608184131),
+(20180506042012),
+(20180608183926);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (321.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-06-10 18:18:44', '2018-06-10 18:18:44')[0m
+  ↳ db/schema.rb:13
+  [1m[35m (48.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `value` = 'test' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:18:46 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (2.5ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (34.6ms)
+Completed 200 OK in 11253ms (Views: 11204.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-06-10 15:27:29 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 113ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:27:34 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (23.0ms)
+Completed 200 OK in 140ms (Views: 139.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 15:27:40 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (24.8ms)
+Completed 200 OK in 145ms (Views: 141.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 15:27:43 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (31.5ms)
+Completed 200 OK in 154ms (Views: 116.1ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-10 15:28:00 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xf90Jr0vMvMfGPle/6wQ8YbOdwpzlUazO04+281Mk01kYIx8gdHro7iGUzvPCwK4qQKhP5/tbWk2Elbx5iZbXQ==", "user"=>{"username"=>"nina", "email"=>"nina@ime.usp.br", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"NIna", "organization"=>"ime"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'nina' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nina@ime.usp.br' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 168ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 15:28:01 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 141ms (Views: 139.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 15:28:06 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 138ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-06-10 15:28:11 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9N8TMSERjHcbSCE036nLWxOwNCpwF4h0h+fy82BpNOZVQOtrHe9VJ7zWi1HvDtkSPHziH5xvo66Ku5rZSwP89g==", "user"=>{"email"=>"nina", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'nina' LIMIT 1[0m
+  ↳ app/models/user.rb:28
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 15:28:11 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 15:28:14 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (21.9ms)
+Completed 200 OK in 153ms (Views: 146.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-10 15:28:25 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P4z794RpnQWKlFWan/TR7dDvZ+HvyycjDq0Sc8NBSJGeEwOtuJdEVS0K//+vU8Ok/yOx1AOzDPkD8XpZ6CuAgQ==", "user"=>{"username"=>"nina", "email"=>"nina@ime.usp.br", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"nina", "organization"=>"nina"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'nina' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nina@ime.usp.br' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 15:28:25 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 123ms (Views: 119.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-10 15:28:56 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3w7nCG2RjXADE4x2uToKTfSCan41j9mQuvcWXVphKU9+kR9SUW9UIKSNJhOJnRgE2068S9n38kq3q353cQvhXw==", "user"=>{"username"=>"mandel", "email"=>"mandel@ime.usp.br", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"mandel", "organization"=>"IME-USP"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'mandel' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mandel@ime.usp.br' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `encrypted_password`, `salt`, `name`, `organization`, `rank`, `created_at`, `updated_at`) VALUES ('mandel', 'mandel@ime.usp.br', '$2a$10$k.WfPxsC8xWIJgA04slV6utEqZ9Aw0gqnYanmABzq4Ehy8h8Bfavi', '$2a$10$k.WfPxsC8xWIJgA04slV6u', 'mandel', 'IME-USP', 'user', '2018-06-10 18:28:56', '2018-06-10 18:28:56')[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (61.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/
+Completed 302 Found in 160ms (ActiveRecord: 63.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:28:56 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (37.9ms)
+Completed 200 OK in 125ms (Views: 123.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 15:29:00 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 119ms (Views: 114.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:29:05 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 115ms (Views: 113.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:35:53 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 119ms (Views: 118.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-06-10 15:35:55 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pN8I6kdgT3FaqHjsvN3VMtvCGvUJl6wYP8HrrXqw37AFQPCwe56WIf020omMesd79A7MwOXvh8IynYOHUdoXoA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:35:55 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:41:46 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (25.5ms)
+Completed 200 OK in 136ms (Views: 134.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-06-10 15:41:52 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 116ms (Views: 115.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-06-10 15:41:55 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:41:58 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 86ms (Views: 86.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:45:22 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 96ms (Views: 95.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:53:38 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 104ms (Views: 97.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/show" for 127.0.0.1 at 2018-06-10 15:53:44 -0300
+Processing by ProjectsController#show as HTML
+Completed 404 Not Found in 2ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/projects_controller.rb:8:in `show'
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:54:23 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 103ms (Views: 97.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/show" for 127.0.0.1 at 2018-06-10 15:54:26 -0300
+Processing by ProjectsController#dashboard as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template projects/dashboard, application/dashboard with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/dan/Documents/bcc/mac0218/MAC0218/app/views"
+):
+  
+app/controllers/projects_controller.rb:64:in `dashboard'
+Started GET "/show" for 127.0.0.1 at 2018-06-10 15:55:19 -0300
+Processing by ProjectsController#dashboard as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template projects/dashboard, application/dashboard with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/dan/Documents/bcc/mac0218/MAC0218/app/views"
+):
+  
+app/controllers/projects_controller.rb:64:in `dashboard'
+Started GET "/show" for 127.0.0.1 at 2018-06-10 15:55:21 -0300
+Processing by ProjectsController#dashboard as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template projects/dashboard, application/dashboard with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/dan/Documents/bcc/mac0218/MAC0218/app/views"
+):
+  
+app/controllers/projects_controller.rb:64:in `dashboard'
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:55:25 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 99ms (Views: 99.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-06-10 15:55:30 -0300
+Processing by ProjectsController#new as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 15:55:30 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-06-10 15:55:38 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VoFhm15JqDDIB66GfpMZfri+G0GnHiDfvQR8526Z9EX3HpnBYrdxYG+ZBONONAs3l3LNdEtmCwWwWBTNRfM8VQ==", "user"=>{"email"=>"mandel", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'mandel' LIMIT 1[0m
+  ↳ app/models/user.rb:28
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:55:38 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 102ms (Views: 101.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:55:41 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 110ms (Views: 109.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-06-10 15:55:47 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering projects/new.html.haml within layouts/application
+  Rendered projects/new.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 152ms (Views: 148.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 15:55:55 -0300
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  ↳ app/views/projects/index.html.haml:24
+  Rendered projects/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.9ms)
+
+
