@@ -59682,6 +59682,13 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 1123ms (Views: 1120.6ms | ActiveRecord: 1.3ms)
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:36:22 -0300
+  [1m[35m (6.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+=======
 Started GET "/login" for 127.0.0.1 at 2018-06-10 02:17:21 -0300
   [1m[35m (4.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
@@ -59738,10 +59745,76 @@ Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 127.0.0.1 at 2018-06-10 02:17:43 -0300
+>>>>>>> adb47739c3352dceb4b78f1d7dfccad5ea55a991
 Processing by PostsController#index as HTML
   Rendering posts/index.html.haml within layouts/application
   [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
   ↳ app/views/posts/index.html.haml:24
+<<<<<<< HEAD
+  Rendered posts/index.html.haml within layouts/application (24.4ms)
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:36:25 -0300
+  [1m[35m (200.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (16.7ms)
+Completed 200 OK in 14025ms (Views: 14018.5ms | ActiveRecord: 0.9ms)
+
+
+Completed 200 OK in 11000ms (Views: 10995.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 02:36:41 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (35.9ms)
+Completed 200 OK in 131ms (Views: 127.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-06-10 02:36:50 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4pU7MqkOC42YFYgkO+lyCi5t774KQc60ub7RdZrNUbKem/qaLgVoWJMlAk3Uhob3EY2T5LGwpDqgxxbdE81+Ug==", "user"=>{"email"=>"pedro.hba@usp.br", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'pedro.hba@usp.br' LIMIT 1[0m
+  ↳ app/models/user.rb:25
+Redirected to http://localhost:3000/login
+Completed 302 Found in 94ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 02:36:50 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 114ms (Views: 112.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 02:36:53 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (17.2ms)
+Completed 200 OK in 127ms (Views: 107.3ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-10 02:37:13 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V+jDzWfm3/sm4T7XCplHhpC1N4ybsBB6H0ZonUoWKQMr5gJl4O28Li3RtL7l9rN7r1VL1iBBevQGP681wxYG4w==", "user"=>{"username"=>"Pedro", "email"=>"pedro.hba@usp.br", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"Pedro Almeida", "organization"=>"IME-USP"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'Pedro' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'pedro.hba@usp.br' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `encrypted_password`, `salt`, `name`, `organization`, `rank`, `created_at`, `updated_at`) VALUES ('Pedro', 'pedro.hba@usp.br', '$2a$10$RBJIVBLOPIiPK8bt8dSjseKk3/A5tzXk41XepbhSf1LsfYj8MhTR2', '$2a$10$RBJIVBLOPIiPK8bt8dSjse', 'Pedro Almeida', 'IME-USP', 'user', '2018-06-10 05:37:13', '2018-06-10 05:37:13')[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (986.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/
+Completed 302 Found in 1083ms (ActiveRecord: 988.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:37:14 -0300
+=======
   Rendered posts/index.html.haml within layouts/application (19.0ms)
 Completed 200 OK in 220ms (Views: 219.1ms | ActiveRecord: 0.4ms)
 
@@ -61255,10 +61328,78 @@ Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 127.0.0.1 at 2018-06-10 03:43:07 -0300
+>>>>>>> adb47739c3352dceb4b78f1d7dfccad5ea55a991
 Processing by PostsController#index as HTML
   Rendering posts/index.html.haml within layouts/application
   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
   ↳ app/controllers/application_controller.rb:8
+<<<<<<< HEAD
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (42.6ms)
+Completed 200 OK in 141ms (Views: 140.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-06-10 02:37:17 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering posts/new.html.haml within layouts/application
+  Rendered posts/new.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 117ms (Views: 113.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-06-10 02:37:24 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wJGYUWWMeWuFeund+J0JYWQ3NFkALo1iWESGeU1EAnm8n1n54ocavo5KY7QX8v2cW9dIA7vf5+xBPUHRxEQtmQ==", "post"=>{"title"=>"teste", "description"=>"test"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO `posts` (`author`, `title`, `description`, `created_at`, `updated_at`) VALUES ('Pedro', 'teste', 'test', '2018-06-10 05:37:24', '2018-06-10 05:37:24')[0m
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (230.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:29
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 250ms (ActiveRecord: 233.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-06-10 02:37:24 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  Rendering posts/show.html.haml within layouts/application
+  Rendered posts/show.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 100ms (Views: 95.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/orange.jpeg" for 127.0.0.1 at 2018-06-10 02:37:24 -0300
+Processing by PostsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:9
+Completed 404 Not Found in 5ms (ActiveRecord: 3.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=orange):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/labels/new" for 127.0.0.1 at 2018-06-10 02:37:27 -0300
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for LabelsController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+=======
   [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
   ↳ app/views/posts/index.html.haml:24
   Rendered posts/index.html.haml within layouts/application (27.6ms)
@@ -61286,6 +61427,7 @@ actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:101:in `binary_params_
 actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
 actionpack (5.2.0) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
 actionpack (5.2.0) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+>>>>>>> adb47739c3352dceb4b78f1d7dfccad5ea55a991
 actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
 actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
 actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
@@ -61329,6 +61471,120 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
+Started GET "/posts/orange.jpeg" for 127.0.0.1 at 2018-06-10 02:37:30 -0300
+Processing by PostsController#show as JPEG
+  Parameters: {"id"=>"orange"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:9
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=orange):
+  
+app/controllers/posts_controller.rb:9:in `show'
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:37:33 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (19.7ms)
+Completed 200 OK in 114ms (Views: 111.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:37:39 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (17.4ms)
+Completed 200 OK in 94ms (Views: 92.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-06-10 02:37:41 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (5.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 92ms (Views: 90.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:37:42 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (17.6ms)
+Completed 200 OK in 126ms (Views: 124.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-06-10 02:38:01 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.haml within layouts/application
+  Rendered pages/about.html.haml within layouts/application (5.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/account" for 127.0.0.1 at 2018-06-10 02:38:05 -0300
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:28
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (7.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Completed 200 OK in 107ms (Views: 103.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:38:07 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:38:10 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (15.6ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:38:11 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (17.7ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2018-06-10 02:38:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
 Started GET "/" for 127.0.0.1 at 2018-06-10 03:54:35 -0300
   [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
@@ -61369,6 +61625,7 @@ activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
 actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
 actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
 actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> adb47739c3352dceb4b78f1d7dfccad5ea55a991
 web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
@@ -61395,6 +61652,33 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:38:20 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (19.8ms)
+Completed 200 OK in 94ms (Views: 93.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:38:22 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (15.4ms)
+Completed 200 OK in 102ms (Views: 100.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/project1" for 127.0.0.1 at 2018-06-10 02:38:33 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/project1"):
+=======
 Started GET "/" for 127.0.0.1 at 2018-06-10 03:55:07 -0300
   [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
@@ -61444,6 +61728,7 @@ Completed 200 OK in 207ms (Views: 206.2ms | ActiveRecord: 0.7ms)
 Started GET "/posts/new" for 127.0.0.1 at 2018-06-10 03:55:14 -0300
   
 ActionController::RoutingError (No route matches [GET] "/posts/new"):
+>>>>>>> adb47739c3352dceb4b78f1d7dfccad5ea55a991
   
 actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
@@ -61472,6 +61757,241 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7511294826585232830', 0)[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7511294826585232830')[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rbenv/versions/2.5.0/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:51:02 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (76.7ms)
+Completed 200 OK in 408ms (Views: 400.9ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-06-10 02:51:08 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ROMmnHAt3lz0bhfOBKQSFRsxoRr1nEXPiMEbuPnuV2E47ec09ya9if9enafry+boJNHdQE5tL0GRuNwQcO54gQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 02:51:08 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 167ms (Views: 165.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 02:51:17 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-06-10 02:51:20 -0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/new.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 101ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 03:37:22 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (49.2ms)
+Completed 200 OK in 3670ms (Views: 3666.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 03:37:28 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (24.6ms)
+Completed 200 OK in 151ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 03:37:52 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 1384ms (Views: 1381.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 03:50:40 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 1273ms (Views: 1269.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:00:34 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 1236ms (Views: 1234.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:00:41 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 1248ms (Views: 1246.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:00:52 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 1235ms (Views: 1232.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:07:56 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 1223ms (Views: 1220.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:08:58 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 1263ms (Views: 1261.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:14:56 -0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 1153ms (Views: 1151.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:21:10 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 1240ms (Views: 1238.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:27:46 -0300
+  [1m[35m (2.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 1186ms (Views: 1184.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:35:58 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 1213ms (Views: 1211.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:41:16 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 1281ms (Views: 1278.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2018-06-10 04:42:11 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 1378ms (Views: 1376.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-06-10 04:55:27 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/pedro/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"223PIwnYtNvmXjl+DmM8frO28G9A89kzzn2mqnWq6KenYw6LjtPXDu1usxfhDMiDjFaMNfsCs73XBGEC/KrHRw==", "user"=>{"email"=>"pedro.hba@usp.br", "password"=>"[FILTERED]"}, "login"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'pedro.hba@usp.br' LIMIT 1[0m
+  ↳ app/models/user.rb:25
+Redirected to http://localhost:3000/
+Completed 302 Found in 113ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 04:55:27 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 1345ms (Views: 1344.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-06-10 04:56:05 -0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HoaRoe9tQS/qrxM5BsfS9BiNYpLftMacq6nfoilv8nZiiFAJaGYi+uGfmVDpqCYJJ20eyGRFrBKy0BgKoG/dlg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-10 04:56:05 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.haml:24
+  Rendered posts/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 1279ms (Views: 1278.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-06-10 04:56:07 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 1413ms (Views: 1411.8ms | ActiveRecord: 0.0ms)
+=======
 Started GET "/" for 127.0.0.1 at 2018-06-10 03:56:16 -0300
   [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   ↳ /Users/batmacumba/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
@@ -61666,6 +62186,7 @@ Processing by ProjectsController#index as HTML
   ↳ app/views/projects/index.html.haml:24
   Rendered projects/index.html.haml within layouts/application (10.1ms)
 Completed 200 OK in 137ms (Views: 135.3ms | ActiveRecord: 0.5ms)
+>>>>>>> adb47739c3352dceb4b78f1d7dfccad5ea55a991
 
 
 Started GET "/login" for 127.0.0.1 at 2018-06-10 04:03:01 -0300
