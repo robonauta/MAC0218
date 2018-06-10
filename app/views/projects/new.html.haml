@@ -8,5 +8,5 @@
       %label.sr-only{:for => "description"} Descrição curta do conjunto de imagens
       = f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => "" 
       
-      = f.file_field :files, class: 'form-control', :placeholder => "Imagens", :required => "" 
+      = f.file_field :files, multiple: true, class: 'form-control', :placeholder => "Imagens", :required => "" 
       %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar
