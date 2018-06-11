@@ -26,5 +26,12 @@ O usuário usado no MySQL é ```root```, sem senha.
 
 O site estará disponível em: http://localhost:3000
 
+## Relatório de testes
+Os testes foram feitos utilizando RSpec. Ao todo, 27 exemplos são testados e todos os testes têm resultado válido, abrangendo amplamente as funcionalidades implementadas até então. 
+
+Para executar o testador e verificar os resultados, basta executar no diretório do projeto o seguinte comando:
+	```bundle exec rspec```
+
 ## Docs
-[Relatório completo](https://github.com/robonauta/MAC0218/blob/master/docs/Relatorios/Monolito%20-%20relatório.pdf)
+[Relatório completo - Entrega 1](https://github.com/robonauta/MAC0218/blob/master/docs/Relatorios/Monolito%20-%20relatório.pdf)
+[Relatório completo - Entrega 2]()
