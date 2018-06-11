@@ -1,5 +1,5 @@
 -# Só mostra apresentação se o usuário não está logado
-- if !current_user
+- if current_user
   -#FIX NESSES BR COM MARGIN DA NAVBAR
   %br
   %br
@@ -11,9 +11,9 @@
     %h1.cover-heading MONOLITO
     %p.lead Inteligência gera inteligência
     %p.lead
-      %a.btn.btn-light.btn-secondary{:href => "/about"} Saiba mais
+      %a.btn.btn-light.btn-secondary{:href => "/projects"} Colobore com um projeto
     %p.lead
-    %a.btn.btn-light.btn-secondary{:href => "#dashboard"} Veja os projetos
+    %a.btn.btn-light.btn-secondary{:href => "/new"} Crie o seu projeto
     
 
 %div

@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy'
   get '/settings/account' => 'users#update'
   get '/upload' => 'images#new'
+  get '/projects' => 'projects#show'
+  get '/label' => 'labels#new'
 
   
   
