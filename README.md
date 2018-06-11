@@ -33,5 +33,6 @@ Para executar o testador e verificar os resultados, basta executar no diretório
 	```bundle exec rspec```
 
 ## Docs
-[Relatório completo - Entrega 1](https://github.com/robonauta/MAC0218/blob/master/docs/Relatorios/Monolito%20-%20relatório.pdf)
-[Relatório completo - Entrega 2]()
+[Relatório completo - Entrega 1](https://github.com/robonauta/MAC0218/blob/master/docs/Relatorios/Monolito%20-%20relat%C3%B3rio%20fase%201.pdf) --- 
+[Relatório completo - Entrega 2](https://github.com/robonauta/MAC0218/blob/master/docs/Relatorios/Monolito%20-%20relat%C3%B3rio%20fase%202.pdf)
+
