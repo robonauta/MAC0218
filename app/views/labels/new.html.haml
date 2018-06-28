@@ -1,1 +1,19 @@
-= image_tag @image.file
+%main.inner.cover.text-dark.shadow-lg{:role => "main"}
+  .row.justify-content-center
+    .card
+      .text-center
+        = image_tag(@image.file, alt: "Imagem da pergunta", class: 'img-fluid', style: 'height:auto;width:600px;' )
+        .card-body
+          %h5.card-title Imagem
+          %p.card-text Pergunta sobre a imagem acima
+        
+        %ul.list-group.list-group-flush
+          %li.list-group-item
+            %button.btn.btn-light{:type => "button"} Opção 1
+          %li.list-group-item
+            %button.btn.btn-light{:type => "button"} Opção 2
+          %li.list-group-item
+            %button.btn.btn-light{:type => "button"} Opção 3
+        .card-body
+          %a.card-link{:href => "#"} Enviar
+          %a.card-link{:href => "#"} Pular
