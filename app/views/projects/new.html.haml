@@ -6,8 +6,7 @@
       %label.sr-only{:for => "title"} Título            
       = f.text_field :name, class: 'form-control', :placeholder => "Título", :required => ""
       %label.sr-only{:for => "description"} Descrição curta do conjunto de imagens
-      = f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => "" 
-      
+      = f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => ""       
       = f.file_field :files, multiple: true, class: 'form-control', :placeholder => "Imagens", :required => "" 
       = f.text_field :name, class: 'form-control', :placeholder => "Pergunta sobre as imagens", :required => ""
       = f.text_field :name, class: 'form-control', :placeholder => "Opção 1", :required => ""
