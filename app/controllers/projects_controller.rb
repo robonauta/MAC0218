@@ -31,7 +31,7 @@ class ProjectsController < ApplicationController
             @image.file.attach(upload)
             @image.save!
           }
-          redirect_to '/'
+          render 'newquestion'
       else
         render 'new'
       end
@@ -72,5 +72,9 @@ class ProjectsController < ApplicationController
     private def image_params
       params.require(:project).permit(:file)
     end
-      
+
+    def my
+      @projects = Project.where('user_id = ?', current_user.id)
+      render 'my'
+    end
 end
