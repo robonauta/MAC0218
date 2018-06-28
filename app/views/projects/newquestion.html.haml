@@ -1,0 +1,16 @@
+%span.text-center.refazer-esse-css{ :style => "min-height: 100vh;"}
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %p.lead 
+        =@project.name
+    %p.lead
+        =@project.description
+    = form_for :question, :url => {:controller => 'question', :action => 'create'} do |f|
+        %h1.h3.mb-3.font-weight-normal Cadastrar questão para o projeto
+        %label.sr-only{:for => "description"} Descrição
+        = f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => ""
+        %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar 

@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   post '/contact' => 'pages#message'
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
-  get '/dashboard' => 'projects#dashboard'
   get '/new' => 'projects#new'
   get '/settings' => 'users#settings'
   get '/settings/account' => 'users#account'
@@ -19,8 +18,7 @@ Rails.application.routes.draw do
   get '/upload' => 'images#new'
   get '/projects' => 'projects#show'
   get '/label' => 'labels#new'
-
-  
+  get '/myprojects' => 'projects#my'
   
   # Resources:
   resources :projects
@@ -28,5 +26,6 @@ Rails.application.routes.draw do
   resources :sessions
   resources :labels
   resources :images
+  resources :question
   
 end
