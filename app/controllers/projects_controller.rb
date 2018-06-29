@@ -96,7 +96,7 @@ class ProjectsController < ApplicationController
     end
 
     def my
-      @projects = Project.where('user_id = ?', current_user.id)
+      @projects = Project.where('user_id = ?', current_user.id)      
       render 'dashboard'
     end
 
