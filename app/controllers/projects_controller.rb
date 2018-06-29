@@ -95,9 +95,8 @@ class ProjectsController < ApplicationController
       params.require(:project).permit(:file)
     end
 
-    def my
+    def dashboard
       @projects = Project.where('user_id = ?', current_user.id)      
-      render 'dashboard'
     end
 
     def retrieve

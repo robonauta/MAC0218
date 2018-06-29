@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get '/upload' => 'images#new'
   get '/projects' => 'projects#show'
   get '/label' => 'labels#new'
-  get '/myprojects' => 'projects#my'
+  get '/dashboard' => 'projects#dashboard'
   post 'create_question' => 'projects#create_question'
   get '/retrieve' => 'projects#retrieve'
   
