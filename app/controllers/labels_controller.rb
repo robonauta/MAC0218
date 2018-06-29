@@ -10,8 +10,11 @@ class LabelsController < ApplicationController
       count = Image.count
       random_offset = rand(count)
       @image = Image.offset(random_offset).first
-    end 
+    end
+    @question = Question.where('project_id = ?', @image.project_id).sample
+    @answer_opts = AnswerOpt.where('question_id = ?', @question.id)
   end
+  
   def create
     
   end

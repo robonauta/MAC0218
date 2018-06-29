@@ -4,20 +4,12 @@
       .text-center
         = image_tag(@image.file, alt: "Imagem da pergunta", class: 'img-fluid', style: 'height:auto;width:600px;' )
         .card-body
-          %h5.card-title Imagem
-          %p.card-text Pergunta sobre a imagem acima
-          = @questions.description
+          %h5.card-title
+            = @question.description
         %ul.list-group.list-group-flush
-          %li.list-group-item
-            %button.btn.btn-light{:type => "button"} Opção 1
-          %li.list-group-item
-            %button.btn.btn-light{:type => "button"} Opção 2
-          %li.list-group-item
-            %button.btn.btn-light{:type => "button"} Opção 3
-          %li.list-group-item
-            %button.btn.btn-light{:type => "button"} Opção 4
-          %li.list-group-item
-            %button.btn.btn-light{:type => "button"} Opção 5            
+          - @answer_opts.each do |answer_opt|
+            %li.list-group-item
+              %button.btn.btn-light{:type => "button"} 
+                =answer_opt.text         
         .card-body
-          %a.card-link{:href => "#"} Enviar
-          %a.card-link{:href => "#"} Pular
+          %a.card-link{:href => "/label"} Pular

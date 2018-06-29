@@ -31,6 +31,7 @@ class ProjectsController < ApplicationController
           params[:project][:files].each { |upload|
             @image = @project.images.create()
             @image.file.attach(upload)
+            @image.nviews = 0
             @image.save!
           }
           render 'newquestion' and return
