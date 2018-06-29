@@ -7,28 +7,31 @@ body, html {
   height: 100%;
 }
 
+// Formulários e cards
 .center-card {
   width: 66%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
 }
-
 .center-card-narrow {
   width: 30%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
 }
-
 .form-control {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .card-text {
   color:#222222
 }
+img {
+  padding: 10px;
+}
+
+
 .panel-transparent {
   background: none;
   .panel-heading {
