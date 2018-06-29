@@ -4,7 +4,7 @@
       .text-center
         = image_tag(@image.file, alt: "Imagem da pergunta", class: 'img-fluid', style: 'height:auto;width:600px;' )
         .card-body
-          %h5.card-title
+          %h5
             = @question.description
         %ul.list-group.list-group-flush
           - @answer_opts.each do |answer_opt|

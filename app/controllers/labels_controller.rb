@@ -17,7 +17,13 @@ class LabelsController < ApplicationController
     # Busca uma pergunta e as respostas possíveis pra aquela pergunta
     if (@image)
       @question = Question.where('project_id = ?', @image.project_id).sample
-      @answer_opts = AnswerOpt.where('question_id = ?', @question.id)
+      if (@question)
+        @answer_opts = AnswerOpt.where('question_id = ?', @question.id)
+      else 
+        redirect_to '/label' and return
+      end
+    else 
+      redirect_to '/label' and return
     end
   end
   
