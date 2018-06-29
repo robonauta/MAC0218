@@ -1,17 +1,15 @@
 %main.inner.cover{:role => "main"}
 .row.justify-content-center
   .card
-    .text-center
-      %img.card-img-top.img-fluid.img-question{:alt => "Card image cap", :src => "orange.jpeg"}/
-    .card-body
-      %h5.card-title= @project.name
-      -#%p.card-text= @project.description
+    .title{:style => "color: black;"}
+      = @project.name
+      %br
+      = @project.description
     %ul.list-group.list-group-flush
       %li.list-group-item
         = link_to "Rotular", controller: "labels", action: "new", id: @project.id, :class => 'btn btn-dark'
     .card-body
       - if @show_edit
-        %hr
         %a.card-link{:href => "#"}
         = link_to "Edit", edit_project_path(@project), :class => 'btn btn-default'
         %a.card-link{:href => "#"}

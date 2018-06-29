@@ -2,16 +2,16 @@
   .album.py-5
     .container
       .row
-        - @posts.each do |post|
+        - @projects.each do |project|
           .col-md-4
             .card.mb-4.box-shadow
+              /= image_tag(@image.file, alt: "Imagem da pergunta", class: 'img-fluid', style: 'height:auto;width:600px;' )
               %img.card-img-top{:alt => "Card image cap", "data-src" => "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"}/
               .card-body.text-dark
-                %p.card-text= post.title
-                %p.card-text= post.author
-                %p.card-text= post.description
+                %p.card-text= project.name
+                %p.card-text= project.user_id
                 .d-flex.justify-content-between.align-items-center
                   .btn-group
-                    %button.btn.btn-sm.btn-outline-secondary{:type => "button"}= link_to "Read More", post_path(post)
+                    %button.btn.btn-sm.btn-outline-secondary{:type => "button"}= link_to "Recuperar dados", "#"
                   %small.text-muted 9 mins                  
               

@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get '/label' => 'labels#new'
   get '/myprojects' => 'projects#my'
   post 'create_question' => 'projects#create_question'
+  get '/retrieve' => 'projects#retrieve'
   
   # Resources:
   resources :projects
