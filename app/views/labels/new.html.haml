@@ -13,4 +13,5 @@
                 -#= link_to answer_opt.text, controller: "labels", action: "create", id: answer_opt.id
                 = link_to answer_opt.text
         .card-body
-          %a.card-link{:href => "/label"} Pular
+          %a.card-link{:href => "#"}
+            = link_to "Pular", '/label', :class => 'btn btn-danger'
