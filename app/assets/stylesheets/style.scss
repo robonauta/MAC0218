@@ -27,10 +27,14 @@ body, html {
 .card-text {
   color:#222222
 }
+
 img {
   padding: 10px;
 }
 
+.list-group-item{
+  padding: 0px !important;
+}
 
 .panel-transparent {
   background: none;
