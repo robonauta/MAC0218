@@ -1,18 +1,24 @@
 %main.inner.cover{:role => "main"}
 .row.justify-content-center
   .card
-    .title{:style => "color: black;"}
-      = @project.name
-      %br
-      = @project.description
-    %ul.list-group.list-group-flush
-      %li.list-group-item
-        = link_to "Rotular", controller: "labels", action: "new", id: @project.id, :class => 'btn btn-dark'
-    .card-body
+    - @image = @project.images.sample
+    .text-center
+      = image_tag(@image.file, alt: "Imagem da pergunta", class: 'img-fluid', style: 'height:300px;width:auto;')
+
+    /= image_tag(@image.file, alt: "Imagem da pergunta", class: 'card-img-top', style: 'height:auto;width:600px;' )
+    .card-body.text-dark
+      %p.card-text= @project.name                
+      %hr
+      %p.card-text= @project.description
+    .card-body.text-center
       - if @show_edit
         %a.card-link{:href => "#"}
-        = link_to "Edit", edit_project_path(@project), :class => 'btn btn-default'
+        = link_to "Voltar", '/myprojects', :class => 'btn btn-primary'
         %a.card-link{:href => "#"}
-        = link_to "Delete", project_path(@project), 
+        = link_to "Rotular", controller: "labels", action: "new", id: @project.id
+        %a.card-link{:href => "#"}
+        = link_to "Editar", edit_project_path(@project), :class => 'btn btn-primary'
+        %a.card-link{:href => "#"}
+        = link_to "Deletar", project_path(@project), 
                   method: :delete, data: { confirm: 'Are you sure?' },
                   :class => 'btn btn-danger'
