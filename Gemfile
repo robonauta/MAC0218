@@ -24,6 +24,8 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 # Flash
 gem 'flash'
+# Ícones
+gem 'font-awesome-rails'
 # Password Hashing
 gem 'bcrypt', '~> 3.1.7'
 # Use SCSS for stylesheets

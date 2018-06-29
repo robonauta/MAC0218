@@ -7,18 +7,16 @@ body, html {
   height: 100%;
 }
 
-// Formulários e cards
+/* Cards */
 .center-card {
   width: 66%;
   margin: 0 auto;
   padding: 20px;
-  text-align: center;
 }
 .center-card-narrow {
   width: 30%;
   margin: 0 auto;
   padding: 20px;
-  text-align: center;
 }
 .form-control {
   margin-top: 10px;
@@ -27,8 +25,33 @@ body, html {
 .card-text {
   color:#222222
 }
+.small-text {
+  font-size: 14px;
+}
+.card-trans {
+  background: rgba(159, 159, 159, 0.46);
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.narrow {
+  width: 30%;
+}
+.wide {
+  width: 66%;
+}
+
+/* Elementos */
 img {
   padding: 10px;
+}
+
+textarea {
+  height: 200px;
+}
+
+.image-upload > input {
+    display: none;
 }
 
 

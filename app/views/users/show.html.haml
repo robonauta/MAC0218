@@ -1,25 +1,42 @@
-%main.card.center-card-narrow.card-text
+%main.card-trans.narrow
   .row.justify-content-center
     %h1.cover-heading Meu perfil 
-  .row.justify-content-center
-    .form-group
-    %label Nome:&nbsp
-    = @user.name
-  .row.justify-content-center
-    .form-group
-    %label Username:&nbsp
-    = @user.username
-  .row.justify-content-center
-    .form-group
-    %label E-mail:&nbsp
-    = @user.email
-  .row.justify-content-center
-    .form-group
-    %label Organização:&nbsp
-    = @user.organization
-  .row.justify-content-center
-    .form-group
-    %label Pontuação:&nbsp
-    /=@user.organization
+  %br
+  .row
+    .col-md-2
+    .col-md-3
+      %label Nome:
+    .col-md-3
+      = @user.name
+    .col-md-3
+  .row
+    .col-md-2
+    .col-md-3
+      %label Username:
+    .col-md-3
+      = @user.username
+    .col-md-3
+  .row
+    .col-md-2
+    .col-md-3
+      %label E-mail:
+    .col-md-3
+      = @user.email
+    .col-md-3
+  .row
+    .col-md-2
+    .col-md-3
+      %label Organização:
+    .col-md-3
+      = @user.organization
+    .col-md-3
+  .row
+    .col-md-2
+    .col-md-3
+      %label Pontuação:
+    .col-md-3
+      
+    .col-md-3
+  %br
   .row.justify-content-center
     = link_to "Editar perfil", edit_user_path(@user), :class => 'btn btn-dark'

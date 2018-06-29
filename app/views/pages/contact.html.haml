@@ -1,22 +1,19 @@
+  
+%main.card-trans.narrow
+  %h1 Fale com a gente!
+  %div.small-text
+    Rua Dont Pânic, 42 - São Paulo, Brasil
+    %br
+    Telefone: +55 36877520
+    %br
+    Email: monolito@gubi.com
+  %br
+  = form_for(:pages, :url => {:controller => 'pages', :action => 'message'}) do |f|   
+    %label.sr-only{:for => "name"} Nome:   
+    = f.text_field :name, class: 'form-control', :placeholder => "Nome", :required => ""      
+    %label.sr-only{:for => "email"} Endereço de e-mail:
+    = f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => ""
+    %label.sr-only{:for => "mensagem"} Mensagem:
+    = f.text_area :message, class: 'form-control', :placeholder => "Mensagem", :required => ""
 
-.row.justify-content-center.text-center     
-  %main.inner.cover{:role => "main"}
-    %br
-    %br
-    %h3 Contato
-    %p Tem alguma dúvida ou sugestão? Fale com a gente!
-    %br/
-    %h3 Informações para contato
-    %p Rua Dont Pânic, 42 - São Paulo, Brasil
-    %p Telefone: +55 36877520
-    %p Email: monolito@gubi.com
-    %h3 Envie-nos uma mensagem
-    = form_for(:pages, :url => {:controller => 'pages', :action => 'message'}) do |f|   
-      %label.sr-only{:for => "name"} Nome:   
-      = f.text_field :name, class: 'form-control', :placeholder => "Nome", :required => ""      
-      %label.sr-only{:for => "email"} Endereço de e-mail:
-      = f.text_field :email, class: 'form-control', :placeholder => "Endereço de e-mail", :required => ""
-      %label.sr-only{:for => "mensagem"} Mensagem:
-      = f.text_area :message, class: 'form-control', :placeholder => "Mensagem", :required => ""
-                   
-      %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar
+    %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar

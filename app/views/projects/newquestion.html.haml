@@ -1,13 +1,18 @@
-.row.justify-content-center
-  %main.inner.cover{:role => "main"}
-    %form.form-signin
-    = form_for :question, :url => {:controller => 'projects', :action => 'create_question'} do |f|
-      = f.text_field :description, class: 'form-control', :placeholder => "Pergunta sobre as imagens", :required => ""
-      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 1", :required => ""
-      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 2", :required => ""
-      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 3", :required => ""
-      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 4", :required => ""
-      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 5", :required => ""
-      = f.hidden_field :project_id, value: @project.id
-      %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar
+.card.center-card.card-text
+  %h1.text-center Preencha uma pergunta
+  %form.form-signin
+  = form_for :question, :url => {:controller => 'projects', :action => 'create_question'} do |f|
+    = f.text_field :description, class: 'form-control', :placeholder => "O que você vê na imagem?", :required => ""
+    = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Um pato", :required => ""
+    = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Um leão", :required => ""
+    = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Um crocodilo", :required => ""
+    = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "O Chapolim colorado", :required => ""
+    = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Fora Temer", :required => ""
+    = f.hidden_field :project_id, value: @project.id
+    .row.justify-content-center
+      %button.btn.btn-lg.btn-primary{:type => "submit"} Adicionar outra pergunta
+      &nbsp
+      %button.btn.btn-lg.btn-success{:type => "submit"} Finalizar
+      
+
       
