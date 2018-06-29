@@ -1,14 +1,15 @@
-%main#data.inner.cover.post-content.text-dark.text-center{:role => "main"}
-  %h2 Section title
+%main.inner.cover.post-content.text-dark.text-center{:role => "main"}
+  %h2 Resultado das respostas dos usuários
   .table-responsive
-    %table.table.table-striped.table-sm
+    %table#datatable.table.table-striped.table-sm
       %thead
         %tr
           %th Imagem
-          %th Opção A
-          %th Opção
-          %th Header
-          %th Header
+          %th Opção 1
+          %th Opção 2
+          %th Opção 3
+          %th Opção 4
+          %th Opção 5 
       %tbody
         %tr
           %td 1,001
@@ -106,4 +107,12 @@
           %td ligula
           %td in
           %td libero
-  %a#data{:onclick => "toCSV()"} Baixar como .csv
+  %a.badge.badge-success.text-light{:download => "answers.xls", :href => "#", :onclick => "return ExcellentExport.excel(this, 'datatable', 'Sheet Name Here');"} Exportar para o Excel
+  %a.badge.badge-dark.text-light{:download => "answers.csv", :href => "#", :onclick => "return ExcellentExport.csv(this, 'datatable');"} Exportar para CSV
+  %br 
+  %br
+  %br
+  %small.font-italic
+    Algoritmo 'excellentexport' para exportar os dados por 
+    %a{:href => 'https://github.com/jmaister/'} jmaister
+    , licenciado sob a Licença do MIT.

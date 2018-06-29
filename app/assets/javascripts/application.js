@@ -15,6 +15,6 @@
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require bg
-//= require csv
+//= require excellentexport
 //= require global
 //= require_tree .
