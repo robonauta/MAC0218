@@ -35,8 +35,9 @@
                 .dropdown-divider
                 %a.dropdown-item{:href =>  "/myprojects"} Meus projetos 
                 .dropdown-divider
-                %a.dropdown-item{:href => "javascript:void(0)"} 
-                  = link_to("Sair", logout_path, :method => :delete)
+                .text-center
+                  %a.dropdown-item{:href => "javascript:void(0)"} 
+                    = link_to("Sair", logout_path, :method => :delete)
           - else
             %li.nav-item
               %a.nav-link{:href => "/login"} Entre
