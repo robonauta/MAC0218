@@ -15,8 +15,9 @@
                 /%p.card-text= project.user_id
                 .d-flex.justify-content-between.align-items-center
                   .btn-group
-                    %button.btn.btn-sm.btn-outline-secondary{:type => "button"}= link_to "Recuperar dados", "#"
+                    %button.btn.btn-sm.btn-outline-secondary{:type => "button"}= link_to "Obter dados", "#"
                     %button.btn.btn-sm.btn-outline-secondary{:type => "button"}= link_to "Ver mais", project_path(project)
-
-                  /%small.text-muted 9 mins                  
+                %hr
+                %small.text-muted Criado em
+                %small.text-muted= project.created_at.strftime("%-d/%-m/%y às %H:%M")               
               
