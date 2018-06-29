@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-
+  #      render plain: params[:project].inspect
     def index
         @projects = Project.all
         render 'index'
@@ -23,7 +23,8 @@ class ProjectsController < ApplicationController
     end
   
     def create
-#      render plain: params[:project].inspect
+      # Cria um Projeto, altera o seu user_id pro id do usuário e salva na DB.
+      # Em caso de sucesso, faz upload das imagens e redireciona pra página de pergunta.
       @project = Project.new(project_params)
       @project.user_id = current_user.id
       if (@project.save)
@@ -32,11 +33,28 @@ class ProjectsController < ApplicationController
             @image.file.attach(upload)
             @image.save!
           }
-          render 'newquestion'
+          render 'newquestion' and return
       else
         render 'new'
       end
-      
+    end
+    
+    def create_question
+      # Cadastra na DB uma pergunta de um projeto.
+      @project = Project.find(params[:question][:project_id])
+      @question = Question.new(question_params)
+      @question.project_id = @project.id
+      @question.nviews = 0
+      if (@question.save)
+        params[:question][:text].each { |text|
+          @answer_opt = AnswerOpt.new()
+          @answer_opt.text = text
+          @answer_opt.question_id = @question.id
+          @answer_opt.nanswers = 0
+          @answer_opt.save!
+          }
+        redirect_to @project and return
+      end
     end
   
     def edit
@@ -46,7 +64,6 @@ class ProjectsController < ApplicationController
   
     def update
       @project = Project.find(params[:id])
-      
       if(@project.update(project_params))
         redirect_to @project
       else
@@ -62,12 +79,15 @@ class ProjectsController < ApplicationController
   
     def dashboard
       @projects = Project.all
-
       render 'dashboard'
     end
 
     private def project_params
       params.require(:project).permit(:name, :description)
+    end
+  
+    private def question_params
+      params.require(:question).permit(:description, :text, :project_id)
     end
   
     private def image_params
