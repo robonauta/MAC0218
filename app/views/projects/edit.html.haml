@@ -7,4 +7,7 @@
       /= f.text_field :title, class: 'form-control', :placeholder => "Título", :required => ""
       %label.sr-only{:for => "password"} Descrição curta do conjunto de imagens
       = f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => ""            
+      %a.card-link{:href => "#"}
+        = link_to "Voltar", '/myprojects', :class => 'btn btn-lg btn-primary btn-block'
       %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar
+

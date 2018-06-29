@@ -1,4 +1,4 @@
-%main.inner.cover.post-content.text-dark.text-center{:role => "main"}
+%main#data.inner.cover.post-content.text-dark.text-center{:role => "main"}
   %h2 Section title
   .table-responsive
     %table.table.table-striped.table-sm
@@ -106,4 +106,4 @@
           %td ligula
           %td in
           %td libero
-  = link_to "Baixar como .csv", "www.google.com"
+  %a#data{:onclick => "toCSV()"} Baixar como .csv
