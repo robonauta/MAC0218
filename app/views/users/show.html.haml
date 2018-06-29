@@ -18,4 +18,8 @@
     %label Organização:
     =@user.organization
   .row.justify-content-center
+    .form-group
+    %label Pontuação:
+    /=@user.organization
+  .row.justify-content-center
     = link_to "Editar perfil", edit_user_path(@user), :class => 'btn btn-dark'
