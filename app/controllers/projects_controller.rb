@@ -76,6 +76,10 @@ class ProjectsController < ApplicationController
 
     def my
       @projects = Project.where('user_id = ?', current_user.id)
-      render 'my'
+      render 'dashboard'
     end
+
+    def retrieve
+      render 'retrieve'
+    end 
 end
