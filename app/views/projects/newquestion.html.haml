@@ -1,16 +1,13 @@
-%span.text-center.refazer-esse-css{ :style => "min-height: 100vh;"}
-    %br
-    %br
-    %br
-    %br
-    %br
-    %br
-    %p.lead 
-        =@project.name
-    %p.lead
-        =@project.description
-    = form_for :question, :url => {:controller => 'question', :action => 'create'} do |f|
-        %h1.h3.mb-3.font-weight-normal Cadastrar questão para o projeto
-        %label.sr-only{:for => "description"} Descrição
-        = f.text_area :description, class: 'form-control', :placeholder => "Descrição", :required => ""
-        %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar 
+.row.justify-content-center
+  %main.inner.cover{:role => "main"}
+    %form.form-signin
+    = form_for :question, :url => {:controller => 'projects', :action => 'create_question'} do |f|
+      = f.text_field :description, class: 'form-control', :placeholder => "Pergunta sobre as imagens", :required => ""
+      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 1", :required => ""
+      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 2", :required => ""
+      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 3", :required => ""
+      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 4", :required => ""
+      = f.text_field :text, multiple: true, class: 'form-control', :placeholder => "Opção 5", :required => ""
+      = f.hidden_field :project_id, value: @project.id
+      %button.btn.btn-lg.btn-primary.btn-block{:type => "submit"} Enviar
+      
