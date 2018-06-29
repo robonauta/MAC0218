@@ -1,9 +1,9 @@
-%main.inner.cover{:role => "main"}
+%main.card-trans.narrow
   .row.justify-content-center
     %form
     = form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f|
-      %img.mb-4{:alt => "", :height => "72", :src => "https://getbootstrap.com/assets/brand/bootstrap-solid.svg", :width => "72"}/
-      %h1.h3.mb-3.font-weight-normal Cadastro
+      %h1.text-center Cadastro
+      %br
       .form-group
         %label.sr-only{:for => "username"} Nome de usuário
         = f.text_field :username, class: 'form-control', id: 'username', :placeholder => "Username", :required => ""

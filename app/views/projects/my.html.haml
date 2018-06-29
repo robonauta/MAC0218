@@ -1,26 +1,21 @@
-%span.text-center.refazer-esse-css{ :style => "min-height: 100vh;"}
-    %br
-    %br
-    %br
-    %br
-    %br
-    %br
-    - if @projects.count == 0
-        %p.lead Você ainda não cadastrou nenhum projeto!
-        %p.lead 
-            %a.btn.btn-light.btn-secondary{:href => "/label"} Colobore com um projeto
-        %p.lead 
-            %a.btn.btn-light.btn-secondary{:href => "/new"} Crie o seu projeto
-    %div
-    #dashboard
-        .album.py-5
-        .container
-            .row
-            - @projects.each do |project|
-                .col-md-4
-                .card.mb-4.box-shadow
-                    %img.card-img-top{:alt => "Card image cap", "data-src" => "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"}/
-                    .card-body.text-dark
-                        .img-question project. 
-                    %p.card-text= project.name
-                    %p.card-text= project.user_id
+%main
+- if @projects.count == 0
+  %p.lead Você ainda não cadastrou nenhum projeto!
+  %p.lead 
+      %a.btn.btn-light.btn-secondary{:href => "/label"} Colobore com um projeto
+  %p.lead 
+      %a.btn.btn-light.btn-secondary{:href => "/new"} Crie o seu projeto
+- else
+  %div
+  #dashboard
+      .album.py-5
+      .container
+          .row
+          - @projects.each do |project|
+              .col-md-4
+              .card.mb-4.box-shadow
+                  %img.card-img-top{:alt => "Card image cap", "data-src" => "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"}/
+                  .card-body.text-dark
+                      .img-question project. 
+                  %p.card-text= project.name
+                  %p.card-text= project.user_id

@@ -1,5 +1,5 @@
--# Só mostra apresentação se o usuário não está logado
 - if current_user
+  -# USUÁRIO LOGADO
   %main.text-center.card-trans.narrow
     %h1.cover-heading MONOLITO
     %p.lead Inteligência gera inteligência
@@ -11,22 +11,29 @@
         %a.btn.btn-warning{:href => "/new"} 
           %i.fa.fa-plus
           Crie o seu projeto
-    
+- else
+  -# USUÁRIO NÃO LOGADO
+  %main.text-center.card-trans.narrow
+    %h1.cover-heading MONOLITO
+    %p.lead Inteligência gera inteligência
+  %main.card-trans.wide
+    %span.text-center
+    %h3 Quem somos
+    %p Uma plataforma que conecta projetos de inteligências artificiais a pessoas. 
 
--#%div
--#  #dashboard
--#    .album.py-5
--#      .container
--#        .row
--#          - @projects.each do |project|
--#            .col-md-4
--#              .card.mb-4.box-shadow
--#                %img.card-img-top{:alt => "Card image cap", "data-src" => "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"}/
--#                .card-body.text-dark
--#                  %p.card-text= project.name
--#                  %p.card-text= project.user_id
--#-#                  %p.card-text= project.description
--#                  .d-flex.justify-content-between.align-items-center
--#                    .btn-group
--#                      %button.btn.btn-sm.btn-outline-secondary{:type => "button"}= link_to "Read More", post_path(post)
--#                    %small.text-muted 9 mins                  
+    %h3 Por que isso importa
+    %p Na área de aprendizado de máquina, um grande desafio é ter em mãos um conjunto de dados rotulados suficiente para que sirva de ‘gabarito’ para o algoritmo - seja durante o desenvolvimento, com o treinamento da inteligência artificial, seja depois, com a validação da acurácia.
+
+    %h3 Como funciona
+    %p Se você é um desenvolvedor, aqui você pode depositar seu conjunto de dados, indicar o que precisa ser classificado ou avaliado com relação a esses dados e obter a um custo justo um amplo espectro de respostas dadas por usuários comuns, recebendo de volta em pouco tempo seus dados devidamente rotulados para uso em sua aplicação.
+  
+    %h3 Se interessou? 
+    
+    %main.text-center
+      %p.lead
+        %a.btn.btn-primary{:href => "/label"} 
+          %i.fa.fa-pencil
+          Colabore
+        %a.btn.btn-warning{:href => "/new"} 
+          %i.fa.fa-plus
+          Crie o seu projeto   
