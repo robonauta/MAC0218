@@ -5,11 +5,8 @@
       %thead
         %tr
           %th Imagem
-          %th Opção 1
-          %th Opção 2
-          %th Opção 3
-          %th Opção 4
-          %th Opção 5 
+          -@opts.each do |opt|
+            %th= opt.text
       %tbody
         -@images.each do |image|
           %tr
