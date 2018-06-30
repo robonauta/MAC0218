@@ -100,6 +100,10 @@ class ProjectsController < ApplicationController
     end
 
     def retrieve
+      @images = Image.where('project_id = ?', params[:pid])
+      @question = Question.where('project_id', params[:pid]).first
+      @opts = AnswerOpt.where('question_id = ?', @question.id)
       render 'retrieve'
     end 
 end
+
