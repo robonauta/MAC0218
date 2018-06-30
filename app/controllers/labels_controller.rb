@@ -24,14 +24,35 @@ class LabelsController < ApplicationController
       end
     else 
       redirect_to '/label' and return
+
     end
   end
-  
-  def create
+  def saveanswer
     # Recebe o id da resposta dada e 
-    if (params[:id])
-      @answer_opt = AnswerOpt.find(params[:id])
-      puts @answer_opt.text
+    if (params[:aid])
+      # atualiza o numero de respostas da opt e salva
+      @answer_opt = AnswerOpt.find(params[:aid])
+      @question = Question.find(@answer_opt.question.id)
+      @answer_opt.nanswers+=1
+      @answer_opt.save
+      # atualiza o numero de views da questao e salva
+      if (@question)
+        @question.nviews+=1
+        @question.save
+      end
+
+      @user = User.find(current_user.id)
+      puts @user.name
+      if (@user)
+        if (!@user.points)
+          @user.points = 0
+        end
+        @user.points+=1
+        @user.save
+      end
+      redirect_to '/label' and return
+    else
+      redirect_to '/label' and return
     end
   end
 end

@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get '/dashboard' => 'projects#dashboard'
   post 'create_question' => 'projects#create_question'
   get '/retrieve' => 'projects#retrieve'
+  get '/saveanswer' => 'labels#saveanswer'
   
   # Resources:
   resources :projects
