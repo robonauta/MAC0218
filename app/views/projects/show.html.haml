@@ -12,7 +12,7 @@
   .card-body.text-center
     - if @show_edit
       %a.card-link{:href => "#"}
-      = link_to "Voltar", '/myprojects', :class => 'btn btn-dark'
+      = link_to "Voltar", '/dashboard', :class => 'btn btn-dark'
       %a.card-link{:href => "#"}
       = link_to "Editar", edit_project_path(@project), :class => 'btn btn-dark'
       %a.card-link{:href => "#"}
