@@ -10,7 +10,11 @@
           - @answer_opts.each do |answer_opt|
             %li.list-group-item
               %button.btn.btn-light
+<<<<<<< HEAD
                 = link_to answer_opt.text, :controller => "labels", :action => "saveanswer", :aid => answer_opt.id
+=======
+              = link_to answer_opt.text, :controller => "labels", :action => "saveanswer", :aid => answer_opt.id, :imid => @image.id
+>>>>>>> 1d92ec540a65b703d99a0756a6309d9fbc9cabe6
         .card-body
           %a.card-link{:href => "#"}
             = link_to "Pular", '/label', :class => 'btn btn-danger'

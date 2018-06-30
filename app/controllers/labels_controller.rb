@@ -31,9 +31,16 @@ class LabelsController < ApplicationController
     # Recebe o id da resposta dada e 
     if (params[:aid])
       # atualiza o numero de respostas da opt e salva
+      @answer = Answer.new
+      @answer.image_id = params[:imid]
+      @answer.opt_id = params[:aid]
+      @answer.user_id = current_user.id
+      @answer.project_id = params[:pid]
+      @answer.save
       @answer_opt = AnswerOpt.find(params[:aid])
       @question = Question.find(@answer_opt.question.id)
       @answer_opt.nanswers+=1
+      @answer_opt.image_id = params[:imid]
       @answer_opt.save
       # atualiza o numero de views da questao e salva
       if (@question)

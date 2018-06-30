@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_30_033716) do
+ActiveRecord::Schema.define(version: 2018_06_30_052225) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2018_06_30_033716) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "question_id"
+    t.integer "image_id"
     t.index ["question_id"], name: "index_answer_opts_on_question_id"
   end
 
@@ -47,6 +48,8 @@ ActiveRecord::Schema.define(version: 2018_06_30_033716) do
     t.datetime "updated_at", null: false
     t.bigint "user_id"
     t.bigint "image_id"
+    t.integer "opt_id"
+    t.integer "project_id"
     t.index ["image_id"], name: "index_answers_on_image_id"
     t.index ["user_id"], name: "index_answers_on_user_id"
   end
