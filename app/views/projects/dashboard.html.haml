@@ -13,8 +13,8 @@
                 %hr
                 %p.card-text= project.description
                 /%p.card-text= project.user_id
-                .text-center                  
-                  %button.btn.btn-dark{:type => "button"}= link_to "Obter dados", :controller => "projects", :action => "retrieve", :pid => project.id, class: 'text-light'
+                .text-center     
+                  = link_to "Obter dados", :controller => "projects", :action => "retrieve", :pid => project.id
                   %button.btn.btn-dark{:type => "button"}= link_to "Ver mais", project_path(project), class: 'text-light'
                 %hr
                 %small.text-muted Criado em
