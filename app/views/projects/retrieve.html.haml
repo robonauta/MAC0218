@@ -13,7 +13,9 @@
       %tbody
         -@images.each do |image|
           %tr
-            %td=image_tag(image.file, alt: "Imagem da pergunta", class: 'img-mini')
+            %td
+              =image_tag(image.file, alt: "Imagem da pergunta", class: 'img-mini')
+              = image.id
             -@opts.each do |option|
               -if option.image_id == image.id
                 %td= option.nanswers
