@@ -1,5 +1,9 @@
 {
-  "name": "dontpanic",
+  "name": "monolito",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "webpack:deploy": "webpack --config=assets/javascripts/bg.js -p",
+    "heroku-postbuild": "npm run webpack:deploy"
+  }
 }
