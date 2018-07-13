@@ -48,6 +48,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'sprockets', '~> 3.7.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'execjs'
 
 
 group :development, :test do
