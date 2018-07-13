@@ -74,8 +74,24 @@ class ProjectsController < ApplicationController
   
     def destroy
       @project = Project.find(params[:id])
+      @images = Image.where('project_id = ?', @project.id)
+      @question = Question.where('project_id = ?', @project.id).first
+      @opts = AnswerOpt.where('question_id = ?', @question.id)
+      
+      #
+      @opts.each do |opt|
+        opt.destroy
+      end
+      @images.each do |image|
+        @answers = Answer.where('image_id = ?', image.id);
+        @answers.each do |answer|
+          answer.destroy
+        end
+        image.destroy
+      end      
+      @question.destroy
       @project.destroy
-      redirect_to projects_path
+      redirect_to '/dashboard'
     end
   
     def dashboard
@@ -101,7 +117,7 @@ class ProjectsController < ApplicationController
 
     def retrieve
       @images = Image.where('project_id = ?', params[:pid])
-      @question = Question.where('project_id', params[:pid]).first
+      @question = Question.where('project_id = ?', params[:pid]).first
       @opts = AnswerOpt.where('question_id = ?', @question.id)
       render 'retrieve'
     end 

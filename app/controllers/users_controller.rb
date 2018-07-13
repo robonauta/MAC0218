@@ -32,6 +32,11 @@ class UsersController < ApplicationController
   def settings
     # busca usuário na db
     @user = User.find(session[:user_id])
+    if(@user.update(user_params))
+      redirect_to '/'
+    else
+      render 'account'
+    end
   end
 
   # GET: EDIT (EDITAR PERFIL)

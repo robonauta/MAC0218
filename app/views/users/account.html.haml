@@ -1,7 +1,7 @@
 .row.justify-content-center
   %main.inner.cover{:role => "main"}
-    %form.form-signin          
-    = form_for :user do |f|
+    %form.form-signin      
+    = form_for :user, :url => {:controller => 'users', :action => 'update'}, :method => "patch" do |f|
       %h1.h3.mb-3.font-weight-normal Configurações avançadas
       %br
       %label{:for => "username"} Username
