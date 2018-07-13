@@ -2,8 +2,11 @@
   "name": "monolito",
   "private": true,
   "dependencies": {},
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.1.x"
+  },
   "scripts": {
-    "webpack:deploy": "webpack --config=webpack/bg.js -p",
-    "heroku-postbuild": "npm run webpack:deploy"
+    "start": "node ./app/assets/javascripts/bg.js"
   }
 }
